@@ -30,38 +30,37 @@
 
 ## (a) 建立知識庫(Knowledge) 並上傳 TTQS 教材
 
-知識庫要灌入 `docs/materials/` 下的所有 Markdown 教材，Chatflow 才能在評分/討論時檢索到正確的指標、條文與定義。
+知識庫請灌入 **RAG 檢索優化版**教材（位於 `docs/materials/dify-kb/rag/`）。這些檔案已把所有 markdown 表格改寫成「每句自帶完整脈絡」的敘述/條列，embedding 切塊與向量檢索的準確度遠優於原始含表格版本。
 
-### 要上傳的檔案清單
+### 要上傳的檔案（擇一）
 
-頂層 `docs/materials/`：
+**選項 1（最省事）：上傳單一合併檔**
 
-- `00-來源與索引.md`
+- `docs/materials/dify-kb/TTQS-knowledge-base.md`（由下列 8 份 rag 檔合併，已無任何表格）
+
+**選項 2（分檔，檢索定位較精準）：上傳 `docs/materials/dify-kb/rag/` 下 8 份**
+
 - `01-企業機構版-評核指標.md`
 - `02-訓練機構版-評核制度.md`
 - `03-訓練品質管理-理論基礎.md`
+- `官方-企業機構版評核表.md`
+- `官方-訓練機構版評核表.md`
+- `官方-辦訓能力檢核表.md`
+- `官方-作業要點.md`
+- `官方-TTQS-QA.md`
 
-`docs/materials/official/`（官方教材整理）：
-
-- `TTQS-QA.md`
-- `企業機構版評核表.md`
-- `訓練機構版評核表.md`
-- `辦訓能力檢核表.md`
-- `作業要點.md`
-
-> 註：`docs/materials/official/pdf/` 下的原始 PDF（QA2014.pdf、各版評核表、作業要點）是來源憑證，
-> **不需上傳**——上面那 9 份 Markdown 已是整理過的純文字版，索引品質比 PDF 更好。
-> 若你仍想額外把 PDF 丟進同一個知識庫，可在 Dify 知識庫頁手動「新增文件」上傳，但通常不必。
+> 註 1：**請勿上傳 `docs/materials/` 與 `docs/materials/official/` 下的原始版**——那些保留 markdown 表格供人閱讀，但 pipe 表格被切塊後欄位會與表頭分家、語意脈絡流失，不利向量檢索。RAG 版才是給 Dify 用的。
+> 註 2：`docs/materials/official/pdf/` 下的原始 PDF 是來源憑證，**不需上傳**。
 
 ### 兩種上傳方式（擇一）
 
 **方式一：自動化腳本（建議）** — 見本文件 [自動化腳本](#自動化腳本) 小節，
-一行指令建好知識庫並上傳全部 9 份 md。
+一行指令建好知識庫並上傳全部 8 份 RAG 優化 md（腳本讀 `docs/materials/dify-kb/rag/`）。
 
 **方式二：Dify 網頁手動**
 
 1. Dify 左側 → **知識庫(Knowledge)** → **建立知識庫**。
-2. 選擇上傳上面列出的 9 份 `.md`。
+2. 上傳上面「選項 1 的合併檔」或「選項 2 的 8 份 rag md」。
 3. 分段設定：**Process Rule = Automatic（自動分段與清洗）**。
 4. 索引方式：**High Quality（高品質，向量索引）**。
 5. 命名例如「TTQS教材」，建立並等待文件由「索引中」變成「可用」。
@@ -154,7 +153,7 @@ bash exam_app/scripts/test_dify.sh
 
 ### `dify_upload_kb.sh` — 自動建知識庫並上傳教材
 
-用 Dify **知識庫(Dataset) API** 建立知識庫並上傳 `docs/materials/*.md` 與 `docs/materials/official/*.md`。
+用 Dify **知識庫(Dataset) API** 建立知識庫並上傳 `docs/materials/dify-kb/rag/*.md`（RAG 優化版）。
 
 > **注意金鑰不同**：這支用的是 **知識庫 API 金鑰（`dataset-xxxx`）**，與 Chat App 的 `app-` 金鑰不同。
 > 取得：Dify → **知識庫(Knowledge)** → 右上 **API** → 建立金鑰。

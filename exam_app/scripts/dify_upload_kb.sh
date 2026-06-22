@@ -2,7 +2,7 @@
 #
 # dify_upload_kb.sh — 自動在 Dify 建立「知識庫(Dataset)」並上傳 TTQS 教材。
 #
-# 用途：把 docs/materials/*.md 與 docs/materials/official/*.md 全部灌進 Dify 知識庫，
+# 用途：把 docs/materials/dify-kb/rag/*.md（RAG 檢索優化版，已移除表格）全部灌進 Dify 知識庫，
 #       供 Chatflow 的 Knowledge Retrieval 節點檢索（評分/討論時注入 {{#context#}}）。
 #
 # 需要的環境變數：
@@ -40,19 +40,19 @@ BASE_URL="${BASE_URL%/}"   # 去掉結尾斜線
 DATASET_NAME="${DIFY_DATASET_NAME:-TTQS教材}"
 AUTH="Authorization: Bearer ${DIFY_DATASET_API_KEY}"
 
-# 推算教材目錄：本腳本在 exam_app/scripts/，教材在 ../../docs/materials/
+# 推算教材目錄：本腳本在 exam_app/scripts/，RAG 優化教材在 ../../docs/materials/dify-kb/rag/
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "${SCRIPT_DIR}/../.." && pwd)"
-MATERIALS_DIR="${REPO_ROOT}/docs/materials"
+MATERIALS_DIR="${REPO_ROOT}/docs/materials/dify-kb/rag"
 
 if [ ! -d "${MATERIALS_DIR}" ]; then
   echo "錯誤：找不到教材目錄 ${MATERIALS_DIR}" >&2
   exit 1
 fi
 
-# 收集所有要上傳的 md（頂層 + official/），用 nullglob 避免無檔時殘留萬用字元
+# 收集 RAG 優化版教材 md（dify-kb/rag/），用 nullglob 避免無檔時殘留萬用字元
 shopt -s nullglob
-FILES=( "${MATERIALS_DIR}"/*.md "${MATERIALS_DIR}"/official/*.md )
+FILES=( "${MATERIALS_DIR}"/*.md )
 shopt -u nullglob
 if [ "${#FILES[@]}" -eq 0 ]; then
   echo "錯誤：${MATERIALS_DIR} 下找不到任何 .md 教材。" >&2
