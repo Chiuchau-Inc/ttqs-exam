@@ -1,0 +1,1412 @@
+{
+ "meta": {
+  "title": "TTQS 人才發展品質管理 線上模擬考",
+  "subtitle": "依勞動部勞動力發展署 TTQS 官方教材自動生成題庫，每次隨機抽題",
+  "duration_min": 90,
+  "total": 100,
+  "pass_score": 60
+ },
+ "structure": {
+  "mcq": {
+   "count": 25,
+   "points_each": 2,
+   "section": "第一題 單選題"
+  },
+  "short": {
+   "count": 4,
+   "points_each": 5,
+   "section": "第二題 簡答題"
+  },
+  "essay": {
+   "count": 1,
+   "points": 30,
+   "section": "第三題 申論題"
+  }
+ },
+ "mcq": [
+  {
+   "topic": "TTQS定義與全名",
+   "topic_id": "a01",
+   "question": "關於 TTQS 的全名，下列何者正確？",
+   "options": {
+    "a": "中文為「人才發展品質管理系統」，英文為 Talent Quality-management System",
+    "b": "中文為「訓練績效管理系統」，英文為 Training Total Quality System",
+    "c": "中文為「人力資源認證系統」，英文為 Talent Recruitment Quality System",
+    "d": "中文為「職能落差管理系統」，英文為 Taiwan Talent Quality Scheme"
+   },
+   "answer": "a",
+   "explanation": "正解 a：TTQS 現行全名為「人才發展品質管理系統 / Talent Quality-management System」。b、c、d 之中英文名稱皆為杜撰，非教材所載名稱。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：1-1 定義與全名",
+   "difficulty": "易",
+   "verified": true,
+   "id": "mcq_001"
+  },
+  {
+   "topic": "TTQS舊名與更名",
+   "topic_id": "a02",
+   "question": "TTQS 在更名前的舊名稱及更名年份，下列何者正確？",
+   "options": {
+    "a": "舊名為「訓練品質系統（Taiwan TrainQuali System）」，於民國103年(2014)更名",
+    "b": "舊名為「人才投資方案」，於民國96年(2007)更名",
+    "c": "舊名為「訓練品質系統（Taiwan TrainQuali System）」，於民國96年(2007)更名",
+    "d": "舊名為「辦訓能力檢核系統」，於民國103年(2014)更名"
+   },
+   "answer": "a",
+   "explanation": "正解 a：舊名為「訓練品質系統 / Taiwan TrainQuali System」，民國103年(2014)更名為現名，縮寫仍為 TTQS。c 年份錯誤(96年為推動年而非更名年)；b 之舊名「人才投資方案」實為 IIP，屬源頭之一而非舊名；d 之舊名為杜撰。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：1-2 緣起與發展背景",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_002"
+  },
+  {
+   "topic": "TTQS三大源頭",
+   "topic_id": "a03",
+   "question": "TTQS 制訂時參酌的三大源頭，下列何者完全正確？",
+   "options": {
+    "a": "ISO 10015、英國 IIP（人才投資方案）、我國訓練產業發展實況",
+    "b": "ISO 9001、美國 ASTD、我國職業訓練法",
+    "c": "ISO 14067、英國 IIP、日本 JIS 標準",
+    "d": "ISO 10015、Kirkpatrick 四層次、PDCA 戴明循環"
+   },
+   "answer": "a",
+   "explanation": "正解 a：三大源頭為 ISO 10015、英國 IIP（Investors in People，人才投資方案）及我國訓練產業實況。b、c、d 混入 ISO 9001/14067、ASTD、JIS、Kirkpatrick、PDCA 等非源頭項目，皆錯誤。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：1-2 緣起與發展背景",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_003"
+  },
+  {
+   "topic": "TTQS推動年份",
+   "topic_id": "a04",
+   "question": "TTQS 自民國幾年起開始推動？",
+   "options": {
+    "a": "民國96年（2007年）",
+    "b": "民國103年（2014年）",
+    "c": "民國90年（2001年）",
+    "d": "民國100年（2011年）"
+   },
+   "answer": "a",
+   "explanation": "正解 a：TTQS 自民國96年(2007)起推動。b 之103年(2014)為「更名」年份而非推動年份；c、d 之年份均無教材依據。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：1-2 緣起與發展背景",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_004"
+  },
+  {
+   "topic": "TTQS目的",
+   "topic_id": "a05",
+   "question": "關於 TTQS 的目的，下列敘述何者正確？",
+   "options": {
+    "a": "作為辦訓體質辨識工具，確保訓練流程的可靠性與正確性，並提升辦訓品質持續改善",
+    "b": "作為員工績效考核工具，據以決定個人薪資與升遷",
+    "c": "作為產品品質檢驗工具，確保製造流程符合規格",
+    "d": "作為財務稽核工具，確保訓練經費收支正確"
+   },
+   "answer": "a",
+   "explanation": "正解 a：TTQS 是辦訓體質辨識工具，目的在確保訓練流程可靠性與正確性並促進辦訓品質持續改善。b（員工績效/薪資）、c（產品品質）、d（財務稽核）皆非 TTQS 之目的，屬誘答。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：1-3 目的",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_005"
+  },
+  {
+   "topic": "TTQS評分重點",
+   "topic_id": "a06",
+   "question": "TTQS 評核的評分重點為何？",
+   "options": {
+    "a": "以整體辦訓系統是否符合 PDDRO 之精神為評分重點",
+    "b": "以受訓學員人數多寡為評分重點",
+    "c": "以訓練經費投入金額高低為評分重點",
+    "d": "以講師學歷與證照數量為評分重點"
+   },
+   "answer": "a",
+   "explanation": "正解 a：TTQS 評核以整體辦訓系統是否符合 PDDRO 精神為評分重點。b、c、d 以人數、經費、學歷證照為評分標準，均非教材所載評分重點。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：1-3 目的",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_006"
+  },
+  {
+   "topic": "四版本-企業機構版",
+   "topic_id": "a07",
+   "question": "TTQS「企業機構版」的適用對象/用途為何？",
+   "options": {
+    "a": "適用於辦訓單位「對內」實施培訓課程管理",
+    "b": "適用於辦訓單位「對外」實施培訓課程管理",
+    "c": "適用於依工會法成立之工會團體對外實施培訓",
+    "d": "適用於中小企業尚未導入 TTQS 之對內初次檢核"
+   },
+   "answer": "a",
+   "explanation": "正解 a：企業機構版用於「對內」辦訓。b 為訓練機構版（對外）；c 為外訓版（工會對外）；d 為辦訓能力檢核表。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：1-5 適用對象",
+   "difficulty": "易",
+   "verified": true,
+   "id": "mcq_007"
+  },
+  {
+   "topic": "四版本-外訓版",
+   "topic_id": "a08",
+   "question": "TTQS「外訓版」的適用對象為何？",
+   "options": {
+    "a": "依工會法成立之工會團體，對外實施培訓課程管理",
+    "b": "一般企業對內實施員工培訓",
+    "c": "訓練機構對外承接學員培訓",
+    "d": "尚未導入 TTQS 之中小企業初次自我檢核"
+   },
+   "answer": "a",
+   "explanation": "正解 a：外訓版適用於依工會法成立之工會團體對外辦訓。b 為企業機構版；c 為訓練機構版；d 為辦訓能力檢核表。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：1-5 適用對象",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_008"
+  },
+  {
+   "topic": "四版本-辦訓能力檢核表",
+   "topic_id": "a09",
+   "question": "TTQS「辦訓能力檢核表」的適用對象，下列何者正確？",
+   "options": {
+    "a": "符合中小企業認定標準且尚未導入 TTQS 之中小企業，作為對內辦訓能力初次檢核",
+    "b": "已取得金牌之大型企業，作為年度複評使用",
+    "c": "依工會法成立之工會，作為對外辦訓管理",
+    "d": "訓練機構對外招生課程之品質管理"
+   },
+   "answer": "a",
+   "explanation": "正解 a：辦訓能力檢核表適用於符合中小企業認定標準、尚未導入 TTQS 的中小企業，供對內初次檢核。b（已取得金牌大企業複評）為杜撰；c 為外訓版；d 為訓練機構版。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：1-5 適用對象",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_009"
+  },
+  {
+   "topic": "PDDRO五構面",
+   "topic_id": "a10",
+   "question": "TTQS 核心的 PDDRO 五大構面，依序為下列何者？",
+   "options": {
+    "a": "計畫 Plan、設計 Design、執行 Do、查核 Review、成果 Outcome",
+    "b": "計畫 Plan、執行 Do、查核 Check、行動 Act、成果 Outcome",
+    "c": "準備 Prepare、設計 Design、發展 Develop、執行 Run、產出 Output",
+    "d": "計畫 Plan、設計 Design、查核 Review、執行 Do、成果 Outcome"
+   },
+   "answer": "a",
+   "explanation": "正解 a：PDDRO 為計畫 Plan、設計 Design、執行 Do、查核 Review、成果 Outcome。b 是 PDCA 而非 PDDRO；c 字母與名稱皆杜撰；d 順序錯誤（執行 Do 應在查核 Review 之前）。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：二、PDDRO 五大構面",
+   "difficulty": "易",
+   "verified": true,
+   "id": "mcq_010"
+  },
+  {
+   "topic": "PDDRO兩個D",
+   "topic_id": "a11",
+   "question": "PDDRO 相較於 PDCA 的最大特色在於多了哪一階段？並注意其中兩個 D 分別代表什麼？",
+   "options": {
+    "a": "多了「設計 Design」一階，兩個 D 分別為 Design（設計）與 Do（執行）",
+    "b": "多了「發展 Develop」一階，兩個 D 分別為 Develop（發展）與 Do（執行）",
+    "c": "多了「決策 Decide」一階，兩個 D 分別為 Decide（決策）與 Do（執行）",
+    "d": "多了「文件 Document」一階，兩個 D 分別為 Document（文件）與 Do（執行）"
+   },
+   "answer": "a",
+   "explanation": "正解 a：PDDRO 精神近似 PDCA 但多了「設計 Design」一階；兩個 D 即 Design（設計）與 Do（執行）。b、c、d 將第二個 D 誤植為 Develop/Decide/Document，皆非教材定義。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：二、PDDRO 五大構面",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_011"
+  },
+  {
+   "topic": "滿分與指標數",
+   "topic_id": "a12",
+   "question": "TTQS 企業機構版的滿分與指標數為何？",
+   "options": {
+    "a": "滿分 100 分，共 19 項指標",
+    "b": "滿分 100 分，共 22 項指標",
+    "c": "滿分 50 分，共 19 項指標",
+    "d": "滿分 120 分，共 11 項指標"
+   },
+   "answer": "a",
+   "explanation": "正解 a：企業機構版滿分 100 分、共 19 項指標。b、c、d 之指標數或滿分數均與教材不符。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：4-1 滿分與指標數",
+   "difficulty": "易",
+   "verified": true,
+   "id": "mcq_012"
+  },
+  {
+   "topic": "計畫P四子向度",
+   "topic_id": "a13",
+   "question": "企業機構版「計畫 P」構面下分為哪四個子向度？",
+   "options": {
+    "a": "明確性、系統性、連結性、能力",
+    "b": "明確性、可行性、經濟性、時效性",
+    "c": "完整性、系統性、連結性、創新性",
+    "d": "明確性、系統性、合規性、效益性"
+   },
+   "answer": "a",
+   "explanation": "正解 a：計畫 P 下分明確性、系統性、連結性、能力四個子向度。b、c、d 混入可行性、經濟性、創新性、合規性等非教材子向度，皆錯誤。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：構面一 計畫(Plan)",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_013"
+  },
+  {
+   "topic": "指標1-組織願景策略",
+   "topic_id": "a14",
+   "question": "企業機構版「指標 1」的核心內涵為何？",
+   "options": {
+    "a": "組織願景／使命／策略的揭露與目標及需求的訂定，訓練要往上接到組織策略與年度工作計畫",
+    "b": "訓練需求的職能落差分析方法與紀錄",
+    "c": "訓練資源的採購程序與廠商甄選標準",
+    "d": "高階主管對訓練的承諾與參與"
+   },
+   "answer": "a",
+   "explanation": "正解 a：指標 1 屬明確性，強調揭露組織願景/使命/策略並使訓練接到組織策略與年度工作計畫。b 為指標 7；c 為指標 10；d 為指標 2。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：指標1",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_014"
+  },
+  {
+   "topic": "指標2-高階主管承諾",
+   "topic_id": "a15",
+   "question": "企業機構版「指標 2」的核心關鍵字（考點）為何？",
+   "options": {
+    "a": "高階主管對訓練的「承諾與參與」，且訓練政策須揭露給員工知悉",
+    "b": "部門主管對人員發展的責任與能力",
+    "c": "PDDRO 訓練體系及核心訓練類別的展現",
+    "d": "利益關係人參與課程設計及審查並留有紀錄"
+   },
+   "answer": "a",
+   "explanation": "正解 a：指標 2 的核心是高階主管的「承諾與參與」，且須將訓練政策揭露給員工知悉。b 為指標 6；c 為指標 3；d 為指標 9。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：指標2",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_015"
+  },
+  {
+   "topic": "指標3-PDDRO訓練體系",
+   "topic_id": "a16",
+   "question": "企業機構版「指標 3」的內涵為何？",
+   "options": {
+    "a": "明確的 PDDRO 訓練體系及明確的核心訓練類別",
+    "b": "訓練品質管理的系統化文件資訊與文件管制",
+    "c": "訓練規劃與經營目標達成的連結性",
+    "d": "訓練計畫及目標需求的結合（設計—目標一致性）"
+   },
+   "answer": "a",
+   "explanation": "正解 a：指標 3 為展現完整的 PDDRO 訓練體系並反映核心訓練類別。b 為指標 4；c 為指標 5；d 為指標 11。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：指標3",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_016"
+  },
+  {
+   "topic": "指標4-文件管制",
+   "topic_id": "a17",
+   "question": "企業機構版「指標 4」（系統性）強調的文件管理應包含哪些動作？",
+   "options": {
+    "a": "文件的核准、公告、更新、保存（文件管制）",
+    "b": "文件的加密、備份、銷毀、稽核",
+    "c": "文件的翻譯、彙編、印刷、寄送",
+    "d": "文件的採購、簽約、驗收、付款"
+   },
+   "answer": "a",
+   "explanation": "正解 a：指標 4 要求展示文件如何核准、公告、更新、保存，即文件管制觀念。b、c、d 之動作組合均非教材所列文件管理要件。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：指標4",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_017"
+  },
+  {
+   "topic": "指標5-連結性",
+   "topic_id": "a18",
+   "question": "企業機構版「指標 5」（連結性）描述的連結邏輯，下列何者最符合教材？",
+   "options": {
+    "a": "連結組織（經營）目標、需求、訓練發展方向，再連結到訓練行動計畫及重點課程",
+    "b": "連結個人績效、部門績效、組織績效三層次評估成果",
+    "c": "連結反應、學習、行為、成果四層次評估",
+    "d": "連結師資、教材、合格廠商的採購與簽約流程"
+   },
+   "answer": "a",
+   "explanation": "正解 a：指標 5 強調由經營目標→需求→訓練發展方向→訓練行動計畫/重點課程的連結性。b、c 屬成果評估構面內容；d 為指標 10。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：指標5",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_018"
+  },
+  {
+   "topic": "指標6-部門主管責任",
+   "topic_id": "a19",
+   "question": "企業機構版「指標 6」（能力）的重要考點為何？",
+   "options": {
+    "a": "人才發展責任不只在 HR／訓練單位，部門主管也負有人員發展責任與能力",
+    "b": "訓練資源的採購須由合格廠商評估後始得簽約",
+    "c": "職能落差分析須有方法與紀錄",
+    "d": "訓練政策須適當揭露給全體員工知悉"
+   },
+   "answer": "a",
+   "explanation": "正解 a：指標 6 強調訓練單位有適當分工與職能，且部門主管亦負人員發展之責並具備發展能力。b 為指標 10；c 為指標 7；d 為指標 2。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：指標6",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_019"
+  },
+  {
+   "topic": "指標7-職能落差分析",
+   "topic_id": "a20",
+   "question": "企業機構版「指標 7」的關鍵字（考點）為何？",
+   "options": {
+    "a": "職能落差分析（competency gap），且須有方法與紀錄",
+    "b": "學習移轉（transfer of learning）",
+    "c": "異常矯正、防止再發",
+    "d": "Kirkpatrick 四層次評估"
+   },
+   "answer": "a",
+   "explanation": "正解 a：指標 7 為訓練需求相關的職能分析及應用，關鍵字是「職能落差分析（competency gap）」並須有方法與紀錄。b、c、d 分別屬執行/查核/成果構面之概念，非指標 7。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：指標7",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_020"
+  },
+  {
+   "topic": "指標9-利益關係人",
+   "topic_id": "a21",
+   "question": "依企業機構版「指標 9」，下列何者「不屬於」教材所列之利益關係人？",
+   "options": {
+    "a": "政府評核委員",
+    "b": "受訓學員",
+    "c": "部門主管",
+    "d": "講師或專家"
+   },
+   "answer": "a",
+   "explanation": "正解 a：指標 9 所列利益關係人含受訓學員、客戶、部門主管、訓練部門人員、高階主管、講師或專家等；「政府評核委員」並未列於利益關係人中，故為應選的不屬於者。b、c、d 均為教材明列之利益關係人。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：指標9",
+   "difficulty": "難",
+   "verified": true,
+   "id": "mcq_021"
+  },
+  {
+   "topic": "指標8與指標10設計要素",
+   "topic_id": "a22",
+   "question": "關於企業機構版設計 D 構面的指標，下列敘述何者正確？",
+   "options": {
+    "a": "指標 8「訓練方案的系統設計」須涵蓋訓練目標、方法、課程時程、師資/學員遴選、教材、設施環境、訓練評估方法等完整要素；指標 10 則為師資/教材/合格廠商的評估→採購→簽約→後續管理",
+    "b": "指標 8 僅須訂出課程名稱即可；指標 10 不需評估廠商即可直接採購",
+    "c": "指標 8 是利益關係人參與審查；指標 10 是職能落差分析方法與紀錄",
+    "d": "指標 8 是訓練計畫與目標需求的結合；指標 10 是高階主管承諾與參與"
+   },
+   "answer": "a",
+   "explanation": "正解 a：指標 8 為訓練方案的系統設計，涵蓋目標、方法、時程、師資與學員遴選、教材、設施環境、評估方法等完整要素；指標 10 為訓練資源（含內部講師、教材、合格廠商）之評估、採購、簽約及後續管理。b 內容明顯不符；c 將指標 9、7 內容錯置；d 將指標 11、2 內容錯置。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：指標8、指標10",
+   "difficulty": "難",
+   "verified": true,
+   "id": "mcq_022"
+  },
+  {
+   "topic": "執行Do-指標12",
+   "topic_id": "b01",
+   "question": "企業機構版指標12「訓練內涵（按計畫執行的程度）」細分為12a–12e，貫穿全部子項的共同關鍵字是下列何者？",
+   "options": {
+    "a": "與訓練目標的切合性",
+    "b": "利益關係人的參與",
+    "c": "職能落差分析",
+    "d": "異常矯正、防止再發"
+   },
+   "answer": "a",
+   "explanation": "指標12的12a遴選學員、12b選擇教材、12c遴選師資、12d選擇教學方法、12e教學環境與設備，共同關鍵字均是「與訓練目標的切合性（一致性）」。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：指標12",
+   "difficulty": "易",
+   "verified": true,
+   "id": "mcq_023"
+  },
+  {
+   "topic": "執行Do-指標12e",
+   "topic_id": "b02",
+   "question": "關於指標12e「依據課程目標選擇教學環境與設備」，下列何項是教材特別強調的要求？",
+   "options": {
+    "a": "教學環境設備要有定期維護紀錄",
+    "b": "教學設備必須全部外購",
+    "c": "教學環境須通過ISO認證",
+    "d": "設備需每年汰換更新"
+   },
+   "answer": "a",
+   "explanation": "指標12e除了強調教學環境與設備須與訓練目標切合外，教材特別點出教學環境設備要有定期維護紀錄。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：指標12e",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_024"
+  },
+  {
+   "topic": "執行Do-指標13",
+   "topic_id": "b03",
+   "question": "企業機構版指標13「學習成果的移轉及運用」對應的關鍵字（英文）是下列何者？",
+   "options": {
+    "a": "transfer of learning",
+    "b": "competency gap",
+    "c": "corrective action",
+    "d": "return on investment"
+   },
+   "answer": "a",
+   "explanation": "指標13的核心關鍵字為「學習移轉（transfer of learning）」，強調以機制或獎懲促進個人、小組團隊及組織績效改善。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：指標13",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_025"
+  },
+  {
+   "topic": "執行Do-指標14",
+   "topic_id": "b04",
+   "question": "指標14「訓練資料分類與建檔及管理資訊系統化」除了將資料存檔保存外，還特別要求做到什麼？",
+   "options": {
+    "a": "還要進行分析及運用",
+    "b": "只要紙本保存即可",
+    "c": "資料須對外公開",
+    "d": "由高階主管親自建檔"
+   },
+   "answer": "a",
+   "explanation": "指標14強調訓練流程相關文件不只是有系統化紀錄與保存建檔，還必須進一步分析及運用。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：指標14",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_026"
+  },
+  {
+   "topic": "查核R-指標15",
+   "topic_id": "b05",
+   "question": "指標15「評估報告及定期性綜合分析」要求定期課後檢討，其檢討內容應涵蓋下列何者？",
+   "options": {
+    "a": "學員回饋、需求、目標、方法",
+    "b": "僅學員出席率",
+    "c": "僅講師鐘點費",
+    "d": "僅場地租金"
+   },
+   "answer": "a",
+   "explanation": "指標15的定期課後檢討內容應涵蓋學員建議回饋、訓練需求、目標及方法。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：指標15",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_027"
+  },
+  {
+   "topic": "查核R-指標16",
+   "topic_id": "b06",
+   "question": "指標16「管控及異常矯正處理」的關鍵字「異常矯正、防止再發」最接近ISO中的哪一項概念？",
+   "options": {
+    "a": "矯正預防措施（CAPA）",
+    "b": "內部稽核（IA）",
+    "c": "管理審查（MR）",
+    "d": "文件管制（DC）"
+   },
+   "answer": "a",
+   "explanation": "指標16強調異常時有紀錄與因應措施、必要時矯正防止再發，並持續管控加上年度審查，近似ISO的矯正預防措施（CAPA）。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：指標16",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_028"
+  },
+  {
+   "topic": "成果O-指標17",
+   "topic_id": "b07",
+   "question": "指標17「訓練成果評估的多元性和完整性」採用下列哪一套評估架構？",
+   "options": {
+    "a": "Kirkpatrick四層次",
+    "b": "PDCA戴明循環",
+    "c": "SWOT分析",
+    "d": "平衡計分卡（BSC）"
+   },
+   "answer": "a",
+   "explanation": "指標17對應Kirkpatrick四層次：17a反應、17b學習、17c行為、17d成果。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：指標17",
+   "difficulty": "易",
+   "verified": true,
+   "id": "mcq_029"
+  },
+  {
+   "topic": "成果O-指標17配分",
+   "topic_id": "b08",
+   "question": "企業機構版指標17四個子項的配分上限，下列何者正確？",
+   "options": {
+    "a": "反應0–2分、學習0–2分、行為0–3分、成果0–3分",
+    "b": "四項皆為0–5分",
+    "c": "反應0–3分、學習0–3分、行為0–2分、成果0–2分",
+    "d": "四項皆為0–2分"
+   },
+   "answer": "a",
+   "explanation": "企業版指標17：17a反應0–2分、17b學習0–2分、17c行為0–3分、17d成果0–3分。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：指標17",
+   "difficulty": "難",
+   "verified": true,
+   "id": "mcq_030"
+  },
+  {
+   "topic": "成果O-指標18",
+   "topic_id": "b09",
+   "question": "指標18「高階主管對訓練發展的認知/支持/評價」（企業版1–5分），給予5分的最高層級代表下列何者？",
+   "options": {
+    "a": "創造特殊績效或擴散效果",
+    "b": "少許改善功效",
+    "c": "達成人員能力提升",
+    "d": "達組織績效改善"
+   },
+   "answer": "a",
+   "explanation": "指標18級距為1少許功效、2一定功效、3人員能力提升、4組織績效改善、5創造特殊績效或擴散效果，5分為最高層級。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：指標18",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_031"
+  },
+  {
+   "topic": "成果O-指標19",
+   "topic_id": "b10",
+   "question": "指標19「訓練成果」（企業版1–5分）中，「有初步成果但無具體佐證」對應幾分？",
+   "options": {
+    "a": "1分",
+    "b": "2分",
+    "c": "3分",
+    "d": "5分"
+   },
+   "answer": "a",
+   "explanation": "指標19級距：1初步成果無具體佐證、2有部分佐證、3個人績效、4部門績效、5組織績效或特殊績效，故無佐證為1分。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：指標19",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_032"
+  },
+  {
+   "topic": "成果O-未執行計分",
+   "topic_id": "b11",
+   "question": "關於成果（Outcome）指標17、18、19的計分原則，下列何者正確？",
+   "options": {
+    "a": "採固定標尺，未執行為0分",
+    "b": "未執行給1分基礎分",
+    "c": "未執行不列入計分",
+    "d": "未執行一律倒扣"
+   },
+   "answer": "a",
+   "explanation": "成果指標採固定標尺，且17、18、19未執行為0分。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：成果指標計分",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_033"
+  },
+  {
+   "topic": "計分標準-4分",
+   "topic_id": "b12",
+   "question": "在1–5分標尺中，給予「4分」的關鍵判準是下列何者？",
+   "options": {
+    "a": "有執行＋一致性流程＋完整紀錄手冊，即「說、做、寫」一致且流程上下連結",
+    "b": "僅具基礎認知",
+    "c": "持續改善達到標竿水準",
+    "d": "僅認知且部分執行但無明確紀錄"
+   },
+   "answer": "a",
+   "explanation": "4分代表有執行、有一致性作業流程、完整過程紀錄及文書手冊，具備「說、做、寫」一致與流程上下連結。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：計分標準",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_034"
+  },
+  {
+   "topic": "計分標準-5分",
+   "topic_id": "b13",
+   "question": "1–5分標尺中達到「5分」的最高層級，其特徵是下列何者？",
+   "options": {
+    "a": "有完整文書手冊紀錄＋分析資料持續改善達標竿水準",
+    "b": "有執行但無完整文書紀錄手冊",
+    "c": "僅具本項目基礎認知",
+    "d": "僅部分執行無明確紀錄"
+   },
+   "answer": "a",
+   "explanation": "5分需有執行及完整文書手冊與紀錄，並分析相關資料持續改善達到標竿水準。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：計分標準",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_035"
+  },
+  {
+   "topic": "計分單位",
+   "topic_id": "b14",
+   "question": "TTQS企業機構版計分的最小單位是多少？",
+   "options": {
+    "a": "0.5分",
+    "b": "1分",
+    "c": "0.1分",
+    "d": "2分"
+   },
+   "answer": "a",
+   "explanation": "計分最小單位為0.5分；委員依級距評分後可酌以0.5分為調整範圍。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：計分單位與級距",
+   "difficulty": "易",
+   "verified": true,
+   "id": "mcq_036"
+  },
+  {
+   "topic": "等級門檻-金牌",
+   "topic_id": "b15",
+   "question": "企業機構版（滿分100）取得「金牌」的分數門檻為下列何者？",
+   "options": {
+    "a": "85.5分以上",
+    "b": "74.5分以上",
+    "c": "63.5分以上",
+    "d": "53.5分以上"
+   },
+   "answer": "a",
+   "explanation": "等級門檻：金牌85.5分以上、銀牌74.5–85、銅牌63.5–74、通過53.5–63、未通過53分以下。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：等級門檻",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_037"
+  },
+  {
+   "topic": "等級門檻-銅牌",
+   "topic_id": "b16",
+   "question": "下列哪一個分數落在「銅牌」的等級區間內？",
+   "options": {
+    "a": "70分",
+    "b": "55分",
+    "c": "80分",
+    "d": "90分"
+   },
+   "answer": "a",
+   "explanation": "銅牌區間為63.5–74分，故70分屬銅牌；55分為通過、80分為銀牌、90分為金牌。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：等級門檻",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_038"
+  },
+  {
+   "topic": "等級門檻-外訓版",
+   "topic_id": "b17",
+   "question": "外訓版與辦訓能力檢核表的合格標準為下列何者？",
+   "options": {
+    "a": "合格分數50分，不分等級",
+    "b": "金牌85.5分以上",
+    "c": "合格分數53.5分並分等級",
+    "d": "合格分數63.5分以上"
+   },
+   "answer": "a",
+   "explanation": "外訓版／辦訓能力檢核表合格分數為50分，且不另分等級。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：等級門檻",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_039"
+  },
+  {
+   "topic": "加分機制",
+   "topic_id": "b18",
+   "question": "關於職能導向認證課程的加分機制，下列何者正確？",
+   "options": {
+    "a": "每通過1門加0.5分、每辦理1班加0.5分，每次評核最高加2分",
+    "b": "每通過1門加1分，無上限",
+    "c": "每通過1門加0.5分，每次評核最高加5分",
+    "d": "每辦理1班加2分，最高加4分"
+   },
+   "answer": "a",
+   "explanation": "職能導向認證課程每通過1門加0.5分、每辦理1班加0.5分，且每次評核此額外加分最高為2分。",
+   "source": "docs/materials/01-企業機構版-評核指標.md：加分機制",
+   "difficulty": "難",
+   "verified": true,
+   "id": "mcq_040"
+  },
+  {
+   "topic": "評核流程-委員時數",
+   "topic_id": "b19",
+   "question": "關於評核與檢核的時數及委員人數，下列何者正確？",
+   "options": {
+    "a": "評核3小時／2位委員；檢核2小時／1位委員",
+    "b": "評核2小時／1位委員；檢核3小時／2位委員",
+    "c": "評核與檢核皆3小時／2位委員",
+    "d": "評核3小時／1位委員；檢核2小時／2位委員"
+   },
+   "answer": "a",
+   "explanation": "評核為3小時、2位評核委員；檢核為2小時、1位檢核委員。",
+   "source": "docs/materials/02-訓練機構版-評核制度.md：評核流程",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_041"
+  },
+  {
+   "topic": "評核流程-規定",
+   "topic_id": "b20",
+   "question": "關於評核當日與前置作業的規定，下列敘述何者正確？",
+   "options": {
+    "a": "評核前一週繳交自評表，當日指派主管級以上人員參與，且除閉門會議外全程錄音",
+    "b": "自評表評核後一週補繳，且全程不錄音",
+    "c": "無須指派主管參與，由承辦人單獨受評",
+    "d": "全程須對外直播"
+   },
+   "answer": "a",
+   "explanation": "教材規定評核約定日前一週繳交自評表、當日應指派主管級以上人員共同參與、現場除閉門會議外全程錄音；約45–60天通知結果，政府公費補助免費。",
+   "source": "docs/materials/02-訓練機構版-評核制度.md：評核流程",
+   "difficulty": "難",
+   "verified": true,
+   "id": "mcq_042"
+  },
+  {
+   "topic": "效期-評核檢核",
+   "topic_id": "b21",
+   "question": "關於TTQS評核與檢核的效期，下列何者正確？",
+   "options": {
+    "a": "評核效期2年、檢核效期1年，2次以上以最近一次為準",
+    "b": "評核與檢核效期皆為1年",
+    "c": "評核效期1年、檢核效期2年",
+    "d": "評核效期3年、檢核效期2年"
+   },
+   "answer": "a",
+   "explanation": "評核效期為2年、檢核效期為1年；若有2次以上，以最近一次為準。",
+   "source": "docs/materials/02-訓練機構版-評核制度.md：效期",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_043"
+  },
+  {
+   "topic": "複評與評核次數",
+   "topic_id": "b22",
+   "question": "關於同年度評核次數限制與違規複評規定，下列何者正確？",
+   "options": {
+    "a": "同一年度同版本評核以2次為限、兩次相隔30日以上；受處分者暫停效期並須於3個月內複評",
+    "b": "同一年度同版本不限次數，且違規即永久取消資格",
+    "c": "兩次評核只需相隔7日，違規者免複評",
+    "d": "受處分者2年內須複評即可保留效期"
+   },
+   "answer": "a",
+   "explanation": "同一年度同版本評核以2次為限、各版本加總3次、兩次相隔30日以上；違規受處分者暫停效期並須於3個月內複評，拒絕者取消資格且2年內不得再申請。",
+   "source": "docs/materials/02-訓練機構版-評核制度.md：複評與評核次數",
+   "difficulty": "難",
+   "verified": true,
+   "id": "mcq_044"
+  },
+  {
+   "topic": "ADDIE 教學設計模式",
+   "topic_id": "c01",
+   "question": "ADDIE 教學設計模式的五個階段依序為下列何者？",
+   "options": {
+    "a": "分析、設計、發展、實施、評估",
+    "b": "計畫、設計、執行、查核、成果",
+    "c": "反應、學習、行為、成果、投資報酬",
+    "d": "組織分析、任務分析、人員分析、落差分析、評估"
+   },
+   "answer": "a",
+   "explanation": "ADDIE 代表 Analysis 分析、Design 設計、Development 發展、Implementation 實施、Evaluation 評估五個階段。選項 b 為 PDDRO、c 為 Kirkpatrick+Phillips 層次、d 為 TNA 相關概念，皆非 ADDIE。",
+   "source": "docs/materials/03-訓練品質管理-理論基礎.md：ADDIE",
+   "difficulty": "易",
+   "verified": true,
+   "id": "mcq_045"
+  },
+  {
+   "topic": "ADDIE 與 TTQS 對應",
+   "topic_id": "c02",
+   "question": "ADDIE 模式主要對應到 TTQS（PDDRO）的哪些構面？",
+   "options": {
+    "a": "執行 Do 與查核 Review",
+    "b": "計畫 P 與設計 D",
+    "c": "查核 Review 與成果 Outcome",
+    "d": "成果 Outcome 與行動 Act"
+   },
+   "answer": "b",
+   "explanation": "教材指出 ADDIE 對應 TTQS 的「計畫 P」與「設計 D」，且 ADDIE 的 A（分析）約等於 PDDRO 的 P。",
+   "source": "docs/materials/03-訓練品質管理-理論基礎.md：ADDIE",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_046"
+  },
+  {
+   "topic": "ADDIE 評估階段",
+   "topic_id": "c03",
+   "question": "ADDIE 的評估（Evaluation）階段包含哪兩種評估？",
+   "options": {
+    "a": "組織性評估與任務性評估",
+    "b": "正遷移評估與負遷移評估",
+    "c": "形成性評估（formative）與總結性評估（summative）",
+    "d": "反應評估與成果評估"
+   },
+   "answer": "c",
+   "explanation": "教材說明 ADDIE 的評估階段含形成性評估（formative）與總結性評估（summative），用以評量方案有效性並修正。",
+   "source": "docs/materials/03-訓練品質管理-理論基礎.md：ADDIE",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_047"
+  },
+  {
+   "topic": "TNA 在訓練系統中的位置",
+   "topic_id": "c04",
+   "question": "訓練需求分析（TNA）位於訓練系統的輸入端，主要對應 TTQS 與 ADDIE 的哪個階段？",
+   "options": {
+    "a": "TTQS 的 P、ADDIE 的 A",
+    "b": "TTQS 的 D、ADDIE 的 D",
+    "c": "TTQS 的 O、ADDIE 的 E",
+    "d": "TTQS 的 R、ADDIE 的 I"
+   },
+   "answer": "a",
+   "explanation": "TNA 位於訓練系統輸入端（I-P-O 模型的 I），對應 TTQS 的「計畫 P」與 ADDIE 的「分析 A」，是 TTQS 計畫構面的核心。",
+   "source": "docs/materials/03-訓練品質管理-理論基礎.md：TNA",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_048"
+  },
+  {
+   "topic": "TNA 三層次",
+   "topic_id": "c05",
+   "question": "McGehee & Thayer（1961）提出的訓練需求分析三構面為下列何者？",
+   "options": {
+    "a": "反應分析、學習分析、行為分析",
+    "b": "組織分析、任務分析、人員分析",
+    "c": "策略分析、流程分析、檢核分析",
+    "d": "知識分析、技術分析、態度分析"
+   },
+   "answer": "b",
+   "explanation": "McGehee & Thayer（1961）最早提出訓練需求三構面：組織分析（Organization）、任務分析（Task）、人員分析（Person）；Goldstein & Ford 後將其系統化。",
+   "source": "docs/materials/03-訓練品質管理-理論基礎.md：TNA",
+   "difficulty": "易",
+   "verified": true,
+   "id": "mcq_049"
+  },
+  {
+   "topic": "TNA 任務分析",
+   "topic_id": "c06",
+   "question": "在 TNA 三層次中，確認「完成任務所需的知識、技術、能力與其他要素（KSAO/KSAs）」屬於哪一層次？",
+   "options": {
+    "a": "組織分析（Organization）",
+    "b": "人員分析（Person）",
+    "c": "任務分析（Task）",
+    "d": "氣候分析（Climate）"
+   },
+   "answer": "c",
+   "explanation": "任務分析（Task Analysis）聚焦於確認完成任務所需的 KSAO/KSAs；組織分析看策略/資源/氣候/目標，人員分析看哪些人需受訓。",
+   "source": "docs/materials/03-訓練品質管理-理論基礎.md：TNA",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_050"
+  },
+  {
+   "topic": "能力落差分析",
+   "topic_id": "c07",
+   "question": "能力落差分析（Gap Analysis）是比對下列何者之間的差距，而該差距即為訓練需求？",
+   "options": {
+    "a": "應有能力（職能基準）與現有能力（盤點結果）",
+    "b": "反應層次與學習層次",
+    "c": "訓練總成本與訓練淨效益",
+    "d": "形成性評估與總結性評估"
+   },
+   "answer": "a",
+   "explanation": "能力落差分析是比對「應有能力（職能基準/標準）」與「現有能力（盤點結果）」的差距，差距即訓練需求。",
+   "source": "docs/materials/03-訓練品質管理-理論基礎.md：TNA",
+   "difficulty": "易",
+   "verified": true,
+   "id": "mcq_051"
+  },
+  {
+   "topic": "Kirkpatrick 四層次",
+   "topic_id": "c08",
+   "question": "柯氏（Kirkpatrick）四層次評估模式由誰於哪一年提出？",
+   "options": {
+    "a": "Jack Phillips，1959 年",
+    "b": "Donald Kirkpatrick，1959 年",
+    "c": "W. Edwards Deming，1950 年",
+    "d": "Goldstein & Ford，1992 年"
+   },
+   "answer": "b",
+   "explanation": "柯氏四級培訓評估模式由 Donald L. Kirkpatrick 於 1959 年提出，是全球應用最廣的訓練成效評估模式；2016 年另提出 New World Kirkpatrick Model 修訂。",
+   "source": "docs/materials/03-訓練品質管理-理論基礎.md：Kirkpatrick",
+   "difficulty": "易",
+   "verified": true,
+   "id": "mcq_052"
+  },
+  {
+   "topic": "Kirkpatrick 四層次順序",
+   "topic_id": "c09",
+   "question": "Kirkpatrick 四層次由低到高（L1→L4）的正確順序為何？",
+   "options": {
+    "a": "學習、反應、成果、行為",
+    "b": "反應、學習、行為、成果",
+    "c": "反應、行為、學習、成果",
+    "d": "行為、學習、反應、成果"
+   },
+   "answer": "b",
+   "explanation": "Kirkpatrick 四層次為 L1 反應（Reaction）、L2 學習（Learning）、L3 行為（Behavior）、L4 成果（Results），每往上一層代表更精確也更難的衡量。",
+   "source": "docs/materials/03-訓練品質管理-理論基礎.md：Kirkpatrick",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_053"
+  },
+  {
+   "topic": "Kirkpatrick L2 學習",
+   "topic_id": "c10",
+   "question": "Kirkpatrick 第二層次「學習（Learning）」主要衡量什麼，常用何種方法？",
+   "options": {
+    "a": "學員滿意度，用課後滿意度問卷",
+    "b": "是否獲得知識/技能/態度，用測驗與實作評量",
+    "c": "是否將所學移轉到工作，用訓練後追蹤",
+    "d": "對組織績效的貢獻，用營運數據比較"
+   },
+   "answer": "b",
+   "explanation": "L2 學習衡量學員是否獲得預期的知識、技能與態度，常用測驗、考試、實作評量。選項 a 為 L1、c 為 L3、d 為 L4。",
+   "source": "docs/materials/03-訓練品質管理-理論基礎.md：Kirkpatrick",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_054"
+  },
+  {
+   "topic": "Kirkpatrick L3 與學習移轉",
+   "topic_id": "c11",
+   "question": "結訓後是否能把所學移轉到工作、行為是否改變，屬於 Kirkpatrick 的哪一層次？",
+   "options": {
+    "a": "L1 反應",
+    "b": "L2 學習",
+    "c": "L3 行為",
+    "d": "L4 成果"
+   },
+   "answer": "c",
+   "explanation": "L3 行為（Behavior）即評估學習/訓練移轉，看學員是否將所學移轉到工作、行為是否改變，常用訓練後追蹤與主管/同儕觀察。",
+   "source": "docs/materials/03-訓練品質管理-理論基礎.md：Kirkpatrick",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_055"
+  },
+  {
+   "topic": "指標 17 與 Kirkpatrick 對應",
+   "topic_id": "c12",
+   "question": "TTQS 成果構面的指標 17 直接對應到下列哪一個理論架構？",
+   "options": {
+    "a": "ADDIE 五階段",
+    "b": "TNA 三層次",
+    "c": "Kirkpatrick 四層次（17a 反應/17b 學習/17c 行為/17d 成果）",
+    "d": "PDCA 戴明循環"
+   },
+   "answer": "c",
+   "explanation": "教材指出 TTQS 成果 O 的指標 17 直接拆成 17a 反應、17b 學習、17c 行為、17d 成果，即 Kirkpatrick 四層次，並可搭配 Phillips ROI 補強。",
+   "source": "docs/materials/03-訓練品質管理-理論基礎.md：Kirkpatrick",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_056"
+  },
+  {
+   "topic": "Phillips ROI 第五層",
+   "topic_id": "c13",
+   "question": "Phillips ROI 方法相對於 Kirkpatrick 四層次，主要新增了什麼？",
+   "options": {
+    "a": "在第四層之上新增第五層投資報酬（ROI）",
+    "b": "在第一層之下新增第零層需求分析",
+    "c": "將四層合併為三層",
+    "d": "以形成性評估取代總結性評估"
+   },
+   "answer": "a",
+   "explanation": "Jack J. Phillips 在柯氏四層之上獨立出第五層「投資報酬（ROI）」，以貨幣價值衡量訓練的投資報酬。",
+   "source": "docs/materials/03-訓練品質管理-理論基礎.md：Phillips ROI",
+   "difficulty": "易",
+   "verified": true,
+   "id": "mcq_057"
+  },
+  {
+   "topic": "ROI 計算公式",
+   "topic_id": "c14",
+   "question": "依教材，訓練的投資報酬率 ROI(%) 的計算公式為下列何者？",
+   "options": {
+    "a": "（訓練總成本 ÷ 訓練淨效益）× 100%",
+    "b": "（貨幣化效益 ÷ 訓練淨效益）× 100%",
+    "c": "（訓練淨效益 ÷ 訓練總成本）× 100%",
+    "d": "（訓練總成本 − 貨幣化效益）× 100%"
+   },
+   "answer": "c",
+   "explanation": "ROI(%) =（訓練淨效益 ÷ 訓練總成本）× 100%，其中淨效益 = 貨幣化效益 − 總成本。",
+   "source": "docs/materials/03-訓練品質管理-理論基礎.md：Phillips ROI",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_058"
+  },
+  {
+   "topic": "效果隔離",
+   "topic_id": "c15",
+   "question": "Phillips ROI 方法的關鍵特色「效果隔離（Isolation of Effects）」是指什麼？",
+   "options": {
+    "a": "把訓練本身的效果從其他因素中分離出來再歸因",
+    "b": "把訓練成本平均分攤到各部門",
+    "c": "把形成性評估與總結性評估分開進行",
+    "d": "把組織分析與人員分析分階段進行"
+   },
+   "answer": "a",
+   "explanation": "效果隔離是 Phillips ROI 的關鍵特色，目的是把訓練本身的效果從其他影響因素中分離出來再歸因（例如用對照組、歷史數據）。",
+   "source": "docs/materials/03-訓練品質管理-理論基礎.md：Phillips ROI",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_059"
+  },
+  {
+   "topic": "職能 KSA",
+   "topic_id": "c16",
+   "question": "職能（Competency）由下列哪三項要素（KSA）組成？",
+   "options": {
+    "a": "知識（Knowledge）、技術（Skill）、態度（Attitude）",
+    "b": "計畫（Plan）、執行（Do）、查核（Check）",
+    "c": "反應（Reaction）、學習（Learning）、行為（Behavior）",
+    "d": "組織（Organization）、任務（Task）、人員（Person）"
+   },
+   "answer": "a",
+   "explanation": "職能即 KSA，由知識（Knowledge）、技術/技能（Skill）、態度（Attitude）組成。",
+   "source": "docs/materials/03-訓練品質管理-理論基礎.md：職能",
+   "difficulty": "易",
+   "verified": true,
+   "id": "mcq_060"
+  },
+  {
+   "topic": "職能基準 OCS 與 iCAP",
+   "topic_id": "c17",
+   "question": "關於職能基準（OCS），下列敘述何者正確？",
+   "options": {
+    "a": "由各企業自行訂定，無統一平台",
+    "b": "是政府訂定完成特定職類所需的能力組合，彙整於勞動力發展署 iCAP 平台",
+    "c": "等同於 Kirkpatrick 第四層成果",
+    "d": "是 ADDIE 中的發展（Development）產出物"
+   },
+   "answer": "b",
+   "explanation": "職能基準（OCS）是政府（中央目的事業主管機關）訂定、完成特定職類工作所需的能力組合（人才規格），彙整於勞動力發展署 iCAP 職能發展應用平台。",
+   "source": "docs/materials/03-訓練品質管理-理論基礎.md：職能基準",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_061"
+  },
+  {
+   "topic": "能力盤點到 IDP",
+   "topic_id": "c18",
+   "question": "以職能導向建置訓練體系時，下列串接順序何者正確？",
+   "options": {
+    "a": "IDP → 能力盤點 → 職能基準 → 職能落差",
+    "b": "職能落差 → 能力盤點 → 職能基準 → IDP",
+    "c": "能力盤點 → 比對職能基準 → 職能落差 → IDP（個人發展計畫）",
+    "d": "職能基準 → IDP → 能力盤點 → 職能落差"
+   },
+   "answer": "c",
+   "explanation": "教材以「能力盤點 → 比對職能基準 → 找出職能落差 → 訂定 IDP（個人發展計畫）」串接，作為計畫 P 與設計 D 的科學依據。",
+   "source": "docs/materials/03-訓練品質管理-理論基礎.md：能力盤點/IDP",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_062"
+  },
+  {
+   "topic": "PDCA 與 PDDRO 對應",
+   "topic_id": "c19",
+   "question": "相較於 PDCA（戴明循環），TTQS 的 PDDRO 有何主要不同？",
+   "options": {
+    "a": "少了查核（Check）一階",
+    "b": "多了設計（Design）一階，並把結果端強化為成果（Outcome）",
+    "c": "以 Study 完全取代了 Plan",
+    "d": "把四階合併為三階"
+   },
+   "answer": "b",
+   "explanation": "PDDRO 源自戴明循環，比 PDCA 多了 Design（設計）一階，並把結果端由 Act 強化為 Outcome（成果評估）；戴明後期則偏好以 Study 取代 Check（PDSA）。",
+   "source": "docs/materials/03-訓練品質管理-理論基礎.md：PDCA/PDDRO",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_063"
+  },
+  {
+   "topic": "導入 TTQS 的 PDCA 時程占比",
+   "topic_id": "c20",
+   "question": "依常見實務，訓練機構導入 TTQS 的 PDCA 流程中，哪一階段時程占比最高（約 60%）？",
+   "options": {
+    "a": "Plan 啟動及策略分析",
+    "b": "Do 系統及流程調整",
+    "c": "Check 系統執行檢核（確保說、寫、做一致）",
+    "d": "Act 外部檢驗"
+   },
+   "answer": "c",
+   "explanation": "常見實務占比為 Plan 10%、Do 20%、Check 60%（確保說寫做一致並提供系統化佐證）、Act 10%，故 Check 系統執行檢核占比最高。",
+   "source": "docs/materials/03-訓練品質管理-理論基礎.md：PDCA時程",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_064"
+  },
+  {
+   "topic": "學習移轉責任",
+   "topic_id": "c21",
+   "question": "關於學習移轉/訓練移轉，下列敘述何者正確？",
+   "options": {
+    "a": "訓練移轉純粹是學員個人的責任",
+    "b": "訓練移轉是組織、主管、講師、學員的共同責任，且包含正遷移、負遷移與零遷移",
+    "c": "只有正遷移，不存在負遷移或零遷移",
+    "d": "訓練移轉對應 Kirkpatrick 的 L1 反應層次"
+   },
+   "answer": "b",
+   "explanation": "教材指出學習移轉有正遷移、負遷移、零遷移；結訓後把所學移轉到工作對應 Kirkpatrick L3，且訓練移轉是組織、主管、講師、學員的共同責任。",
+   "source": "docs/materials/03-訓練品質管理-理論基礎.md：學習移轉",
+   "difficulty": "中",
+   "verified": true,
+   "id": "mcq_065"
+  },
+  {
+   "topic": "訓練機構版 vs 企業機構版差異",
+   "topic_id": "c22",
+   "question": "關於 TTQS 訓練機構版與企業機構版的差異，下列敘述何者正確？",
+   "options": {
+    "a": "兩版架構不同，訓練機構版只有 4 構面、企業版有 5 構面",
+    "b": "成果構面評價主體相同，皆為高階主管",
+    "c": "兩版皆為 PDDRO 5 構面 19 指標滿分 100、相同等級門檻與 1–5 計分；差異在對內 vs 對外，且成果構面評價主體與分數上限不同",
+    "d": "指標 13 在兩版完全相同，皆為「移轉及運用（含獎懲）」"
+   },
+   "answer": "c",
+   "explanation": "兩版架構相同（PDDRO 5 構面、19 指標、滿分 100、相同門檻與 1–5 計分），差異在對內 vs 對外：企業版評價主體為高階主管、18/19 上限 5 分、指標 13 為「移轉及運用（含獎懲）」；訓練機構版評價主體為目標客戶及學員/目標市場及顧客、18/19 上限 4 分、指標 13 為「提供建議或協助（協助客戶）」。",
+   "source": "docs/materials/02-訓練機構版-評核制度.md：訓練機構版 vs 企業機構版",
+   "difficulty": "難",
+   "verified": true,
+   "id": "mcq_066"
+  }
+ ],
+ "short": [
+  {
+   "topic": "PDDRO 五大構面",
+   "topic_id": "s01",
+   "question": "請寫出 TTQS 核心架構 PDDRO 五個構面的中英文名稱，並說明 PDDRO 與 PDCA 戴明循環相比多了哪一階、結果端強化為哪一階。",
+   "reference_answer": "PDDRO 五構面為：計畫 Plan、設計 Design、執行 Do、查核 Review、成果 Outcome。PDDRO 源自 PDCA 戴明循環（計畫 Plan-執行 Do-查核 Check-行動 Act），但針對訓練管理擴展：比 PDCA 多了「設計 Design」一階（由 Plan 細分出來），並把結果端從 Act 強化為「成果 Outcome（成果評估）」。對應關係：查核 Review 對應 Check、成果 Outcome 對應 Act。",
+   "rubric": [
+    "正確寫出 PDDRO 五構面中英文（計畫Plan/設計Design/執行Do/查核Review/成果Outcome）（2分）",
+    "指出比 PDCA 多了 Design（設計）一階（1.5分）",
+    "指出結果端強化為 Outcome（成果評估）（1.5分）"
+   ],
+   "source": "docs/materials/03-訓練品質管理-理論基礎.md：PDCA↔PDDRO對應",
+   "points": 5,
+   "id": "short_001"
+  },
+  {
+   "topic": "四種評核版本與對內對外",
+   "topic_id": "s02",
+   "question": "TTQS 共有哪四種版本？請分別說明各版本的適用對象，並標示其屬於「對內」或「對外」。",
+   "reference_answer": "四種版本如下：(1) 企業機構版：適用辦訓單位「對內」實施培訓課程管理；(2) 訓練機構版：適用辦訓單位「對外」實施培訓課程管理；(3) 外訓版：適用依工會法成立之工會團體「對外」實施培訓課程管理；(4) 辦訓能力檢核表：適用符合中小企業認定標準且尚未導入 TTQS 之中小企業，作為「對內」辦訓能力「初次檢核」使用。企業機構版與訓練機構版核心差異的記法即「對內 vs 對外」。",
+   "rubric": [
+    "正確列出四種版本名稱（2分）",
+    "正確標示企業機構版（對內）與訓練機構版（對外）（1.5分）",
+    "正確說明外訓版（工會對外）與辦訓能力檢核表（中小企業對內初次檢核）（1.5分）"
+   ],
+   "source": "docs/materials/01-企業機構版-評核指標.md：四版本對內對外",
+   "points": 5,
+   "id": "short_002"
+  },
+  {
+   "topic": "計畫P指標的四個子向度",
+   "topic_id": "s03",
+   "question": "TTQS 計畫（Plan）構面指標 1～6 涵蓋哪四個子向度？並各舉一個對應的指標重點。",
+   "reference_answer": "計畫 P 構面四個子向度為：明確性、系統性、連結性、能力。對應重點舉例：(1) 明確性：指標1組織願景/使命/策略揭露、指標2訓練政策與高階主管承諾、指標3明確的PDDRO訓練體系及核心訓練類別；(2) 系統性：指標4訓練品質管理的系統化文件資訊；(3) 連結性：指標5訓練規劃與經營目標達成的連結性；(4) 能力：指標6訓練單位與部門主管訓練發展能力及責任。",
+   "rubric": [
+    "正確寫出四個子向度：明確性、系統性、連結性、能力（2分）",
+    "明確性與系統性各舉對應指標重點（1.5分）",
+    "連結性與能力各舉對應指標重點（1.5分）"
+   ],
+   "source": "docs/materials/01-企業機構版-評核指標.md：計畫P指標1-6四子向度",
+   "points": 5,
+   "id": "short_003"
+  },
+  {
+   "topic": "設計D構面指標7-11",
+   "topic_id": "s04",
+   "question": "請列出 TTQS 設計（Design）構面指標 7～11 的五項重點內涵。",
+   "reference_answer": "設計 D 構面指標 7～11 為：指標7職能落差分析（訓練需求相關的職能分析及應用）；指標8訓練方案的系統設計（產出訓練目標、方法、時程、師資、學員條件、教材、設施環境、評估方法等）；指標9利益關係人的參與過程（受訓學員、客戶、部門主管、訓練人員、高階主管、講師等適當參與設計與審查並有紀錄）；指標10訓練資源的採購程序及甄選標準（師資、教材、合格廠商之評估採購簽約與後續管理）；指標11訓練計畫及目標需求的結合（設計產出符合訓練目標與需求，即設計—目標一致性）。",
+   "rubric": [
+    "正確指出指標7職能落差分析與指標8訓練方案系統設計（2分）",
+    "正確指出指標9利益關係人參與與指標10採購程序及甄選標準（2分）",
+    "正確指出指標11設計與目標需求結合（1分）"
+   ],
+   "source": "docs/materials/01-企業機構版-評核指標.md：設計D指標7-11",
+   "points": 5,
+   "id": "short_004"
+  },
+  {
+   "topic": "執行Do指標12的子項與切合性",
+   "topic_id": "s05",
+   "question": "TTQS 執行（Do）構面指標 12 細分為 12a～12e 五個子項，請寫出各子項所評核的對象，並指出貫穿全部子項的核心關鍵字。",
+   "reference_answer": "指標12「訓練內涵（按計畫執行的程度）」分為：12a 依訓練目標遴選學員、12b 依訓練目標選擇教材、12c 依訓練目標遴選師資、12d 依訓練目標選擇教學方法、12e 依課程目標選擇教學環境與設備（教學環境設備須有定期維護紀錄）。貫穿全部子項的核心關鍵字是「切合性」，即各項要素與訓練目標的一致性。",
+   "rubric": [
+    "正確寫出 12a 學員、12b 教材、12c 師資三項（2分）",
+    "正確寫出 12d 教學方法、12e 教學環境與設備兩項（1.5分）",
+    "指出核心關鍵字為「切合性（與訓練目標的一致性）」（1.5分）"
+   ],
+   "source": "docs/materials/01-企業機構版-評核指標.md：執行Do指標12a-12e切合性",
+   "points": 5,
+   "id": "short_005"
+  },
+  {
+   "topic": "學習移轉與資料系統化",
+   "topic_id": "s06",
+   "question": "TTQS 執行（Do）構面指標 13 與指標 14 各評核什麼？並說明「學習移轉」是誰的責任。",
+   "reference_answer": "指標13「學習成果的移轉及運用」：以適當機制與安排（或獎懲措施）促進學員將所學運用於工作，改善個人、小組團隊及組織績效，核心關鍵字為「學習移轉（transfer of learning）」。指標14「訓練資料分類與建檔及管理資訊系統化」：訓練流程相關文件須有系統化紀錄、分析及運用，並適當保存及建檔。學習移轉是組織、主管、講師、學員的共同責任。",
+   "rubric": [
+    "正確說明指標13為學習成果移轉及運用（含關鍵字學習移轉）（2分）",
+    "正確說明指標14為訓練資料分類建檔及資訊系統化（1.5分）",
+    "指出學習移轉是組織、主管、講師、學員的共同責任（1.5分）"
+   ],
+   "source": "docs/materials/01-企業機構版-評核指標.md：執行Do指標12-14",
+   "points": 5,
+   "id": "short_006"
+  },
+  {
+   "topic": "查核R指標15-16",
+   "topic_id": "s07",
+   "question": "TTQS 查核（Review）構面指標 15 與指標 16 的重點為何？指標 16 的核心關鍵字是什麼？",
+   "reference_answer": "指標15「評估報告及定期性綜合分析」：定期課後檢討紀錄與審查改善機制，檢討內容涵蓋學員建議回饋、訓練需求、目標與方法。指標16「管控及異常矯正處理」：訓練過程持續管控且符合程序，彙整結果進行年度審查；異常時有紀錄與因應措施，必要時矯正以防止再發。指標16核心關鍵字為「異常矯正、防止再發」（近似 ISO 矯正預防措施 CAPA）。",
+   "rubric": [
+    "正確說明指標15評估報告及定期綜合分析（2分）",
+    "正確說明指標16管控及異常矯正處理（1.5分）",
+    "指出指標16關鍵字為「異常矯正、防止再發」（1.5分）"
+   ],
+   "source": "docs/materials/01-企業機構版-評核指標.md：查核R指標15-16",
+   "points": 5,
+   "id": "short_007"
+  },
+  {
+   "topic": "成果O指標17與Kirkpatrick四層次",
+   "topic_id": "s08",
+   "question": "TTQS 成果（Outcome）構面指標 17 採用哪個評估模式？請寫出該模式的四個層次（中英文），並對應指標 17 的四個子項。",
+   "reference_answer": "指標17「訓練成果評估的多元性和完整性」採用 Kirkpatrick 四層次（柯氏四級培訓評估模式，1959年提出）。四個層次為：L1 反應 Reaction（學員滿意度）、L2 學習 Learning（知識/技能/態度習得，以測驗實作評量）、L3 行為 Behavior（將所學移轉到工作、行為改變）、L4 成果 Results（對組織績效的貢獻）。對應指標子項：17a 反應評估、17b 學習評估、17c 行為評估、17d 成果評估。",
+   "rubric": [
+    "指出指標17採用 Kirkpatrick 四層次（柯氏四級）模式（1.5分）",
+    "正確寫出四層次：反應Reaction/學習Learning/行為Behavior/成果Results（2分）",
+    "正確對應 17a/17b/17c/17d 四子項（1.5分）"
+   ],
+   "source": "docs/materials/01-企業機構版-評核指標.md：成果O指標17Kirkpatrick四層次",
+   "points": 5,
+   "id": "short_008"
+  },
+  {
+   "topic": "計分標準1-5級與4分5分意義",
+   "topic_id": "s09",
+   "question": "TTQS 計分以「說、做、寫」一致性為核心，請說明達到 4 分與 5 分各代表什麼意義？並說明最小計分單位，以及成果指標 17/18/19 未執行時如何計分。",
+   "reference_answer": "4分：有執行，且有一致性作業流程、完整過程紀錄及文書手冊，即具有「說、做、寫」一致與「流程上下連結」的一致性。5分：有執行及完整文書手冊與紀錄，分析相關資料並持續改善達到「標竿水準」。最小計分單位為 0.5 分。成果（Outcome）指標 17、18、19 未執行為 0 分（惟「1 分後始具 0.5 分之調整」）。",
+   "rubric": [
+    "正確說明4分＝說做寫一致＋流程上下連結（1.5分）",
+    "正確說明5分＝持續改善達標竿水準（1.5分）",
+    "指出最小計分單位0.5分，且成果17/18/19未執行為0分（2分）"
+   ],
+   "source": "docs/materials/02-訓練機構版-評核制度.md：計分標準1-5級",
+   "points": 5,
+   "id": "short_009"
+  },
+  {
+   "topic": "評核等級門檻分數",
+   "topic_id": "s10",
+   "question": "請寫出 TTQS 企業機構版/訓練機構版的金、銀、銅牌與通過門檻的分數標準；另說明外訓版與辦訓能力檢核表的合格標準。",
+   "reference_answer": "企業機構版/訓練機構版（滿分100）等級門檻：金牌 85.5 分以上；銀牌 74.5～85 分；銅牌 63.5～74 分；通過（門檻）53.5～63 分；53 分以下未通過。通過門檻為 53.5 分，銅牌門檻為 63.5 分（申請國家訓練品質獎須銅牌以上）。外訓版與辦訓能力檢核表：合格分數 50 分，不另分等級（通過者發函證明、不另核發證書或獎牌）。",
+   "rubric": [
+    "正確寫出金85.5↑、銀74.5、銅63.5（2分）",
+    "正確寫出通過門檻53.5（1.5分）",
+    "正確說明外訓版與辦訓能力檢核表合格50分不分等級（1.5分）"
+   ],
+   "source": "docs/materials/02-訓練機構版-評核制度.md：等級門檻",
+   "points": 5,
+   "id": "short_010"
+  },
+  {
+   "topic": "TNA訓練需求分析三層次",
+   "topic_id": "s11",
+   "question": "訓練需求分析（TNA）包含哪三個層次？各層次的分析焦點為何？並說明 TNA 在 TTQS 中對應哪一個構面。",
+   "reference_answer": "TNA 三層次為：(1) 組織分析（Organization Analysis）：焦點為組織策略、資源、氣候、內外環境限制，起始於組織中長/短程目標；(2) 任務分析（Task Analysis）：確認完成任務所需的知識、技術、能力等要素（KSA/KSAO），當期望績效與實際績效有落差時進行；(3) 人員分析（Person Analysis）：確認哪些人需要受訓、訓練內容如何確定。TNA 是 TTQS「計畫 P」構面的核心（亦對應 ADDIE 的 A 分析）。",
+   "rubric": [
+    "正確寫出三層次：組織分析、任務分析、人員分析（2分）",
+    "正確說明各層次分析焦點（2分）",
+    "指出 TNA 對應 TTQS 計畫 P 構面（1分）"
+   ],
+   "source": "docs/materials/03-訓練品質管理-理論基礎.md：TNA三層次",
+   "points": 5,
+   "id": "short_011"
+  },
+  {
+   "topic": "Phillips ROI與效果隔離",
+   "topic_id": "s12",
+   "question": "Phillips ROI 方法論在 Kirkpatrick 四層次之上新增了第幾層？請寫出 ROI 的計算公式，並說明「效果隔離」的意義。",
+   "reference_answer": "Phillips（Jack J. Phillips）將 ROI 從第四層獨立成「第五層（L5 投資報酬 ROI）」，以貨幣價值衡量訓練投資報酬。ROI(%) =（訓練淨效益 ÷ 訓練總成本）× 100%，其中淨效益 = 貨幣化效益 − 總成本。「效果隔離（Isolation of Effects）」是指把訓練本身的效果從其他因素中分離出來再歸因（例如使用對照組、歷史數據），以確保所衡量的效益確實來自訓練。",
+   "rubric": [
+    "指出 Phillips 新增第五層（L5）ROI（1.5分）",
+    "正確寫出公式 ROI＝淨效益÷總成本×100%（含淨效益＝效益−成本）（2分）",
+    "正確說明效果隔離為將訓練效果從其他因素分離再歸因（1.5分）"
+   ],
+   "source": "docs/materials/03-訓練品質管理-理論基礎.md：Phillips ROI效果隔離",
+   "points": 5,
+   "id": "short_012"
+  }
+ ],
+ "essay": [
+  {
+   "topic": "以PDDRO說明企業導入TTQS完整流程",
+   "topic_id": "e01",
+   "question": "某製造業公司決定導入 TTQS（企業機構版）以提升辦訓品質。請你以 PDDRO 五大構面為主軸，完整說明該公司從計畫到成果應如何逐階推動 TTQS，並在每一構面點出對應的關鍵評核指標與作法。",
+   "reference_answer": "一、計畫 Plan（指標1-6，子向度：明確性/系統性/連結性/能力）：揭露組織願景使命策略並訂定年度訓練發展方向（指標1）；訂定明確訓練政策、揭露給員工、取得高階主管承諾與參與（指標2）；建立明確的 PDDRO 訓練體系與核心訓練類別（指標3）；建立系統化文件並做核准/公告/更新/保存的文件管制（指標4）；連結訓練規劃與經營目標及重點課程（指標5）；確立訓練單位與部門主管的人員發展能力與責任（指標6）。二、設計 Design（指標7-11）：進行職能落差分析（指標7）；系統化設計訓練方案，產出目標、方法、時程、師資、學員條件、教材、設施環境、評估方法（指標8）；納入利益關係人參與設計與審查（指標9）；建立訓練資源採購程序與甄選標準（指標10）；確保設計產出與訓練目標需求結合（指標11）。三、執行 Do（指標12-14）：依訓練目標切合地遴選學員、教材、師資、教學方法、教學環境（12a-12e，核心為切合性）；建立學習移轉機制促進所學運用於工作（指標13）；訓練資料分類建檔、資訊系統化（指標14）。四、查核 Review（指標15-16）：撰寫評估報告並定期綜合分析（指標15）；建立管控與異常矯正機制以防止再發（指標16）。五、成果 Outcome（指標17-19）：以 Kirkpatrick 四層次（反應/學習/行為/成果）做多元完整評估（指標17）；衡量高階主管對訓練的認知支持與評價（指標18）；衡量訓練成果與佐證（個人→部門→組織績效，指標19）。全程須維持「說、做、寫」一致與流程上下連結（4分水準），並持續改善邁向標竿（5分水準）。",
+   "rubric": [
+    "計畫P與設計D構面：正確說明指標1-6子向度及指標7-11作法（8分）",
+    "執行Do構面：正確說明12a-12e切合性、學習移轉、資料系統化（8分）",
+    "查核R與成果O構面：正確說明指標15-16及指標17 Kirkpatrick四層次、18、19（8分）",
+    "論述條理清楚、各構面與正確指標對應、有舉例（6分）"
+   ],
+   "source": "docs/materials/01-企業機構版-評核指標.md：PDDRO",
+   "points": 30,
+   "id": "essay_001"
+  },
+  {
+   "topic": "企業機構版與訓練機構版差異比較",
+   "topic_id": "e02",
+   "question": "請比較 TTQS「企業機構版」與「訓練機構版」的異同。論述時請涵蓋兩版本的整體相同架構，以及在適用對象精神、計畫構面指標、成果構面（指標17、18、19）計分上限與評價主體上的主要差異。",
+   "reference_answer": "一、整體相同架構：兩版本都採 PDDRO 五構面、19 項指標、滿分 100、相同等級門檻（金85.5/銀74.5/銅63.5/通過53.5）、相同 1-5 級計分標準（4分說做寫一致、5分持續改善達標竿，最小0.5分，成果17/18/19未執行為0分）。二、適用對象精神不同：企業機構版為「對內」促進單位內部人才發展；訓練機構版為「對外」辦訓、促進國家人力資本發展，指標處處強調目標市場、目標客戶、對外訓練承諾。三、計畫構面指標差異：指標1企業版為組織願景/使命/策略揭露，訓練機構版為經營方向及目標（含定位、目標客戶）；指標2企業版強調高階主管承諾及參與，訓練機構版強調對外揭露與對外訓練承諾；指標3企業版為訓練體系、訓練機構版為訓練課程；指標6企業版為訓練單位與部門主管能力責任，訓練機構版為行政管理能力及訓練主管職能；指標13企業版為學習成果移轉及運用（含獎懲），訓練機構版為提供學習移轉的建議或協助（協助客戶）。四、成果構面差異：17a/17b 企業版上限2分、訓練機構版上限3分；指標18企業版評價主體為高階主管（1-5分），訓練機構版為目標客戶及學員（1-4分）；指標19企業版為訓練成果（1-5分，個人→部門→組織），訓練機構版為目標市場及顧客的價值創造（1-4分）。歸納：企業版圍繞組織願景、高階主管承諾、組織/部門/個人三層績效；訓練機構版圍繞目標市場、目標客戶、市場價值創造。",
+   "rubric": [
+    "正確說明兩版本整體相同架構（PDDRO/19指標/滿分100/相同門檻與計分標準）（8分）",
+    "正確說明適用對象精神差異（對內人才發展 vs 對外國家人力資本）（6分）",
+    "正確說明計畫構面指標差異與成果構面計分上限及評價主體差異（10分）",
+    "比較有條理、對照清楚、結論歸納（6分）"
+   ],
+   "source": "docs/materials/02-訓練機構版-評核制度.md：四版本(對內對外)",
+   "points": 30,
+   "id": "essay_002"
+  },
+  {
+   "topic": "設計某職能訓練的TNA與成效評估",
+   "topic_id": "e03",
+   "question": "假設你是 HR，要為公司「客服專員」職能規劃訓練。請運用訓練需求分析（TNA）三層次、能力落差分析、職能 KSA/職能基準（OCS）與 IDP，設計這項訓練的需求分析流程；並運用 Kirkpatrick 四層次（必要時搭配 Phillips ROI）設計其成效評估。",
+   "reference_answer": "一、訓練需求分析（TNA 三層次）：組織分析（檢視公司策略、資源與年度目標，確認客服品質提升的策略需求）；任務分析（確認客服專員完成任務所需的知識、技術、能力等要素 KSA/KSAO）；人員分析（盤點哪些客服人員需受訓、訓練內容如何確定）。二、能力落差分析與職能工具：以職能基準 OCS（政府訂定的人才規格，含主要工作任務、行為指標、工作產出、KSA，彙整於 iCAP 平台）作為「應有能力」標準；透過能力盤點得出「現有能力」；比對兩者得出職能落差（差距即訓練需求）；職能為知識 Knowledge、技術 Skill、態度 Attitude 之組合（KSA）。三、IDP：依個別客服人員需求與優劣勢，以「能力盤點→找落差→訂 IDP」串接，量身訂做發展目標與培育計畫，並可建立能力地圖/課程地圖（能力→課程）。四、成效評估（Kirkpatrick 四層次）：L1 反應（課後滿意度問卷）、L2 學習（測驗或實作評量是否習得知識技能態度）、L3 行為（訓後追蹤客服人員是否將所學移轉到工作、行為是否改變）、L4 成果（對組織績效如客訴率/滿意度等營運指標的貢獻）。必要時加 Phillips 第五層 ROI＝淨效益÷總成本×100%，並以效果隔離（對照組/歷史數據）確保效益歸因於訓練。整體對應 TTQS 計畫P與設計D（TNA/職能分析）、執行Do（學習移轉）、成果O（指標17四層次）。",
+   "rubric": [
+    "正確運用 TNA 三層次（組織/任務/人員分析）於客服職能需求分析（8分）",
+    "正確運用能力落差分析、職能KSA、職能基準OCS、能力盤點與IDP（8分）",
+    "正確運用 Kirkpatrick 四層次（並適當搭配 Phillips ROI 與效果隔離）設計成效評估（8分）",
+    "設計完整可行、概念正確、條理與舉例（6分）"
+   ],
+   "source": "docs/materials/03-訓練品質管理-理論基礎.md：TNA三層次、能力落差分析、Kirkpatrick四層次、Phillips ROI",
+   "points": 30,
+   "id": "essay_003"
+  },
+  {
+   "topic": "ADDIE與PDDRO的對應與整合應用",
+   "topic_id": "e04",
+   "question": "請說明 ADDIE 教學設計模式的五個階段內涵，並論述 ADDIE 如何對應到 TTQS 的 PDDRO 架構（特別是與計畫P、設計D的關係），以及一個組織如何整合 ADDIE 與 PDDRO 來建立系統化訓練流程。",
+   "reference_answer": "一、ADDIE 五階段：分析 Analysis（確認學習需求、目標與限制，了解學習者、要學什麼、學習情境，為訓練需求分析起點）；設計 Design（規劃學習目標、課程內容、教學策略與評估策略，確保與需求/目標一致）；發展 Development（製作實際學習材料，如教材、學員手冊、教具設備）；實施 Implementation（對學習者實際遞送/執行訓練課程）；評估 Evaluation（評量方案有效性並修正，含形成性評估 formative 與總結性評估 summative）。二、與 PDDRO 對應：ADDIE 對應 TTQS 的「計畫 P」與「設計 D」；ADDIE 的 A（分析）約等於 PDDRO 的 P（計畫）；ADDIE 的 D（設計）對應 PDDRO 的 D（設計）；發展與實施落在執行 Do；評估則對應查核 R 與成果 O。三、整合應用：組織可在計畫 P 階段以 ADDIE 的分析（即 TNA）連結組織策略與訓練需求；在設計 D 階段以 ADDIE 設計確保訓練方案與目標一致並系統化產出；在執行 Do 以 ADDIE 的發展與實施製作教材並遞送課程、落實學習移轉；在查核 R 與成果 O 以 ADDIE 評估（含形成性/總結性）結合 Kirkpatrick 四層次驗證成效，並維持說做寫一致、持續改善。",
+   "rubric": [
+    "正確說明 ADDIE 五階段內涵（分析/設計/發展/實施/評估，含形成性與總結性評估）（8分）",
+    "正確論述 ADDIE 對應 PDDRO（A≒P、D對應D，特別是與計畫P、設計D關係）（8分）",
+    "正確論述整合 ADDIE 與 PDDRO 建立系統化訓練流程的作法（8分）",
+    "論述條理清楚、對應正確、有整合觀點（6分）"
+   ],
+   "source": "docs/materials/03-訓練品質管理-理論基礎.md：ADDIE、PDCA↔PDDRO對應",
+   "points": 30,
+   "id": "essay_004"
+  },
+  {
+   "topic": "計分標準與等級門檻評析",
+   "topic_id": "e05",
+   "question": "TTQS 採 1-5 級計分標準，並以「說、做、寫」一致性為核心。請完整說明 1-5 各級分數的意義、最小計分單位與成果指標的特殊計分規定；並說明企業/訓練機構版的等級門檻分數，以及外訓版與辦訓能力檢核表的合格標準。最後論述一個單位若要從「通過」邁向「金牌」應在計分上補強什麼。",
+   "reference_answer": "一、1-5 級計分意義：1分具本項目基礎認知；2分僅具認知且部分執行，無明確紀錄或文件證明；3分有執行及作業流程，但無完整文書紀錄及手冊；4分有執行且有一致性作業流程、完整過程紀錄及文書手冊，即具「說、做、寫」一致與「流程上下連結」的一致性；5分有執行及完整文書手冊與紀錄，分析相關資料並持續改善達到標竿水準。二、計分單位與特殊規定：最小計分單位 0.5 分；成果（Outcome）指標 17、18、19 未執行為 0 分。三、等級門檻（企業/訓練機構版，滿分100）：金牌85.5以上、銀牌74.5～85、銅牌63.5～74、通過53.5～63、53以下未通過；外訓版與辦訓能力檢核表合格50分、不分等級。四、由通過邁向金牌的補強：通過僅達53.5～63分，多停留在3分（有執行但缺完整文書紀錄手冊）或部分4分；要邁向金牌須讓各指標全面達到4分以上——建立一致性作業流程、完整過程紀錄與文書手冊以達成「說、做、寫」一致與流程上下連結，再進一步分析資料、持續改善達標竿水準（5分）；尤其補強成果構面（指標17 Kirkpatrick四層次、18、19）避免0分，並維持全流程系統化文件管制。",
+   "rubric": [
+    "正確完整說明 1-5 各級分數意義（含4分說做寫一致、5分達標竿）（10分）",
+    "正確說明最小計分單位0.5分與成果17/18/19未執行為0分（6分）",
+    "正確說明企業/訓練機構版等級門檻與外訓版/辦訓檢核表合格50分（8分）",
+    "由通過邁向金牌的補強論述合理、有條理（6分）"
+   ],
+   "source": "docs/materials/02-訓練機構版-評核制度.md：計分標準1-5級、等級門檻",
+   "points": 30,
+   "id": "essay_005"
+  },
+  {
+   "topic": "成果O構面與訓練成效評估理論整合",
+   "topic_id": "e06",
+   "question": "TTQS 成果（Outcome）構面（指標17、18、19）強調訓練成果評估的多元性與完整性。請說明三項指標各自的評核重點，並論述如何運用 Kirkpatrick 四層次與 Phillips ROI（含效果隔離）、以及學習移轉概念，使成果構面的評估更完整且能呈現對組織績效的貢獻。",
+   "reference_answer": "一、成果構面三指標重點：指標17訓練成果評估的多元性和完整性，採 Kirkpatrick 四層次拆為 17a 反應、17b 學習、17c 行為、17d 成果（反應、學習各最高2分，行為、成果各最高3分；未執行為0分）；指標18高階主管對訓練發展的認知、支持及評價（1-5分，由少許改善功效到創造特殊績效或擴散效果）；指標19訓練成果（1-5分，由有初步成果但無佐證，到個人→部門→組織績效改善與特殊績效）。二、運用 Kirkpatrick 四層次：L1反應（滿意度）、L2學習（測驗實作）、L3行為（訓後追蹤是否將所學移轉到工作、行為改變）、L4成果（對組織績效貢獻），逐層提高衡量精確度。三、學習移轉：指標17c行為層即評估學習移轉，且移轉是組織、主管、講師、學員共同責任；可透過行動計畫、訓後追蹤促進移轉並佐證 L3。四、Phillips ROI：在 L4 之上加第五層 ROI＝淨效益÷總成本×100%（淨效益＝貨幣化效益−總成本），以貨幣價值呈現投資報酬；並以效果隔離（對照組、歷史數據）把訓練本身效果從其他因素分離再歸因，確保成果歸因於訓練。五、整合呈現：以多元評估佐證（指標17）、結合高階主管評價（指標18）與個人/部門/組織三層績效與佐證（指標19），呈現訓練從反應到組織績效甚至 ROI 的完整貢獻鏈。",
+   "rubric": [
+    "正確說明成果構面三指標（17 Kirkpatrick四層次、18高階主管評價、19訓練成果）重點（8分）",
+    "正確運用 Kirkpatrick 四層次與學習移轉（含共同責任）強化評估（8分）",
+    "正確運用 Phillips ROI 第五層公式與效果隔離呈現組織績效貢獻（8分）",
+    "整合論述完整、層次分明、有舉例（6分）"
+   ],
+   "source": "docs/materials/01-企業機構版-評核指標.md：成果O指標17-19、Kirkpatrick四層次、Phillips ROI",
+   "points": 30,
+   "id": "essay_006"
+  }
+ ]
+}

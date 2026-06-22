@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TTQS 人才發展品質管理 線上模擬考</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar" id="topbar">
+    <div><b>TTQS 人才發展品質管理 模擬考</b></div>
+    <div class="row">
+      <span class="progress-mini" id="exam-hint">作答中…時間到自動交卷</span>
+      <span class="timer" id="timer">--:--</span>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div id="view-start"></div>
+    <div id="view-exam" class="hidden">
+      <div id="exam-body"></div>
+    </div>
+    <div id="view-result" class="hidden"></div>
+  </div>
+
+  <!-- 全部 JS 走外部檔（嚴格 CSP：script-src 'self'，不用 inline） -->
+  <script src="config.js"></script>
+  <script src="boot.js"></script>
+  <script src="app.js" defer></script>
+</body>
+</html>

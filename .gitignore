@@ -1,0 +1,16 @@
+# 機密：Dify 金鑰、admin token 等
+exam_app/.env
+*.env
+!*.env.example
+
+# 執行期成績資料（持久卷內容，不入版控）
+exam_app/data/*.jsonl
+exam_app/data/results.jsonl
+
+# 依賴與系統檔
+node_modules/
+.DS_Store
+*.log
+
+# 暫存
+/tmp/

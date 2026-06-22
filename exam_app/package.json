@@ -1,0 +1,13 @@
+{
+  "name": "ttqs-exam-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TTQS 人才發展品質管理 線上題庫模擬考 App（靜態前端 + 零依賴 Dify 代理後端）",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
