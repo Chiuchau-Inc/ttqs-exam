@@ -15,7 +15,7 @@
 | 第二題 簡答題 | 4 題 | ×5＝20 分 | Dify 依 rubric 評分（未設則自評） |
 | 第三題 申論題 | 1 題 | 30 分 | Dify 依 rubric 評分（未設則自評） |
 
-及格 60 分。題庫現有：單選 66、簡答 12、申論 6（見 `public/question_bank.json`）。
+及格 60 分。題庫現有：單選 150、簡答 24、申論 12（見 `public/question_bank.json`）。
 
 ## 組成
 

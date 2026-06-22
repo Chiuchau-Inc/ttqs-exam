@@ -1,0 +1,260 @@
+{
+  "mcq": [
+    {
+      "topic": "TTQS版本用途",
+      "topic_id": "ed01",
+      "question": "依TTQS指引手冊Q&A，下列哪一個版本「適用於辦訓單位對內實施培訓課程管理」？",
+      "options": {
+        "a": "企業機構版",
+        "b": "訓練機構版",
+        "c": "外訓版",
+        "d": "辦訓能力檢核表"
+      },
+      "answer": "a",
+      "explanation": "依Q2，企業機構版適用於辦訓單位「對內」實施培訓課程管理；訓練機構版為對外，外訓版為依工會法成立之工會團體對外實施。",
+      "source": "docs/materials/official/TTQS-QA.md：Q2",
+      "difficulty": "中",
+      "verified": true
+    },
+    {
+      "topic": "辦訓能力檢核表適用對象",
+      "topic_id": "ed02",
+      "question": "依TTQS指引手冊Q&A，「辦訓能力檢核表」的適用對象為何？",
+      "options": {
+        "a": "所有已導入TTQS的大型企業",
+        "b": "合於經濟部「中小企業認定標準」且尚未導入TTQS之中小企業，作為對內辦訓能力初次檢核使用",
+        "c": "依工會法成立之工會團體對外辦訓",
+        "d": "申請國家訓練品質獎金牌之單位"
+      },
+      "answer": "b",
+      "explanation": "依Q2，辦訓能力檢核表適用對象為合於經濟部頒佈「中小企業認定標準」且尚未導入TTQS之中小企業，作為對內辦訓能力初次檢核使用。",
+      "source": "docs/materials/official/TTQS-QA.md：Q2",
+      "difficulty": "中",
+      "verified": true
+    },
+    {
+      "topic": "外訓版與辦訓能力檢核表合格分數",
+      "topic_id": "ed03",
+      "question": "依TTQS指引手冊Q&A，外訓版與辦訓能力檢核表的合格分數及等級規定為何？",
+      "options": {
+        "a": "合格分數為63分，分金、銀、銅牌",
+        "b": "合格分數為85.5分以上才算金牌",
+        "c": "合格分數為50分，不另分等級",
+        "d": "滿分100分，53分以下未通過"
+      },
+      "answer": "c",
+      "explanation": "依Q2(2)B，外訓版與辦訓能力檢核表合格分數為50分，不另分等級；金銀銅牌之等級制度僅適用於企業機構版與訓練機構版。",
+      "source": "docs/materials/official/TTQS-QA.md：Q2",
+      "difficulty": "中",
+      "verified": true
+    },
+    {
+      "topic": "企業機構版等級分數",
+      "topic_id": "ed04",
+      "question": "依TTQS指引手冊Q&A，企業機構版與訓練機構版（滿分100分）獲得「金牌」的分數標準為何？",
+      "options": {
+        "a": "85.5分以上",
+        "b": "74.5分以上",
+        "c": "63.5分以上",
+        "d": "53.5分以上"
+      },
+      "answer": "a",
+      "explanation": "依Q2(2)A，企業機構版與訓練機構版金牌標準為85.5分以上；銀牌85-74.5、銅牌74-63.5、通過門檻63-53.5、未通過門檻53以下。",
+      "source": "docs/materials/official/TTQS-QA.md：Q2",
+      "difficulty": "中",
+      "verified": true
+    },
+    {
+      "topic": "評核與檢核差異",
+      "topic_id": "ed05",
+      "question": "依TTQS指引手冊Q&A，關於「評核」與「檢核」在時間與委員人數上的差異，下列何者正確？",
+      "options": {
+        "a": "評核2小時、檢核3小時",
+        "b": "評核3小時由2位評核委員執行；檢核2小時由1位檢核委員執行",
+        "c": "評核與檢核均為3小時，均由2位委員執行",
+        "d": "評核1小時由1位委員執行；檢核3小時由2位委員執行"
+      },
+      "answer": "b",
+      "explanation": "依Q3，評核時間共計3小時、由2位評核委員執行；檢核時間共計2小時、由1位檢核委員執行。",
+      "source": "docs/materials/official/TTQS-QA.md：Q3",
+      "difficulty": "中",
+      "verified": true
+    },
+    {
+      "topic": "申請費用",
+      "topic_id": "ed06",
+      "question": "依TTQS指引手冊Q&A，單位申請TTQS輔導或評核服務需要支付費用嗎？",
+      "options": {
+        "a": "需依單位規模收取不同費用",
+        "b": "輔導免費，但評核需付費",
+        "c": "由政府公費補助，不需支付任何費用",
+        "d": "第一次免費，第二次起須付費"
+      },
+      "answer": "c",
+      "explanation": "依Q7，目前單位申請TTQS輔導或評核服務，由政府公費補助，不需支付任何費用。",
+      "source": "docs/materials/official/TTQS-QA.md：Q7",
+      "difficulty": "易",
+      "verified": true
+    },
+    {
+      "topic": "評核效期",
+      "topic_id": "ed07",
+      "question": "依TTQS指引手冊Q&A，99年以前接受TTQS評核的單位，其評核結果證書的效期為何？",
+      "options": {
+        "a": "自通過評核之日起一年",
+        "b": "自通過評核之日起二年，期限屆滿失其效力",
+        "c": "自通過評核之日起三年",
+        "d": "永久有效，無效期限制"
+      },
+      "answer": "b",
+      "explanation": "依Q12，99年以前接受TTQS評核的單位，依人才發展品質管理規範作業要點，評核結果證書效期為自通過評核之日起二年，期限屆滿失其效力。",
+      "source": "docs/materials/official/TTQS-QA.md：Q12",
+      "difficulty": "中",
+      "verified": true
+    },
+    {
+      "topic": "一年兩次評核以哪次為準",
+      "topic_id": "ed08",
+      "question": "依TTQS指引手冊Q&A，若受評單位曾接受2次（含）以上TTQS評核，其評核結果以哪一次為準？",
+      "options": {
+        "a": "以分數最高的一次為準",
+        "b": "以第一次的評核結果為準",
+        "c": "以最近一次的評核結果為準，其效期亦同",
+        "d": "以兩次平均分數為準"
+      },
+      "answer": "c",
+      "explanation": "依Q13，若受評單位曾接受2次（含）以上TTQS評核，以最近一次的評核結果為準，其效期亦同。",
+      "source": "docs/materials/official/TTQS-QA.md：Q13",
+      "difficulty": "中",
+      "verified": true
+    },
+    {
+      "topic": "成績通知時間",
+      "topic_id": "ed09",
+      "question": "依TTQS指引手冊Q&A，單位評核後通常多久內會以公文收到評核結果通知？",
+      "options": {
+        "a": "通常在15-30天內",
+        "b": "通常在30-45天內",
+        "c": "通常在45-60天內",
+        "d": "通常在60-90天內"
+      },
+      "answer": "c",
+      "explanation": "依Q14，單位評核後，除有特殊情形，通常在45–60天內，勞動部勞動力發展署將以公文通知評核結果。",
+      "source": "docs/materials/official/TTQS-QA.md：Q14",
+      "difficulty": "中",
+      "verified": true
+    },
+    {
+      "topic": "同年度評核次數限制",
+      "topic_id": "ed10",
+      "question": "依TTQS指引手冊Q&A，依評核服務標準作業規範（SOP），同一年度評核服務的次數限制及間隔為何？",
+      "options": {
+        "a": "一年以1次為限",
+        "b": "一年以2次為限，且第1次與第2次間應相隔至少1個月",
+        "c": "一年以3次為限，無間隔限制",
+        "d": "一年以2次為限，且兩次間應相隔至少3個月"
+      },
+      "answer": "b",
+      "explanation": "依Q15與Q19，評核服務同一年度以2次為限，且第1次評核與第2次間應相隔至少1個月。",
+      "source": "docs/materials/official/TTQS-QA.md：Q15",
+      "difficulty": "中",
+      "verified": true
+    },
+    {
+      "topic": "輔導時數上限",
+      "topic_id": "ed11",
+      "question": "依TTQS指引手冊Q&A，依輔導服務作業標準規範（SOP），受輔導單位的輔導服務時數上限為何？",
+      "options": {
+        "a": "至多不超過6小時（每次以3小時為限）",
+        "b": "至多不超過9小時（每次以3小時為限）",
+        "c": "至多不超過12小時（每次輔導以3小時為限）",
+        "d": "無時數上限，依需求安排"
+      },
+      "answer": "c",
+      "explanation": "依Q19(2)，受輔導單位的輔導服務時數至多不超過12小時，每次輔導以3小時為限。",
+      "source": "docs/materials/official/TTQS-QA.md：Q19",
+      "difficulty": "中",
+      "verified": true
+    },
+    {
+      "topic": "放棄評核之後果",
+      "topic_id": "ed12",
+      "question": "依TTQS指引手冊Q&A，受輔導單位若於輔導後放棄後續評核，除填寫「放棄評核聲明書」外，會有何後果？",
+      "options": {
+        "a": "當年度不得再申請任何服務",
+        "b": "2年內不得再申請TTQS輔導與評（檢）核服務",
+        "c": "1年內不得再申請輔導服務",
+        "d": "須補繳輔導費用後方可再申請"
+      },
+      "answer": "b",
+      "explanation": "依Q17，若受輔導單位放棄後續評核，除須填寫「放棄評核聲明書」外，2年內不得再申請TTQS輔導與評（檢）核服務。",
+      "source": "docs/materials/official/TTQS-QA.md：Q17",
+      "difficulty": "中",
+      "verified": true
+    },
+    {
+      "topic": "辦訓能力檢核表總分公式",
+      "topic_id": "ed13",
+      "question": "依辦訓能力檢核表，總分的計算公式為何？",
+      "options": {
+        "a": "原始分數/100*69",
+        "b": "原始分數/69*100（計算到小數第一位，第二位後無條件進入）",
+        "c": "原始分數/50*100",
+        "d": "原始分數加總後直接為總分"
+      },
+      "answer": "b",
+      "explanation": "依辦訓能力檢核表「總分」欄，總分=原始分數/69*100，計算到小數第一位，第二位後無條件進入。",
+      "source": "docs/materials/official/辦訓能力檢核表.md：總分",
+      "difficulty": "中",
+      "verified": true
+    },
+    {
+      "topic": "辦訓能力檢核表構面架構",
+      "topic_id": "ed14",
+      "question": "依辦訓能力檢核表，其檢核指標項目是依循下列哪一個架構分類？",
+      "options": {
+        "a": "PDCA（計畫、執行、查核、行動）",
+        "b": "計畫（Plan）、設計（Design）、執行（Do）、查核（Review）、成果（Outcome）",
+        "c": "輸入、處理、輸出、回饋",
+        "d": "金、銀、銅、鐵四級制"
+      },
+      "answer": "b",
+      "explanation": "依辦訓能力檢核表的檢核指標項目，分為計畫（Plan）、設計（Design）、執行（Do）、查核（Review）、成果（Outcome）等構面，即TTQS的PDDRO架構。",
+      "source": "docs/materials/official/辦訓能力檢核表.md：檢核指標項目",
+      "difficulty": "中",
+      "verified": true
+    },
+    {
+      "topic": "辦訓能力檢核表計分單位",
+      "topic_id": "ed15",
+      "question": "依辦訓能力檢核表的計分標準，下列何者正確？",
+      "options": {
+        "a": "計分最小單位為1分，不可有0.5分",
+        "b": "計分以整數1-5或加上0.5為評分標準，最小單位為0.5分",
+        "c": "計分範圍為0-10分",
+        "d": "計分僅有合格與不合格兩種"
+      },
+      "answer": "b",
+      "explanation": "依辦訓能力檢核表備註1，計分單位最小單位為0.5分，以整數1-5或加上0.5為評分標準。",
+      "source": "docs/materials/official/辦訓能力檢核表.md：備註",
+      "difficulty": "中",
+      "verified": true
+    },
+    {
+      "topic": "辦訓能力檢核表5分標準",
+      "topic_id": "ed16",
+      "question": "依辦訓能力檢核表的計分標準（以是否有無紀錄或書面文字評定），獲得「5分」的條件為何？",
+      "options": {
+        "a": "僅具本項目基礎認知",
+        "b": "有執行本項目及作業流程，但無完整文書紀錄及手冊",
+        "c": "有執行本項目，且具有「說、做、寫」及「流程上下連結」的一致性",
+        "d": "有執行本項目及完整文書手冊與紀錄，分析相關資料並持續改善達到標竿水準"
+      },
+      "answer": "d",
+      "explanation": "依辦訓能力檢核表計分標準，5分為有執行本項目及完整文書手冊與紀錄，分析相關資料並持續改善達到標竿水準；4分則為具「說、做、寫」及流程上下連結的一致性。",
+      "source": "docs/materials/official/辦訓能力檢核表.md：計分標準",
+      "difficulty": "難",
+      "verified": true
+    }
+  ]
+}
