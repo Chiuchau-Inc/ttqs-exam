@@ -14,14 +14,24 @@ ttqs-exam/
 │  ├─ 03-訓練品質管理-理論基礎.md   # ADDIE / TNA / Kirkpatrick / Phillips ROI / 職能 / PDCA↔PDDRO
 │  └─ official/               # 官方 PDF 原件 + 經 VLM 逐頁轉錄的 md（評核表、作業要點、Q&A）
 │     └─ pdf/                 # 官方 PDF 原檔
-└─ exam_app/                  # 🖥️ 線上考試 App（零依賴 Node 後端 + 純前端 + Dify 代理）
-   ├─ server.js               # 後端：靜態檔沙箱 + /api/dify 代理 + 成績記錄 + 老師稽核
-   ├─ public/                 # 前端 + question_bank.json 題庫
-   ├─ scripts/                # 題庫組裝（assemble_question_bank.js）+ 出題片段 fragments/
-   ├─ dify_system_prompt.md   # Dify Chatflow 的評分/討論 system prompt
-   ├─ Dockerfile / DEPLOY.md  # Zeabur 部署
-   └─ README.md               # App 詳細說明
+├─ exam_app/                  # 🖥️ 線上考試 App（零依賴 Node 後端 + 純前端 + Dify 代理）
+│  ├─ server.js               # 後端：靜態檔沙箱 + /api/dify 代理 + 成績記錄 + 老師稽核
+│  ├─ public/                 # 前端 + question_bank.json 題庫
+│  ├─ scripts/                # 題庫組裝（assemble_question_bank.js）+ 出題片段 fragments/
+│  ├─ dify_system_prompt.md   # Dify Chatflow 的評分/討論 system prompt
+│  ├─ dify_question_gen_prompt.md  # Dify 出題 App prompt（限單選+是非；quiz_app 產題共用）
+│  ├─ dify_rag_system_prompt.md    # Dify 評核顧問 App prompt（RAG 制度問答）
+│  ├─ Dockerfile / DEPLOY.md  # Zeabur 部署
+│  └─ README.md               # App 詳細說明
+└─ quiz_app/                  # 📝 全員匿名快測（20 題/30 分；Dify 出題入池、伺服器端評分）
+   ├─ SPEC.md                 # 規格書（API 契約 / 資料 schema / 畫面規格 / 部署現況）
+   ├─ server.js / public/     # 零依賴後端 + 前台四畫面 + 管理後台
+   └─ seed_question_pool.json # 100 題 seed（空池啟動自動初始化）
 ```
+
+> 兩個 App 的分工：`exam_app` 是備考模擬考（Dify **考後**評分簡答/申論）；`quiz_app` 是全公司匿名快測
+> （Dify **考前**出題入池，正式站 https://ttqs-quiz.zeabur.app ）。
+> 接續開發 quiz_app：先讀 `.claude/skills/quiz-app-dev/SKILL.md` 與 `quiz_app/SPEC.md`。
 
 ## 系統怎麼運作
 

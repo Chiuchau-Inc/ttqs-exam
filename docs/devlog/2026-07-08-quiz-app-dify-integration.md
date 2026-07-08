@@ -41,3 +41,17 @@ Firefox(IPv6 優先)打到 Agent DVR,除錯半天才發現是雙棧分家。
 - API:20 題(12 選擇+8 是非)、start 不外洩答案、伺服器端評分正確(已知 14 正解 → 80 分)、重複交卷 410。
 - Dify 實打:兩批產 30 題全數入池,無重複無淘汰。
 - UI:6 畫面 Playwright 全流程過,無 JS error,桌機+手機截圖對齊設計稿。
+
+## 14:20 — 題庫養到 100 題 + seed 入版控
+
+5 批主題錯開的 Dify 產題(作業要點/企業版指標/訓練機構版/理論基礎/計分門檻),
+30 → 100 題(選擇 60/是非 40),零重複淘汰。
+**決策**:`data/` 在 gitignore,部署後會空池 → 把池複製成 `seed_question_pool.json` 入版控,
+`loadPool()` 空池時自動以 seed 初始化。題庫演進流程 = 養題 → 同步 seed → commit。
+
+## 14:40 — 部署 Zeabur(hobbit server 新專案)
+
+使用者說的「hobby」server 實為 **hobbit**(Tencent Tokyo)。CLI 建 project 的 region code
+不是 server id,是 `server-<id>` 格式(從既有 project 的 --json 輸出反推出來的)。
+方案 B(CLI 直推,無持久卷):成績重佈即失,題庫靠 seed 復原——快測場景可接受,
+要保成績再去主控台掛 /data 卷。ADMIN_TOKEN 產隨機值存 Zeabur 變數 + 本機 .admin_token.local(gitignored)。
