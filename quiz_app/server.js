@@ -1,7 +1,7 @@
 'use strict';
 /*
  * TTQS 線上測驗(quiz_app)— 零依賴後端。
- * 依 ttqs-exam-prototype 設計稿實作:匿名測驗 20 題(選擇 12 + 是非 8)、30 分鐘、70 分及格。
+ * 依 ttqs-exam-prototype 設計稿實作:匿名測驗 20 題(選擇 12 + 是非 8)、60 分鐘、70 分及格。
  *
  * 架構:題目由管理後台呼叫 Dify 出題 App 產生 → 存入題庫池(data/question_pool.json);
  * 考生開考時從池中抽題,正解與解析留在伺服器端,交卷才評分回傳(統計才有意義)。
@@ -30,8 +30,8 @@ const POOL_FILE = path.join(DATA_DIR, 'question_pool.json');
 const RESULTS_FILE = path.join(DATA_DIR, 'results.jsonl');
 const PUBLIC_DIR = path.join(__dirname, 'public');
 
-// 考卷規格(對齊設計稿:20 題、選擇 12 + 是非 8、每題 5 分、70 及格、30 分鐘)
-const PAPER = { mcq: 12, tf: 8, points_each: 5, pass_score: 70, duration_min: 30 };
+// 考卷規格:20 題、選擇 12 + 是非 8、每題 5 分、70 及格、60 分鐘
+const PAPER = { mcq: 12, tf: 8, points_each: 5, pass_score: 70, duration_min: 60 };
 const EXAM_TTL_MS = (PAPER.duration_min + 10) * 60 * 1000; // 逾時寬限 10 分鐘
 const MAX_BODY = 64 * 1024;
 const MAX_NAME = 40;

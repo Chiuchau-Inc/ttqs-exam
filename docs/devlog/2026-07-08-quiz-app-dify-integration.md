@@ -55,3 +55,18 @@ Firefox(IPv6 優先)打到 Agent DVR,除錯半天才發現是雙棧分家。
 不是 server id,是 `server-<id>` 格式(從既有 project 的 --json 輸出反推出來的)。
 方案 B(CLI 直推,無持久卷):成績重佈即失,題庫靠 seed 復原——快測場景可接受,
 要保成績再去主控台掛 /data 卷。ADMIN_TOKEN 產隨機值存 Zeabur 變數 + 本機 .admin_token.local(gitignored)。
+
+## 16:10 — 考卷改制:兩 app 統一 20 題(選擇12+是非8)、60 分鐘
+
+exam_app 從 25單選+4簡答+1申論/90分 改為與 quiz_app 同構的 20 題/60 分;
+簡答申論題目保留在題庫檔但不抽(STRUCTURE 移除),AI 評分邏輯保留備援。
+是非題來源:quiz_app seed 的 40 題轉成 fragment(g-tf-是非題.json),兩邊共用同一批。
+
+## 16:30 — 重大發現:題庫正解偏斜,全猜 a 可及格
+
+exam_app 題庫 150 題單選有 104 題正解是 a(舊批次生成時未落實「正解隨機分佈」),
+實測全猜 a 拿 65 分及格。修法:組裝時以題幹 hash 為種子做**確定性選項洗牌**
+(同題永遠洗出同順序,bank diff 穩定),同步重寫 answer 與詳解中的字母引用。
+詳解字母引用有兩種形態(前綴式「選項a」與後綴式「、b 為…」),第一版 regex 漏了後綴式
+造成 mcq_045 指涉錯亂,擴成單趟雙 alternation 後 10 題逐一人工核對自洽。
+quiz_app seed(b 偏多,d 僅 3)用同演算法一次性重洗。修後全猜 a 三卷 45/10/25,不再及格。

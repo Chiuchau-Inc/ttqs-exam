@@ -1,0 +1,604 @@
+{
+ "mcq": [
+  {
+   "topic": "效期與複評",
+   "topic_id": "tf01",
+   "subtype": "tf",
+   "question": "TTQS 評核通過後的效期原則上為 2 年。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "a",
+   "explanation": "正確。TTQS 評核效期原則為 2 年。",
+   "source": "作業要點：評核效期",
+   "difficulty": "易",
+   "verified": true
+  },
+  {
+   "topic": "等級門檻",
+   "topic_id": "tf02",
+   "subtype": "tf",
+   "question": "TTQS 企業機構版評核的合格（通過）門檻為 53.5 分。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "a",
+   "explanation": "正確。53.5 分以上為通過，未達 53.5 分為未通過。",
+   "source": "作業要點：附件三",
+   "difficulty": "易",
+   "verified": true
+  },
+  {
+   "topic": "成果構面",
+   "topic_id": "tf03",
+   "subtype": "tf",
+   "question": "在企業機構版中，成果構面的指標 18 與 19，其最高分皆為 5 分。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "a",
+   "explanation": "正確。企業機構版之指標 18 與 19 滿分為 5 分。",
+   "source": "企業機構版評核表：計分備註",
+   "difficulty": "中",
+   "verified": true
+  },
+  {
+   "topic": "PDDRO構面",
+   "topic_id": "tf04",
+   "subtype": "tf",
+   "question": "TTQS 的 PDDRO 構面順序為：計畫 (Plan)、設計 (Design)、執行 (Do)、查核 (Review)、成果 (Outcome)。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "a",
+   "explanation": "正確。PDDRO 代表 Plan, Design, Do, Review, Outcome。",
+   "source": "作業要點：架構說明",
+   "difficulty": "易",
+   "verified": true
+  },
+  {
+   "topic": "計分標準",
+   "topic_id": "tf05",
+   "subtype": "tf",
+   "question": "TTQS 評核的計分等級分為 1 到 4 級。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "b",
+   "explanation": "錯誤。計分等級分為 1 到 5 級。",
+   "source": "企業機構版評核表：計分備註",
+   "difficulty": "易",
+   "verified": true
+  },
+  {
+   "topic": "等級門檻",
+   "topic_id": "tf06",
+   "subtype": "tf",
+   "question": "TTQS 評核分數若為 53 分，其等級判定為「通過」。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "b",
+   "explanation": "錯誤。53 分（含）以下為「未通過」，通過門檻為 53.5 分。",
+   "source": "作業要點：附件三",
+   "difficulty": "中",
+   "verified": true
+  },
+  {
+   "topic": "PDDRO構面",
+   "topic_id": "tf07",
+   "subtype": "tf",
+   "question": "執行 (Do) 構面的重點在於確保訓練活動確實依據計畫與設計內容進行，並進行紀錄。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "a",
+   "explanation": "正確。執行 (Do) 構面關注訓練的實施與紀錄。",
+   "source": "企業機構版評核表：指標10-13",
+   "difficulty": "中",
+   "verified": true
+  },
+  {
+   "topic": "成果構面",
+   "topic_id": "tf08",
+   "subtype": "tf",
+   "question": "成果指標 17a-17d 在企業機構版中，其單項指標最高得分上限為 3 分。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "b",
+   "explanation": "錯誤。企業機構版之成果指標 17a-17b 上限為 2 分，非 3 分（訓練機構版才是 3 分）。",
+   "source": "企業機構版評核表：計分備註",
+   "difficulty": "難",
+   "verified": true
+  },
+  {
+   "topic": "PDDRO-執行",
+   "topic_id": "tf09",
+   "subtype": "tf",
+   "question": "「執行（Do）」構面僅包含課堂內的教學活動，不包含課前的學員通知與報到流程。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "b",
+   "explanation": "錯誤。執行（Do）構面包含訓練實施的相關作業流程，如學員通知、報到、教材發放、教學活動實施等完整過程。",
+   "source": "企業機構版評核表：執行構面定義",
+   "difficulty": "中",
+   "verified": true
+  },
+  {
+   "topic": "PDDRO-查核",
+   "topic_id": "tf10",
+   "subtype": "tf",
+   "question": "查核（Review）構面主要在檢視訓練過程是否符合品質要求，而非僅是確認訓練是否辦理。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "a",
+   "explanation": "正確。查核（Review）不僅是確認有辦理，而是針對訓練品質監控、執行過程檢討及持續改善進行評核。",
+   "source": "企業機構版評核表：查核構面定義",
+   "difficulty": "易",
+   "verified": true
+  },
+  {
+   "topic": "PDDRO-成果",
+   "topic_id": "tf11",
+   "subtype": "tf",
+   "question": "Kirkpatrick 評估模式中，「成果（Result）」層次指的是學員在訓練後的學習滿意度。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "b",
+   "explanation": "錯誤。學習滿意度對應的是「反應（Reaction）」層次；「成果（Result）」層次指的是對組織經營績效或營運目標的具體貢獻。",
+   "source": "企業機構版評核表：指標17說明",
+   "difficulty": "中",
+   "verified": true
+  },
+  {
+   "topic": "PDDRO-計畫",
+   "topic_id": "tf12",
+   "subtype": "tf",
+   "question": "訓練需求分析（TNA）是屬於 TTQS 的計畫（Plan）構面。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "a",
+   "explanation": "正確。訓練需求分析（TNA）是訓練規劃的起點，屬於計畫（Plan）構面。",
+   "source": "企業機構版評核表：計畫構面定義",
+   "difficulty": "易",
+   "verified": true
+  },
+  {
+   "topic": "評核效期",
+   "topic_id": "tf13",
+   "subtype": "tf",
+   "question": "以下敘述正確或錯誤：TTQS 證書有效期限屆滿後，若單位未申請複評，該評核等級即自動失效。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "a",
+   "explanation": "正確。證書有效期限屆滿即失效，必須進行複評程序才能延續等級。",
+   "source": "作業要點：效期規定",
+   "difficulty": "易",
+   "verified": true
+  },
+  {
+   "topic": "免評機制",
+   "topic_id": "tf14",
+   "subtype": "tf",
+   "question": "以下敘述正確或錯誤：符合免評資格之單位，無需提出申請即可自動獲得免評資格。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "b",
+   "explanation": "錯誤。即使符合免評資格（如連續兩次銀牌以上），仍須主動向主管機關提出免評申請，並經審核通過後方可免評。",
+   "source": "作業要點：免評申請程序",
+   "difficulty": "中",
+   "verified": true
+  },
+  {
+   "topic": "評核委員",
+   "topic_id": "tf15",
+   "subtype": "tf",
+   "question": "以下敘述正確或錯誤：評核委員在進行實地評核時，可以同時為受評單位提供改善建議與諮詢。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "b",
+   "explanation": "錯誤。評核委員之職責為「評核」，而非「輔導」。評核期間應維持客觀中立，不得提供任何諮詢或指導以免影響公平性。",
+   "source": "作業要點：評核委員倫理",
+   "difficulty": "中",
+   "verified": true
+  },
+  {
+   "topic": "評核流程",
+   "topic_id": "tf16",
+   "subtype": "tf",
+   "question": "以下敘述正確或錯誤：TTQS 評核僅包含實地評核，不包含書面審查。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "b",
+   "explanation": "錯誤。TTQS 評核程序包含「書面審查」與「實地評核」兩階段，缺一不可。",
+   "source": "作業要點：評核流程",
+   "difficulty": "易",
+   "verified": true
+  },
+  {
+   "topic": "評核效期",
+   "topic_id": "tf17",
+   "subtype": "tf",
+   "question": "以下敘述正確或錯誤：若單位名稱或組織型態變更，其原持有之 TTQS 證書效期不受影響，無需報備。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "b",
+   "explanation": "錯誤。若單位名稱、地址或組織型態變更，應主動通知相關單位，並依規定辦理證書更換或相關程序，不可視為無影響。",
+   "source": "作業要點：單位異動規定",
+   "difficulty": "難",
+   "verified": true
+  },
+  {
+   "topic": "評核委員",
+   "topic_id": "tf18",
+   "subtype": "tf",
+   "question": "以下敘述正確或錯誤：評核委員必須具備一定之專業訓練與資格認證，方能執行 TTQS 評核。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "a",
+   "explanation": "正確。評核委員需通過特定之訓練與資格認證，方能取得執行評核之資格。",
+   "source": "作業要點：評核委員資格",
+   "difficulty": "易",
+   "verified": true
+  },
+  {
+   "topic": "評核流程",
+   "topic_id": "tf19",
+   "subtype": "tf",
+   "question": "以下敘述正確或錯誤：評核結果核定後，主管機關會發函通知受評單位，並公佈獲獎等級。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "a",
+   "explanation": "正確。評核作業完成後，會由主管機關正式發函通知評核結果。",
+   "source": "作業要點：評核結果通知",
+   "difficulty": "易",
+   "verified": true
+  },
+  {
+   "topic": "評核效期",
+   "topic_id": "tf20",
+   "subtype": "tf",
+   "question": "以下敘述正確或錯誤：複評申請若未於期限前提出，單位可於證書過期後隨時補申請，並追溯原證書效期。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "b",
+   "explanation": "錯誤。若未於期限前申請複評，證書過期即失效，無法追溯原效期，需重新辦理評核。",
+   "source": "作業要點：複評申請規定",
+   "difficulty": "中",
+   "verified": true
+  },
+  {
+   "topic": "評核指標-計畫(P)",
+   "topic_id": "tf21",
+   "subtype": "tf",
+   "question": "指標2「訓練需求分析之方法與工具」要求機構必須採用量化問卷進行需求調查，不得使用訪談或觀察法。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "b",
+   "explanation": "錯誤。指標2並未限制只能使用量化問卷，機構應依據自身特性選擇合適且多元的需求分析方法（如訪談、焦點團體、觀察、問卷等）。",
+   "source": "企業機構版評核表：指標2",
+   "difficulty": "中",
+   "verified": true
+  },
+  {
+   "topic": "評核指標-計畫(P)",
+   "topic_id": "tf22",
+   "subtype": "tf",
+   "question": "指標4「訓練計畫之完整性」中，訓練經費預算編列屬於可有可無的項目，不影響評核分數。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "b",
+   "explanation": "錯誤。訓練計畫必須具備完整性，經費預算編列是訓練計畫的核心要素，攸關訓練資源的配置與可行性。",
+   "source": "企業機構版評核表：指標4",
+   "difficulty": "易",
+   "verified": true
+  },
+  {
+   "topic": "評核指標-設計(D)",
+   "topic_id": "tf23",
+   "subtype": "tf",
+   "question": "指標7「訓練課程規劃之適切性」評核重點在於課程內容是否符合組織需求，而非僅是課程數量的多寡。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "a",
+   "explanation": "正確。指標7強調課程規劃必須與組織需求連結，重視課程內容的適切性與系統性。",
+   "source": "企業機構版評核表：指標7",
+   "difficulty": "中",
+   "verified": true
+  },
+  {
+   "topic": "評核指標-設計(D)",
+   "topic_id": "tf24",
+   "subtype": "tf",
+   "question": "指標8「訓練資源與講師之規劃」僅需評核外部講師的專業度，內部講師之遴選無需納入規範。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "b",
+   "explanation": "錯誤。指標8針對「講師」的規劃，無論是內部或外部講師，皆需有遴選、評估與管理的機制，確保教學品質。",
+   "source": "企業機構版評核表：指標8",
+   "difficulty": "中",
+   "verified": true
+  },
+  {
+   "topic": "評核指標-執行(D)",
+   "topic_id": "tf25",
+   "subtype": "tf",
+   "question": "指標10「訓練資源與教材之運用」評核重點在於教材是否確實發放給學員，以及教學設備是否運作正常。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "a",
+   "explanation": "正確。指標10關注訓練過程中資源（教材、設備、環境）的有效運用與管理。",
+   "source": "企業機構版評核表：指標10",
+   "difficulty": "易",
+   "verified": true
+  },
+  {
+   "topic": "評核指標-執行(D)",
+   "topic_id": "tf26",
+   "subtype": "tf",
+   "question": "指標12「訓練執行之紀錄與保存」要求所有訓練過程紀錄，必須以紙本形式保存，電子檔不具備效力。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "b",
+   "explanation": "錯誤。TTQS 並未規定必須採紙本，電子化紀錄只要能完整呈現執行過程並可供查核，皆符合要求。",
+   "source": "企業機構版評核表：指標12",
+   "difficulty": "易",
+   "verified": true
+  },
+  {
+   "topic": "評核指標-查核(R)",
+   "topic_id": "tf27",
+   "subtype": "tf",
+   "question": "指標14「訓練成效評估資訊之蒐集」僅需蒐集學員滿意度問卷，無需蒐集其他數據。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "b",
+   "explanation": "錯誤。指標14要求評估資訊的蒐集應多元且具體，需涵蓋Kirkpatrick各層次所需之數據，不僅止於滿意度問卷。",
+   "source": "企業機構版評核表：指標14",
+   "difficulty": "中",
+   "verified": true
+  },
+  {
+   "topic": "評核指標-查核(R)",
+   "topic_id": "tf28",
+   "subtype": "tf",
+   "question": "指標16「訓練改善會議之召開」要求機構需有定期檢討機制，並留下會議紀錄。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "a",
+   "explanation": "正確。指標16要求透過會議或檢討機制，針對評估結果進行討論並提出改善方案，並需有紀錄佐證。",
+   "source": "企業機構版評核表：指標16",
+   "difficulty": "中",
+   "verified": true
+  },
+  {
+   "topic": "評核制度",
+   "topic_id": "tf29",
+   "subtype": "tf",
+   "question": "企業機構版評核中，成果構面的指標 17a、17b 計分上限為 5 分。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "b",
+   "explanation": "錯誤。企業機構版成果指標 17a、17b 計分上限為 2 分，非 5 分。",
+   "source": "企業機構版評核表：指標17",
+   "difficulty": "中",
+   "verified": true
+  },
+  {
+   "topic": "評核制度",
+   "topic_id": "tf30",
+   "subtype": "tf",
+   "question": "訓練機構版評核指標 18、19 的計分上限為 4 分。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "a",
+   "explanation": "正確。訓練機構版指標 18、19 計分上限為 4 分。",
+   "source": "訓練機構版評核表：成果構面",
+   "difficulty": "中",
+   "verified": true
+  },
+  {
+   "topic": "評核制度",
+   "topic_id": "tf31",
+   "subtype": "tf",
+   "question": "TTQS 評核計分的最小單位為 0.5 分。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "a",
+   "explanation": "正確。TTQS 評核計分最小單位為 0.5 分。",
+   "source": "作業要點：計分原則",
+   "difficulty": "易",
+   "verified": true
+  },
+  {
+   "topic": "評核制度",
+   "topic_id": "tf32",
+   "subtype": "tf",
+   "question": "所有類型的 TTQS 評核，其成果構面指標（17、18、19）若未執行，該指標得分為 1 分。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "b",
+   "explanation": "錯誤。成果構面指標（17、18、19）若未執行，該指標得分為 0 分。",
+   "source": "企業機構版評核表：計分備註",
+   "difficulty": "中",
+   "verified": true
+  },
+  {
+   "topic": "評核版本",
+   "topic_id": "tf33",
+   "subtype": "tf",
+   "question": "一般企業若僅進行內部員工訓練，應申請「訓練機構版」評核。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "b",
+   "explanation": "錯誤。一般企業進行內部員工訓練應申請「企業機構版」；「訓練機構版」適用於對外提供訓練之機構。",
+   "source": "作業要點：版本適用對象",
+   "difficulty": "易",
+   "verified": true
+  },
+  {
+   "topic": "評核制度",
+   "topic_id": "tf34",
+   "subtype": "tf",
+   "question": "Kirkpatrick 四層次評估法在訓練機構版中是對應於指標 17。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "a",
+   "explanation": "正確。指標 17 確實對應 Kirkpatrick 四層次評估。",
+   "source": "訓練機構版評核表：指標17",
+   "difficulty": "中",
+   "verified": true
+  },
+  {
+   "topic": "理論基礎:Kirkpatrick",
+   "topic_id": "tf35",
+   "subtype": "tf",
+   "question": "Kirkpatrick 四層次評估模式中，Level 2「學習」主要評估學員對課程的滿意度與講師表現。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "b",
+   "explanation": "錯誤。評估學員對課程滿意度與講師表現屬於 Level 1「反應」；Level 2「學習」評估的是學員知識、技能或態度的改變。",
+   "source": "企業機構版評核表：指標17說明",
+   "difficulty": "中",
+   "verified": true
+  },
+  {
+   "topic": "理論基礎:Phillips ROI",
+   "topic_id": "tf36",
+   "subtype": "tf",
+   "question": "Phillips 的 ROI (投資報酬率) 評估屬於 Kirkpatrick 四層次評估模型的一部分。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "b",
+   "explanation": "錯誤。Kirkpatrick 原模式僅有四層次，ROI 是 Phillips 額外提出的第五層次 (Level 5)，並非原四層次的一部份。",
+   "source": "訓練品質系統參考手冊：評估模式",
+   "difficulty": "中",
+   "verified": true
+  },
+  {
+   "topic": "理論基礎:ADDIE",
+   "topic_id": "tf37",
+   "subtype": "tf",
+   "question": "ADDIE 模式中的 Evaluation (評估) 階段，應僅在訓練結束後進行一次總結性評估。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "b",
+   "explanation": "錯誤。ADDIE 模式強調 Evaluation 是持續性的，應包含形成性評估 (設計/發展階段) 與總結性評估 (執行後)。",
+   "source": "訓練品質系統參考手冊：ADDIE 模式",
+   "difficulty": "難",
+   "verified": true
+  },
+  {
+   "topic": "理論基礎:TNA",
+   "topic_id": "tf38",
+   "subtype": "tf",
+   "question": "執行訓練需求分析 (TNA) 的目的之一，是為了釐清訓練是否為解決績效問題的有效方法。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "a",
+   "explanation": "正確。TNA 不僅是為了排課，更重要的是判斷績效問題是否源於訓練需求，還是其他因素（如系統、環境），避免無效訓練。",
+   "source": "訓練品質系統參考手冊：訓練需求分析",
+   "difficulty": "中",
+   "verified": true
+  },
+  {
+   "topic": "等級門檻",
+   "topic_id": "tf39",
+   "subtype": "tf",
+   "question": "以下敘述正確或錯誤：在企業機構版評核中，分數為 74.0 分者，等級判定為銀牌。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "b",
+   "explanation": "錯誤。銀牌門檻為 74.5 分以上，74.0 分屬於銅牌（63.5 至 74 分）。",
+   "source": "作業要點：附件三 等級分數標準",
+   "difficulty": "中",
+   "verified": true
+  },
+  {
+   "topic": "計分標準",
+   "topic_id": "tf40",
+   "subtype": "tf",
+   "question": "以下敘述正確或錯誤：企業機構版與訓練機構版在成果構面（指標 17-19）的計分上限完全相同。",
+   "options": {
+    "a": "正確",
+    "b": "錯誤"
+   },
+   "answer": "b",
+   "explanation": "錯誤。兩者計分上限不同。企業版指標 18/19 為 1-5 分、17 為 1-2 分；訓練機構版指標 18/19 為 1-4 分、17 為 1-3 分。",
+   "source": "企業機構版評核表與訓練機構版評核表差異說明",
+   "difficulty": "難",
+   "verified": true
+  }
+ ]
+}

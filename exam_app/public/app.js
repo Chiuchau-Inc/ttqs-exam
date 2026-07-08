@@ -45,20 +45,20 @@ function sampleBalanced(pool, n) {
 
 function buildPaper(bank) {
   const s = bank.structure;
-  const paper = { mcq: [], short: [], essay: [] };
+  const paper = { mcq: [], tf: [] };
   paper.mcq = sampleBalanced(bank.mcq || [], s.mcq.count);
-  paper.short = shuffle(bank.short || []).slice(0, s.short.count);
-  paper.essay = shuffle(bank.essay || []).slice(0, s.essay.count);
+  paper.tf = sampleBalanced(bank.tf || [], s.tf.count);
   return paper;
 }
 
 function paperFlat() { // 統一順序的題目清單
   const out = [];
-  PAPER.mcq.forEach((q, i) => out.push({ ...q, _type: 'mcq', _idx: i, _key: 'mcq_' + i }));
-  PAPER.short.forEach((q, i) => out.push({ ...q, _type: 'short', _idx: i, _key: 'short_' + i }));
-  PAPER.essay.forEach((q, i) => out.push({ ...q, _type: 'essay', _idx: i, _key: 'essay_' + i }));
+  for (const t of ['mcq', 'tf', 'short', 'essay']) {
+    (PAPER[t] || []).forEach((q, i) => out.push({ ...q, _type: t, _idx: i, _key: t + '_' + i }));
+  }
   return out;
 }
+const isChoice = t => t === 'mcq' || t === 'tf'; // 是非題以兩選項單選處理
 
 /* ---------- 狀態存取（localStorage，可中途重整不丟） ---------- */
 function persist() { localStorage.setItem(LS_KEY, JSON.stringify({ PAPER, STATE })); }
@@ -76,7 +76,7 @@ function show(view) { ['start', 'exam', 'result'].forEach(v => $('#view-' + v).c
 
 function renderStart() {
   const m = BANK.meta, s = BANK.structure;
-  const avail = `題庫現有：單選 ${BANK.mcq.length}、簡答 ${BANK.short.length}、申論 ${BANK.essay.length}`;
+  const avail = `題庫現有：單選 ${BANK.mcq.length}、是非 ${(BANK.tf || []).length}`;
   $('#view-start').innerHTML = `
     <div class="card center">
       <h1>${esc(m.title)}</h1>
@@ -90,12 +90,11 @@ function renderStart() {
         <b>本次題目結構（每次隨機抽題）</b>
         <ul>
           <li>第一題 單選題：${s.mcq.count} 題 × ${s.mcq.points_each} 分 = ${s.mcq.count * s.mcq.points_each} 分</li>
-          <li>第二題 簡答題：${s.short.count} 題 × ${s.short.points_each} 分 = ${s.short.count * s.short.points_each} 分</li>
-          <li>第三題 申論題：${s.essay.count} 題（共 ${s.essay.points} 分）</li>
+          <li>第二題 是非題：${s.tf.count} 題 × ${s.tf.points_each} 分 = ${s.tf.count * s.tf.points_each} 分</li>
         </ul>
         <p class="muted" style="font-size:13px">${avail}</p>
       </div>
-      ${CFG.aiEnabled ? '' : '<div class="warnbox">後端未設定 Dify（AI 評分未啟用）：簡答/申論題交卷後會顯示<b>參考答案供自評</b>，單選題仍自動計分。</div>'}
+      ${CFG.aiEnabled ? '' : '<div class="warnbox">後端未設定 Dify：交卷後「討論這題」AI 功能不可用，計分不受影響（全卷本地計分）。</div>'}
       <div class="card" style="text-align:left">
         <label for="stu-name"><b>請輸入姓名</b>（僅供老師批改紀錄，不會公開、無排名）</label>
         <input id="stu-name" maxlength="40" placeholder="你的姓名" autocomplete="off"
@@ -151,8 +150,7 @@ function renderExam() {
   const root = $('#exam-body'); root.innerHTML = '';
   const sections = [
     ['mcq', `第一題　單選題（每題 ${BANK.structure.mcq.points_each} 分，單選）`],
-    ['short', `第二題　簡答題（每題 ${BANK.structure.short.points_each} 分）`],
-    ['essay', `第三題　申論題`],
+    ['tf', `第二題　是非題（每題 ${BANK.structure.tf.points_each} 分）`],
   ];
   let globalNo = 0;
   for (const [type, title] of sections) {
@@ -173,10 +171,10 @@ function renderExam() {
 
 function renderQuestionInput(q, no) {
   const card = el('div', 'q');
-  const pts = q.points || (q._type === 'mcq' ? BANK.structure.mcq.points_each : '');
+  const pts = q.points || (isChoice(q._type) ? BANK.structure[q._type].points_each : '');
   card.appendChild(el('div', 'q-head', `<span class="q-no">第 ${no} 題</span><span class="q-tag">${esc(q.topic || q._type)}</span><span class="q-tag">${pts} 分</span>`));
   card.appendChild(el('div', 'q-stem', esc(q.question)));
-  if (q._type === 'mcq') {
+  if (isChoice(q._type)) {
     const opts = el('div', 'opts');
     for (const k of ['a', 'b', 'c', 'd', 'e']) {
       if (q.options[k] == null) continue;
@@ -211,14 +209,15 @@ async function doSubmit(auto) {
 
   const flat = paperFlat();
   const graded = [];
-  // 單選：本地計分
-  for (const q of flat.filter(q => q._type === 'mcq')) {
+  // 單選/是非：本地計分
+  for (const q of flat.filter(q => isChoice(q._type))) {
     const ua = STATE.answers[q._key] || null;
     const correct = ua && ua === q.answer;
-    graded.push({ q, ua, got: correct ? BANK.structure.mcq.points_each : 0, max: BANK.structure.mcq.points_each, status: correct ? 'correct' : 'wrong' });
+    const pts = BANK.structure[q._type].points_each;
+    graded.push({ q, ua, got: correct ? pts : 0, max: pts, status: correct ? 'correct' : 'wrong' });
   }
-  // 自由題：Dify 評分或自評
-  const freeQs = flat.filter(q => q._type !== 'mcq');
+  // 自由題（現行考卷結構不含，保留邏輯以備回復簡答/申論）：Dify 評分或自評
+  const freeQs = flat.filter(q => !isChoice(q._type));
   const useAi = CFG.enableAiGrading && CFG.aiEnabled;
   for (const q of freeQs) {
     const ua = STATE.answers[q._key] || '';
@@ -269,7 +268,7 @@ function renderResult(graded) {
 
   // 分項
   const bd = el('div', 'breakdown');
-  for (const [type, name] of [['mcq', '單選'], ['short', '簡答'], ['essay', '申論']]) {
+  for (const [type, name] of [['mcq', '單選'], ['tf', '是非'], ['short', '簡答'], ['essay', '申論']]) {
     const gs = graded.filter(g => g.q._type === type); if (!gs.length) continue;
     const got = gs.every(g => g.got != null) ? gs.reduce((s, g) => s + g.got, 0) : '—';
     const mx = gs.reduce((s, g) => s + g.max, 0);
@@ -313,7 +312,7 @@ async function submitResult(graded, autoPts, hasManual) {
     name: (STATE && STATE.name) || localStorage.getItem('ttqs_name') || '匿名',
     uid: clientUid(),
     total: autoPts,
-    breakdown: { mcq: sect('mcq'), short: sect('short'), essay: sect('essay') },
+    breakdown: { mcq: sect('mcq'), tf: sect('tf'), short: sect('short'), essay: sect('essay') },
     duration_sec: STATE && STATE.startedAt ? Math.round(((STATE.submittedAt || Date.now()) - STATE.startedAt) / 1000) : 0,
     ai_graded: !hasManual,
     answers,
@@ -336,7 +335,7 @@ function renderReviewQ(g, no) {
   card.appendChild(el('div', 'q-head', `<span class="q-no">第 ${no} 題</span><span class="q-tag">${esc(q.topic || q._type)}</span>${markTxt}`));
   card.appendChild(el('div', 'q-stem', esc(q.question)));
 
-  if (q._type === 'mcq') {
+  if (isChoice(q._type)) {
     const opts = el('div', 'opts');
     for (const k of ['a', 'b', 'c', 'd', 'e']) {
       if (q.options[k] == null) continue;
@@ -402,7 +401,7 @@ function buildDiscuss(q, g) {
 
 function discussContext(q, g) {
   const lines = [`【題目】${q.question}`];
-  if (q._type === 'mcq') {
+  if (isChoice(q._type)) {
     lines.push('【選項】' + ['a', 'b', 'c', 'd', 'e'].filter(k => q.options[k] != null).map(k => `${k}.${q.options[k]}`).join('  '));
     lines.push(`【正解】${q.answer}　【我的答案】${g.ua || '未作答'}`);
     lines.push(`【詳解】${q.explanation || ''}`);

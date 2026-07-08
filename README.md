@@ -29,18 +29,19 @@ ttqs-exam/
    └─ seed_question_pool.json # 100 題 seed（空池啟動自動初始化）
 ```
 
-> 兩個 App 的分工：`exam_app` 是備考模擬考（Dify **考後**評分簡答/申論）；`quiz_app` 是匿名快測(個人名義提供給同學)
+> 兩個 App 的分工：`exam_app` 是備考模擬考（60 分鐘、Dify 逐題討論）；`quiz_app` 是匿名快測(個人名義提供給同學)
 > （Dify **考前**出題入池，正式站 https://ttqs-quiz.zeabur.app ）。
 > 接續開發 quiz_app：先讀 `.claude/skills/quiz-app-dev/SKILL.md` 與 `quiz_app/SPEC.md`。
 
 ## 系統怎麼運作
 
 1. **題庫**：依 `docs/materials/` 教材生成 `exam_app/public/question_bank.json`
-   （目前 **150 單選 + 24 簡答 + 12 申論**；每卷隨機抽 25 單選 + 4 簡答 + 1 申論 = 100 分）。
-2. **考試**：學員進網頁 →（90 分鐘計時）作答 → 交卷。
-   - 單選題：前端**本地即時計分**（公平、不耗 token）。
-   - 簡答/申論：經後端 `/api/dify` 代理呼叫 **Dify** 依 rubric 做 AI 語意評分；可追問「為什麼沒得分」做討論。
-   - 沒設 Dify 金鑰也能跑：自動退回「參考答案自評」模式。
+   （目前 **150 單選 + 40 是非**；每卷隨機抽 12 單選 + 8 是非 = 20 題、100 分。
+   另保留 24 簡答 + 12 申論於題庫檔，現行考卷不抽）。
+2. **考試**：學員進網頁 →（60 分鐘計時）作答 → 交卷。
+   - 全卷（單選+是非）前端**本地即時計分**（公平、不耗 token）。
+   - 逐題檢討可經後端 `/api/dify` 代理呼叫 **Dify** 討論「為何錯、正確觀念是什麼」。
+   - 沒設 Dify 金鑰也能跑：計分不受影響，僅討論功能停用。
 3. **出題/評分用 Dify**：把 `docs/materials/` 教材灌進 Dify 知識庫，LLM 節點套用 `exam_app/dify_system_prompt.md`。
 
 ## 安全重點（沿用 ISO 14067 模擬考架構）
