@@ -23,13 +23,13 @@ ttqs-exam/
 │  ├─ dify_rag_system_prompt.md    # Dify 評核顧問 App prompt（RAG 制度問答）
 │  ├─ Dockerfile / DEPLOY.md  # Zeabur 部署
 │  └─ README.md               # App 詳細說明
-└─ quiz_app/                  # 📝 全員匿名快測（20 題/30 分；Dify 出題入池、伺服器端評分）
+└─ quiz_app/                  # 📝 匿名快測（20 題/30 分；Dify 出題入池、伺服器端評分）
    ├─ SPEC.md                 # 規格書（API 契約 / 資料 schema / 畫面規格 / 部署現況）
    ├─ server.js / public/     # 零依賴後端 + 前台四畫面 + 管理後台
    └─ seed_question_pool.json # 100 題 seed（空池啟動自動初始化）
 ```
 
-> 兩個 App 的分工：`exam_app` 是備考模擬考（Dify **考後**評分簡答/申論）；`quiz_app` 是全公司匿名快測
+> 兩個 App 的分工：`exam_app` 是備考模擬考（Dify **考後**評分簡答/申論）；`quiz_app` 是匿名快測(個人名義提供給同學)
 > （Dify **考前**出題入池，正式站 https://ttqs-quiz.zeabur.app ）。
 > 接續開發 quiz_app：先讀 `.claude/skills/quiz-app-dev/SKILL.md` 與 `quiz_app/SPEC.md`。
 

@@ -2,7 +2,7 @@
   "name": "ttqs-quiz-app",
   "version": "1.0.0",
   "private": true,
-  "description": "久朝企業 TTQS 線上測驗(依 ttqs-exam-prototype 設計稿;題目由 Dify 出題 App 產生入池)",
+  "description": "TTQS 線上測驗(個人名義)(依 ttqs-exam-prototype 設計稿;題目由 Dify 出題 App 產生入池)",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"

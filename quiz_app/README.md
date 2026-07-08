@@ -1,4 +1,4 @@
-# quiz_app — 久朝企業 TTQS 線上測驗
+# quiz_app — TTQS 線上測驗
 
 依 `ttqs-exam-prototype` 設計稿(Claude design 匯出,6 畫面)實作的匿名測驗服務,
 題目由 **Dify 出題 App**(system prompt 見 `../exam_app/dify_question_gen_prompt.md`)產生。
