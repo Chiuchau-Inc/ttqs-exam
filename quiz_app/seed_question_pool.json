@@ -1,0 +1,1662 @@
+[
+ {
+  "id": "q_82a636a7ab90",
+  "question": "TTQS 的 PDDRO 五大構面中，針對「訓練需求分析（TNA）」主要是歸類於哪一個構面？",
+  "options": {
+   "a": "計畫 (Plan)",
+   "b": "設計 (Design)",
+   "c": "執行 (Do)",
+   "d": "查核 (Review)"
+  },
+  "answer": "a",
+  "explanation": "訓練需求分析（TNA）屬於計畫 (Plan) 階段，旨在確認組織與員工的職能落差與訓練需求。",
+  "source": "企業機構版評核表：指標1",
+  "topic": "PDDRO構面",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480387887
+ },
+ {
+  "id": "q_fcb403c4b71c",
+  "question": "TTQS 企業機構版評核中，取得「金牌」等級的分數門檻為多少分（含）以上？",
+  "options": {
+   "a": "74.5 分",
+   "b": "85.5 分",
+   "c": "63.5 分",
+   "d": "53.5 分"
+  },
+  "answer": "b",
+  "explanation": "金牌門檻為 85.5 分以上；74.5-85 為銀牌，63.5-74 為銅牌，53.5-63 為通過。",
+  "source": "作業要點：附件三",
+  "topic": "等級門檻",
+  "difficulty": "易",
+  "origin": "Dify",
+  "added_at": 1783480387887
+ },
+ {
+  "id": "q_534648debcfa",
+  "question": "關於 TTQS 評核的計分方式，下列敘述何者正確？",
+  "options": {
+   "a": "計分最小單位為 1 分",
+   "b": "計分最小單位為 0.5 分",
+   "c": "計分最小單位為 0.1 分",
+   "d": "計分採整數制，無小數點"
+  },
+  "answer": "b",
+  "explanation": "TTQS 評核計分最小單位為 0.5 分，分數範圍為 1-5 級。",
+  "source": "企業機構版評核表：計分備註",
+  "topic": "計分標準",
+  "difficulty": "易",
+  "origin": "Dify",
+  "added_at": 1783480387887
+ },
+ {
+  "id": "q_f4e9ac8b7458",
+  "question": "TTQS 評核指標總共有幾項？",
+  "options": {
+   "a": "17 項",
+   "b": "18 項",
+   "c": "19 項",
+   "d": "20 項"
+  },
+  "answer": "c",
+  "explanation": "TTQS 評核表包含 PDDRO 五構面，總計 19 項指標。",
+  "source": "企業機構版評核表",
+  "topic": "指標架構",
+  "difficulty": "易",
+  "origin": "Dify",
+  "added_at": 1783480387887
+ },
+ {
+  "id": "q_a08955ec50da",
+  "question": "在 TTQS 評核中，關於成果 (Outcome) 構面的指標 17、18、19，若機構未執行相關項目，計分方式為何？",
+  "options": {
+   "a": "得 1 分",
+   "b": "得 2.5 分",
+   "c": "得 0 分",
+   "d": "不予計分，直接剔除該指標"
+  },
+  "answer": "c",
+  "explanation": "成果指標 17、18、19 若未執行，該指標分數為 0 分。",
+  "source": "企業機構版評核表：計分備註",
+  "topic": "成果構面",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480387887
+ },
+ {
+  "id": "q_fc6485daa7d5",
+  "question": "下列何者屬於 TTQS 的設計 (Design) 構面範疇？",
+  "options": {
+   "a": "訓練需求分析",
+   "b": "訓練目標設定",
+   "c": "訓練課程規劃與設計",
+   "d": "訓練滿意度調查"
+  },
+  "answer": "c",
+  "explanation": "訓練課程規劃與設計屬於 Design 構面；需求分析屬 Plan；滿意度調查屬 Review。",
+  "source": "企業機構版評核表：指標6-9",
+  "topic": "PDDRO構面",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480387888
+ },
+ {
+  "id": "q_cbe2dac62832",
+  "question": "Kirkpatrick 的訓練成效評估四層次中，第一層次為下列何者？",
+  "options": {
+   "a": "學習 (Learning)",
+   "b": "反應 (Reaction)",
+   "c": "行為 (Behavior)",
+   "d": "成果 (Result)"
+  },
+  "answer": "b",
+  "explanation": "Kirkpatrick 四層次依序為：反應、學習、行為、成果。",
+  "source": "企業機構版評核表：指標17",
+  "topic": "Kirkpatrick模型",
+  "difficulty": "易",
+  "origin": "Dify",
+  "added_at": 1783480387888
+ },
+ {
+  "id": "q_ec0e480522e1",
+  "question": "ADDIE 訓練設計模型通常對應到 TTQS 的哪些構面？",
+  "options": {
+   "a": "計畫 (Plan) 與 設計 (Design)",
+   "b": "設計 (Design) 與 執行 (Do)",
+   "c": "執行 (Do) 與 查核 (Review)",
+   "d": "查核 (Review) 與 成果 (Outcome)"
+  },
+  "answer": "a",
+  "explanation": "ADDIE (Analysis, Design, Development, Implementation, Evaluation) 在 TTQS 體系中主要對應於 Plan 與 Design 構面。",
+  "source": "企業機構版評核表：指標1-9",
+  "topic": "ADDIE模型",
+  "difficulty": "難",
+  "origin": "Dify",
+  "added_at": 1783480387888
+ },
+ {
+  "id": "q_180bc36696f5",
+  "question": "TTQS 企業機構版評核中，「銀牌」等級的分數範圍為下列何者？",
+  "options": {
+   "a": "85.5 分以上",
+   "b": "74.5 分 - 85 分",
+   "c": "63.5 分 - 74 分",
+   "d": "53.5 分 - 63 分"
+  },
+  "answer": "b",
+  "explanation": "銀牌門檻為 74.5-85 分；85.5 以上為金牌，63.5-74 為銅牌，53.5-63 為通過。",
+  "source": "作業要點：附件三",
+  "topic": "等級門檻",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480387888
+ },
+ {
+  "id": "q_dded77b7c922",
+  "question": "關於企業機構版與訓練機構版之差異，下列敘述何者正確？",
+  "options": {
+   "a": "兩者成果構面評分上限完全相同",
+   "b": "企業機構版成果指標 17a-17d 上限為 3 分",
+   "c": "訓練機構版成果指標 17a-17d 上限為 3 分",
+   "d": "訓練機構版不包含執行構面"
+  },
+  "answer": "c",
+  "explanation": "訓練機構版之成果指標 17a-17d 上限為 3 分；企業機構版則不同。",
+  "source": "訓練機構版評核表：計分說明",
+  "topic": "版本差異",
+  "difficulty": "難",
+  "origin": "Dify",
+  "added_at": 1783480387888
+ },
+ {
+  "id": "q_f7406ddc8116",
+  "subtype": "tf",
+  "question": "TTQS 評核通過後的效期原則上為 2 年。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "a",
+  "explanation": "正確。TTQS 評核效期原則為 2 年。",
+  "source": "作業要點：評核效期",
+  "topic": "效期與複評",
+  "difficulty": "易",
+  "origin": "Dify",
+  "added_at": 1783480387888
+ },
+ {
+  "id": "q_c794065cb68f",
+  "subtype": "tf",
+  "question": "TTQS 企業機構版評核的合格（通過）門檻為 53.5 分。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "a",
+  "explanation": "正確。53.5 分以上為通過，未達 53.5 分為未通過。",
+  "source": "作業要點：附件三",
+  "topic": "等級門檻",
+  "difficulty": "易",
+  "origin": "Dify",
+  "added_at": 1783480387888
+ },
+ {
+  "id": "q_01cf24d0271a",
+  "subtype": "tf",
+  "question": "在企業機構版中，成果構面的指標 18 與 19，其最高分皆為 5 分。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "a",
+  "explanation": "正確。企業機構版之指標 18 與 19 滿分為 5 分。",
+  "source": "企業機構版評核表：計分備註",
+  "topic": "成果構面",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480387888
+ },
+ {
+  "id": "q_f5e682fca094",
+  "subtype": "tf",
+  "question": "TTQS 的 PDDRO 構面順序為：計畫 (Plan)、設計 (Design)、執行 (Do)、查核 (Review)、成果 (Outcome)。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "a",
+  "explanation": "正確。PDDRO 代表 Plan, Design, Do, Review, Outcome。",
+  "source": "作業要點：架構說明",
+  "topic": "PDDRO構面",
+  "difficulty": "易",
+  "origin": "Dify",
+  "added_at": 1783480387888
+ },
+ {
+  "id": "q_0daa6c504a6d",
+  "subtype": "tf",
+  "question": "TTQS 評核的計分等級分為 1 到 4 級。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "b",
+  "explanation": "錯誤。計分等級分為 1 到 5 級。",
+  "source": "企業機構版評核表：計分備註",
+  "topic": "計分標準",
+  "difficulty": "易",
+  "origin": "Dify",
+  "added_at": 1783480387888
+ },
+ {
+  "id": "q_9a6de51644a0",
+  "subtype": "tf",
+  "question": "TTQS 評核分數若為 53 分，其等級判定為「通過」。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "b",
+  "explanation": "錯誤。53 分（含）以下為「未通過」，通過門檻為 53.5 分。",
+  "source": "作業要點：附件三",
+  "topic": "等級門檻",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480387888
+ },
+ {
+  "id": "q_30b9dc6abc62",
+  "subtype": "tf",
+  "question": "執行 (Do) 構面的重點在於確保訓練活動確實依據計畫與設計內容進行，並進行紀錄。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "a",
+  "explanation": "正確。執行 (Do) 構面關注訓練的實施與紀錄。",
+  "source": "企業機構版評核表：指標10-13",
+  "topic": "PDDRO構面",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480387888
+ },
+ {
+  "id": "q_d595b4e7ed7f",
+  "subtype": "tf",
+  "question": "成果指標 17a-17d 在企業機構版中，其單項指標最高得分上限為 3 分。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "b",
+  "explanation": "錯誤。企業機構版之成果指標 17a-17b 上限為 2 分，非 3 分（訓練機構版才是 3 分）。",
+  "source": "企業機構版評核表：計分備註",
+  "topic": "成果構面",
+  "difficulty": "難",
+  "origin": "Dify",
+  "added_at": 1783480387888
+ },
+ {
+  "id": "q_19de04bbead9",
+  "question": "在 TTQS 訓練循環中，關於「計畫（Plan）」構面的核心任務，下列何者正確？",
+  "options": {
+   "a": "執行訓練課程的教學活動",
+   "b": "進行訓練需求分析（TNA）與設定訓練目標",
+   "c": "評估訓練後的績效改善成果",
+   "d": "檢查訓練執行過程的缺失並提出改善建議"
+  },
+  "answer": "b",
+  "explanation": "計畫（Plan）構面主要在於訓練需求分析（TNA）、訓練目標設定與訓練規劃，確保訓練與組織目標連結。",
+  "source": "企業機構版評核表：計畫構面說明",
+  "topic": "PDDRO-計畫",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480398683
+ },
+ {
+  "id": "q_a817445187f6",
+  "question": "關於「設計（Design）」構面，下列敘述何者最符合其定義？",
+  "options": {
+   "a": "實際執行訓練教學",
+   "b": "針對訓練過程進行監控",
+   "c": "規劃課程內容、教材編製與教學方法設計",
+   "d": "統計訓練滿意度數據"
+  },
+  "answer": "c",
+  "explanation": "設計（Design）構面包含課程架構、教材、師資、教學方法與評量工具的設計與規劃。",
+  "source": "企業機構版評核表：設計構面說明",
+  "topic": "PDDRO-設計",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480398683
+ },
+ {
+  "id": "q_2505b591ed37",
+  "question": "「執行（Do）」構面在 TTQS 中主要關注的是下列哪一項？",
+  "options": {
+   "a": "訓練需求的調查與分析",
+   "b": "訓練課程的實際授課與教學活動落實",
+   "c": "訓練成效的統計分析",
+   "d": "訓練辦理後的複評與檢討"
+  },
+  "answer": "b",
+  "explanation": "執行（Do）構面是將計畫與設計的內容付諸實行，包含教學現場的管理、教材呈現與學員互動。",
+  "source": "企業機構版評核表：執行構面說明",
+  "topic": "PDDRO-執行",
+  "difficulty": "易",
+  "origin": "Dify",
+  "added_at": 1783480398683
+ },
+ {
+  "id": "q_f1e21343db2f",
+  "question": "「查核（Review）」構面的主要目的為何？",
+  "options": {
+   "a": "確認訓練需求是否符合組織策略",
+   "b": "確保訓練過程與成果符合品質要求，並進行持續改善",
+   "c": "確認課程教材是否編撰完成",
+   "d": "計算訓練課程的預算支出"
+  },
+  "answer": "b",
+  "explanation": "查核（Review）構面旨在監控訓練執行過程是否符合品質要求，並透過相關評核機制進行檢討與改善。",
+  "source": "企業機構版評核表：查核構面說明",
+  "topic": "PDDRO-查核",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480398683
+ },
+ {
+  "id": "q_cef265facffc",
+  "question": "TTQS 指標 17 參考 Kirkpatrick 四層次評估模式，請問第二層次為何？",
+  "options": {
+   "a": "反應（Reaction）",
+   "b": "學習（Learning）",
+   "c": "行為（Behavior）",
+   "d": "成果（Result）"
+  },
+  "answer": "b",
+  "explanation": "Kirkpatrick 四層次依序為：反應、學習、行為、成果。指標 17 對應此模式。",
+  "source": "企業機構版評核表：指標17",
+  "topic": "PDDRO-成果",
+  "difficulty": "難",
+  "origin": "Dify",
+  "added_at": 1783480398683
+ },
+ {
+  "id": "q_a2942278a669",
+  "question": "下列關於 ADDIE 模型與 TTQS 構面的對應關係，何者正確？",
+  "options": {
+   "a": "ADDIE 的 A（Analysis）對應 TTQS 的設計構面",
+   "b": "ADDIE 的 D（Design）對應 TTQS 的執行構面",
+   "c": "ADDIE 的 I（Implementation）對應 TTQS 的執行構面",
+   "d": "ADDIE 的 E（Evaluation）對應 TTQS 的計畫構面"
+  },
+  "answer": "c",
+  "explanation": "ADDIE 模型中，Implementation（執行）對應 TTQS 的執行（Do）構面；Analysis 對應計畫；Design 對應設計；Evaluation 對應查核與成果。",
+  "source": "訓練品質管理系統作業要點：理論基礎說明",
+  "topic": "理論基礎",
+  "difficulty": "難",
+  "origin": "Dify",
+  "added_at": 1783480398683
+ },
+ {
+  "id": "q_a28edf90118f",
+  "question": "關於 TTQS 成果構面的指標 17、18、19，若該項未執行，計分標準為何？",
+  "options": {
+   "a": "給予 1 分",
+   "b": "給予 2.5 分",
+   "c": "給予 0 分",
+   "d": "不予計分，直接扣除總分"
+  },
+  "answer": "c",
+  "explanation": "成果構面指標 17、18、19 若未執行，該指標計分為 0 分。",
+  "source": "企業機構版評核表：計分備註",
+  "topic": "PDDRO-成果",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480398683
+ },
+ {
+  "id": "q_93a975cfba6e",
+  "question": "TTQS 強調 PDDRO 循環的連續性，下列敘述何者正確？",
+  "options": {
+   "a": "設計構面完成後，執行與查核構面即可省略",
+   "b": "計畫是所有構面的基礎，與後續執行與成果無關",
+   "c": "查核構面應貫穿於執行過程，作為改善的依據",
+   "d": "成果構面僅需在年度結束時評估，不需與計畫連結"
+  },
+  "answer": "c",
+  "explanation": "TTQS 視 PDDRO 為一個循環，查核（Review）構面必須監控執行過程，並將結果回饋至計畫與設計，形成持續改善。",
+  "source": "訓練品質管理系統作業要點：PDDRO 循環說明",
+  "topic": "PDDRO-理論",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480398683
+ },
+ {
+  "id": "q_f25e44bcec1e",
+  "subtype": "tf",
+  "question": "「執行（Do）」構面僅包含課堂內的教學活動，不包含課前的學員通知與報到流程。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "b",
+  "explanation": "錯誤。執行（Do）構面包含訓練實施的相關作業流程，如學員通知、報到、教材發放、教學活動實施等完整過程。",
+  "source": "企業機構版評核表：執行構面定義",
+  "topic": "PDDRO-執行",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480398683
+ },
+ {
+  "id": "q_887218a3abdb",
+  "subtype": "tf",
+  "question": "查核（Review）構面主要在檢視訓練過程是否符合品質要求，而非僅是確認訓練是否辦理。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "a",
+  "explanation": "正確。查核（Review）不僅是確認有辦理，而是針對訓練品質監控、執行過程檢討及持續改善進行評核。",
+  "source": "企業機構版評核表：查核構面定義",
+  "topic": "PDDRO-查核",
+  "difficulty": "易",
+  "origin": "Dify",
+  "added_at": 1783480398683
+ },
+ {
+  "id": "q_3681356e3e9f",
+  "subtype": "tf",
+  "question": "Kirkpatrick 評估模式中，「成果（Result）」層次指的是學員在訓練後的學習滿意度。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "b",
+  "explanation": "錯誤。學習滿意度對應的是「反應（Reaction）」層次；「成果（Result）」層次指的是對組織經營績效或營運目標的具體貢獻。",
+  "source": "企業機構版評核表：指標17說明",
+  "topic": "PDDRO-成果",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480398683
+ },
+ {
+  "id": "q_f543bb108f7c",
+  "subtype": "tf",
+  "question": "訓練需求分析（TNA）是屬於 TTQS 的計畫（Plan）構面。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "a",
+  "explanation": "正確。訓練需求分析（TNA）是訓練規劃的起點，屬於計畫（Plan）構面。",
+  "source": "企業機構版評核表：計畫構面定義",
+  "topic": "PDDRO-計畫",
+  "difficulty": "易",
+  "origin": "Dify",
+  "added_at": 1783480398683
+ },
+ {
+  "id": "q_3700699bb9ad",
+  "question": "依據 TTQS 作業要點，獲頒等級之單位，其證書有效期限為多久？",
+  "options": {
+   "a": "1 年",
+   "b": "2 年",
+   "c": "3 年",
+   "d": "4 年"
+  },
+  "answer": "b",
+  "explanation": "TTQS 評核等級證書之有效期限原則為 2 年。",
+  "source": "作業要點：評核效期規定",
+  "topic": "評核效期",
+  "difficulty": "易",
+  "origin": "Dify",
+  "added_at": 1783480952955
+ },
+ {
+  "id": "q_513f1ca8b35b",
+  "question": "單位欲申請複評以延續效期，應於證書有效期限屆滿前多久提出申請？",
+  "options": {
+   "a": "1 個月前",
+   "b": "2 個月前",
+   "c": "3 個月前",
+   "d": "6 個月前"
+  },
+  "answer": "c",
+  "explanation": "依作業要點，應於證書有效期限屆滿前 3 個月提出複評申請，以利安排評核作業。",
+  "source": "作業要點：複評申請時程",
+  "topic": "評核效期",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480952955
+ },
+ {
+  "id": "q_1f1b6f2834d5",
+  "question": "下列何者符合 TTQS 免評資格之主要條件？",
+  "options": {
+   "a": "連續兩次獲得金牌",
+   "b": "連續兩次獲得銀牌以上",
+   "c": "單次獲得金牌",
+   "d": "連續兩次獲得銅牌以上"
+  },
+  "answer": "b",
+  "explanation": "依據作業要點，連續兩次評核獲得銀牌（含）以上等級者，得申請免評。",
+  "source": "作業要點：免評機制",
+  "topic": "免評機制",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480952955
+ },
+ {
+  "id": "q_6d192032ad58",
+  "question": "TTQS 評核流程之標準順序為何？",
+  "options": {
+   "a": "實地評核 -> 書面審查 -> 等級核定",
+   "b": "書面審查 -> 實地評核 -> 等級核定",
+   "c": "等級核定 -> 書面審查 -> 實地評核",
+   "d": "實地評核 -> 等級核定 -> 書面審查"
+  },
+  "answer": "b",
+  "explanation": "標準評核流程為先進行書面審查，確認資料齊全後，再安排實地評核，最後由審議委員會核定等級。",
+  "source": "作業要點：評核作業流程",
+  "topic": "評核流程",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480952955
+ },
+ {
+  "id": "q_53f7844264e9",
+  "question": "關於 TTQS 評核委員之行為規範，下列何者正確？",
+  "options": {
+   "a": "評核委員可接受受評單位之餽贈",
+   "b": "評核委員若與受評單位有利益衝突，應主動迴避",
+   "c": "評核委員可私下向受評單位提供付費輔導",
+   "d": "評核委員可對外公開受評單位之詳細機密資料"
+  },
+  "answer": "b",
+  "explanation": "評核委員應秉持客觀公正，若與受評單位有利益衝突（如曾任職、輔導關係等），應主動迴避，不得接受餽贈或洩漏機密。",
+  "source": "作業要點：評核委員倫理規範",
+  "topic": "評核委員",
+  "difficulty": "易",
+  "origin": "Dify",
+  "added_at": 1783480952955
+ },
+ {
+  "id": "q_211f5ef65120",
+  "question": "若單位證書已過期，但尚未完成複評，下列敘述何者正確？",
+  "options": {
+   "a": "自動展延效期",
+   "b": "仍視為有效，直至下次評核",
+   "c": "該單位之評核資格視為失效，需重新申請評核",
+   "d": "僅需繳納罰款即可恢復"
+  },
+  "answer": "c",
+  "explanation": "證書過期即失效，單位若未及時完成複評，須重新申請評核程序，無自動展延機制。",
+  "source": "作業要點：證書效期與失效規定",
+  "topic": "評核效期",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480952955
+ },
+ {
+  "id": "q_54a2a5fdb8a6",
+  "question": "單位若對評核結果有異議，應於收到通知後多久內提出申覆？",
+  "options": {
+   "a": "7 日內",
+   "b": "14 日內",
+   "c": "30 日內",
+   "d": "不得提出申覆"
+  },
+  "answer": "b",
+  "explanation": "依作業要點，受評單位若對評核結果有異議，得於收到通知後 14 日內提出申覆。",
+  "source": "作業要點：申覆機制",
+  "topic": "評核流程",
+  "difficulty": "難",
+  "origin": "Dify",
+  "added_at": 1783480952955
+ },
+ {
+  "id": "q_ebeba61e4444",
+  "question": "申請免評之單位，其免評資格期限為何？",
+  "options": {
+   "a": "永久有效",
+   "b": "僅該次評核週期有效",
+   "c": "效期為 2 年，期滿後需重新申請或參加評核",
+   "d": "效期為 3 年"
+  },
+  "answer": "c",
+  "explanation": "免評資格並非永久，其效期與一般評核相同為 2 年，期滿後需視狀況重新申請免評或接受評核。",
+  "source": "作業要點：免評機制規定",
+  "topic": "免評機制",
+  "difficulty": "難",
+  "origin": "Dify",
+  "added_at": 1783480952955
+ },
+ {
+  "id": "q_7c459207fc2a",
+  "question": "TTQS 實地評核時，通常由幾位評核委員共同執行？",
+  "options": {
+   "a": "1 位",
+   "b": "2 位以上",
+   "c": "固定 5 位",
+   "d": "由單位自行決定"
+  },
+  "answer": "b",
+  "explanation": "TTQS 實地評核通常由 2 位以上（含）具備資格之評核委員組成評核小組執行，以確保評估之客觀性。",
+  "source": "作業要點：評核作業執行",
+  "topic": "評核委員",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480952955
+ },
+ {
+  "id": "q_5bd840054088",
+  "question": "關於評核指標之適用性，下列何者正確？",
+  "options": {
+   "a": "所有單位皆使用同一套指標，無版本差異",
+   "b": "企業機構與訓練機構適用之指標完全相同",
+   "c": "應依單位性質（企業/訓練機構）選擇適用之指標版本",
+   "d": "指標內容每年皆會大幅變動，不需參考作業要點"
+  },
+  "answer": "c",
+  "explanation": "TTQS 針對不同屬性單位設有不同版本（如企業機構版、訓練機構版），評核時須依單位性質選擇正確版本。",
+  "source": "作業要點：評核指標適用性",
+  "topic": "評核流程",
+  "difficulty": "易",
+  "origin": "Dify",
+  "added_at": 1783480952955
+ },
+ {
+  "id": "q_15e94e24f2ab",
+  "subtype": "tf",
+  "question": "以下敘述正確或錯誤：TTQS 證書有效期限屆滿後，若單位未申請複評，該評核等級即自動失效。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "a",
+  "explanation": "正確。證書有效期限屆滿即失效，必須進行複評程序才能延續等級。",
+  "source": "作業要點：效期規定",
+  "topic": "評核效期",
+  "difficulty": "易",
+  "origin": "Dify",
+  "added_at": 1783480952955
+ },
+ {
+  "id": "q_1a8da29f7edf",
+  "subtype": "tf",
+  "question": "以下敘述正確或錯誤：符合免評資格之單位，無需提出申請即可自動獲得免評資格。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "b",
+  "explanation": "錯誤。即使符合免評資格（如連續兩次銀牌以上），仍須主動向主管機關提出免評申請，並經審核通過後方可免評。",
+  "source": "作業要點：免評申請程序",
+  "topic": "免評機制",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480952955
+ },
+ {
+  "id": "q_07fbe1b5ffca",
+  "subtype": "tf",
+  "question": "以下敘述正確或錯誤：評核委員在進行實地評核時，可以同時為受評單位提供改善建議與諮詢。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "b",
+  "explanation": "錯誤。評核委員之職責為「評核」，而非「輔導」。評核期間應維持客觀中立，不得提供任何諮詢或指導以免影響公平性。",
+  "source": "作業要點：評核委員倫理",
+  "topic": "評核委員",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480952955
+ },
+ {
+  "id": "q_a2c2cb4397e5",
+  "subtype": "tf",
+  "question": "以下敘述正確或錯誤：TTQS 評核僅包含實地評核，不包含書面審查。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "b",
+  "explanation": "錯誤。TTQS 評核程序包含「書面審查」與「實地評核」兩階段，缺一不可。",
+  "source": "作業要點：評核流程",
+  "topic": "評核流程",
+  "difficulty": "易",
+  "origin": "Dify",
+  "added_at": 1783480952955
+ },
+ {
+  "id": "q_520076c3e060",
+  "subtype": "tf",
+  "question": "以下敘述正確或錯誤：若單位名稱或組織型態變更，其原持有之 TTQS 證書效期不受影響，無需報備。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "b",
+  "explanation": "錯誤。若單位名稱、地址或組織型態變更，應主動通知相關單位，並依規定辦理證書更換或相關程序，不可視為無影響。",
+  "source": "作業要點：單位異動規定",
+  "topic": "評核效期",
+  "difficulty": "難",
+  "origin": "Dify",
+  "added_at": 1783480952955
+ },
+ {
+  "id": "q_8208d06b4149",
+  "subtype": "tf",
+  "question": "以下敘述正確或錯誤：評核委員必須具備一定之專業訓練與資格認證，方能執行 TTQS 評核。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "a",
+  "explanation": "正確。評核委員需通過特定之訓練與資格認證，方能取得執行評核之資格。",
+  "source": "作業要點：評核委員資格",
+  "topic": "評核委員",
+  "difficulty": "易",
+  "origin": "Dify",
+  "added_at": 1783480952955
+ },
+ {
+  "id": "q_97cd86ee0bb3",
+  "subtype": "tf",
+  "question": "以下敘述正確或錯誤：評核結果核定後，主管機關會發函通知受評單位，並公佈獲獎等級。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "a",
+  "explanation": "正確。評核作業完成後，會由主管機關正式發函通知評核結果。",
+  "source": "作業要點：評核結果通知",
+  "topic": "評核流程",
+  "difficulty": "易",
+  "origin": "Dify",
+  "added_at": 1783480952955
+ },
+ {
+  "id": "q_17aac417381c",
+  "subtype": "tf",
+  "question": "以下敘述正確或錯誤：複評申請若未於期限前提出，單位可於證書過期後隨時補申請，並追溯原證書效期。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "b",
+  "explanation": "錯誤。若未於期限前申請複評，證書過期即失效，無法追溯原效期，需重新辦理評核。",
+  "source": "作業要點：複評申請規定",
+  "topic": "評核效期",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480952955
+ },
+ {
+  "id": "q_411c81030a8e",
+  "question": "在企業機構版中，指標1「訓練需求分析(TNA)之系統性」主要評核重點為何？",
+  "options": {
+   "a": "訓練經費的編列是否充足",
+   "b": "是否依據組織營運目標與職能落差進行需求分析",
+   "c": "講師的教學技巧是否專業",
+   "d": "受訓學員的滿意度回饋"
+  },
+  "answer": "b",
+  "explanation": "指標1重點在於TNA是否與組織目標、職能落差連結，而非單純討論經費或滿意度。",
+  "source": "企業機構版評核表：指標1",
+  "topic": "評核指標-計畫(P)",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480970068
+ },
+ {
+  "id": "q_6fd0468f5a46",
+  "question": "指標3「訓練計畫與需求分析之連結性」之評核重點為何？",
+  "options": {
+   "a": "訓練計畫是否完整涵蓋TNA所發現的職能缺口",
+   "b": "講師是否擁有專業證照",
+   "c": "外部訓練機構的評選過程",
+   "d": "訓練結束後的行政結案作業"
+  },
+  "answer": "a",
+  "explanation": "指標3旨在確認訓練計畫是否針對指標1與2所分析出的需求進行規劃，確保資源投入在正確的職能缺口上。",
+  "source": "企業機構版評核表：指標3",
+  "topic": "評核指標-計畫(P)",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480970068
+ },
+ {
+  "id": "q_5deeef177015",
+  "question": "指標5「訓練課程設計之系統性」主要參照何種理論架構？",
+  "options": {
+   "a": "PDCA循環",
+   "b": "ADDIE模型",
+   "c": "SWOT分析",
+   "d": "BCG矩陣"
+  },
+  "answer": "b",
+  "explanation": "指標5課程設計強調系統性，通常指ADDIE（分析、設計、發展、實施、評估）等教學設計模式的應用。",
+  "source": "企業機構版評核表：指標5",
+  "topic": "評核指標-設計(D)",
+  "difficulty": "易",
+  "origin": "Dify",
+  "added_at": 1783480970068
+ },
+ {
+  "id": "q_c14b7464abef",
+  "question": "指標6「訓練教材與方法之規劃」中，下列何者非評核重點？",
+  "options": {
+   "a": "教材內容是否符合課程目標",
+   "b": "訓練方法是否多元且適合學員",
+   "c": "訓練場地的租金成本",
+   "d": "教材開發的邏輯性"
+  },
+  "answer": "c",
+  "explanation": "指標6重點在於教材與訓練方法的適切性，場地租金成本通常屬於行政庶務或預算管理，非課程設計核心。",
+  "source": "企業機構版評核表：指標6",
+  "topic": "評核指標-設計(D)",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480970068
+ },
+ {
+  "id": "q_89f66f7736af",
+  "question": "指標9「訓練執行與管理之落實」之核心要求為何？",
+  "options": {
+   "a": "確保所有訓練課程皆由外部講師授課",
+   "b": "訓練過程的執行紀錄與管理機制（如簽到、紀錄、異常處理）",
+   "c": "強制要求學員必須通過測驗",
+   "d": "訓練經費必須全數執行完畢"
+  },
+  "answer": "b",
+  "explanation": "指標9關注訓練是否依照計畫執行，並有相關紀錄可供查核，包含異常狀況的處理。",
+  "source": "企業機構版評核表：指標9",
+  "topic": "評核指標-執行(D)",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480970068
+ },
+ {
+  "id": "q_e7dcc80bd769",
+  "question": "指標13「訓練成效評估之實施」主要評核下列何者？",
+  "options": {
+   "a": "訓練預算編列是否精準",
+   "b": "是否依據計畫執行成效評估（如反應、學習層次）",
+   "c": "講師是否親自簽到",
+   "d": "訓練計畫的變更申請流程"
+  },
+  "answer": "b",
+  "explanation": "指標13關注評估作業的執行，確認機構是否有落實Kirkpatrick層次評估。",
+  "source": "企業機構版評核表：指標13",
+  "topic": "評核指標-查核(R)",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480970068
+ },
+ {
+  "id": "q_b39bb44e8c99",
+  "question": "指標15「訓練成效評估結果之應用與改善」之關鍵動作為何？",
+  "options": {
+   "a": "僅需將評估問卷歸檔",
+   "b": "將評估結果回饋至下一年度的計畫與設計階段",
+   "c": "將評估結果僅作為對外宣傳使用",
+   "d": "僅需向主管機關報告"
+  },
+  "answer": "b",
+  "explanation": "指標15強調「改善」與「應用」，評估結果必須回饋到PDDRO循環中的P或D階段，形成持續改善。",
+  "source": "企業機構版評核表：指標15",
+  "topic": "評核指標-查核(R)",
+  "difficulty": "難",
+  "origin": "Dify",
+  "added_at": 1783480970068
+ },
+ {
+  "id": "q_f9d50b5933c2",
+  "question": "指標17「訓練成效（反應與學習層次）」在企業機構版中，其單一指標得分上限為多少？",
+  "options": {
+   "a": "1 分",
+   "b": "2 分",
+   "c": "3 分",
+   "d": "5 分"
+  },
+  "answer": "b",
+  "explanation": "企業機構版中，指標17a（反應層次）與17b（學習層次）得分上限皆為 2 分。",
+  "source": "企業機構版評核表：計分備註",
+  "topic": "評核指標-成果(O)",
+  "difficulty": "難",
+  "origin": "Dify",
+  "added_at": 1783480970068
+ },
+ {
+  "id": "q_32166fb4ef52",
+  "question": "指標18「訓練成效（行為層次）」主要評核什麼？",
+  "options": {
+   "a": "學員對講師的滿意度",
+   "b": "學員對於課程內容的記憶力",
+   "c": "學員回到工作崗位後，行為是否有改變",
+   "d": "組織整體的營收成長率"
+  },
+  "answer": "c",
+  "explanation": "指標18對應Kirkpatrick第三層次（行為），評核重點為訓練後學員在工作上的應用與行為改變。",
+  "source": "企業機構版評核表：指標18",
+  "topic": "評核指標-成果(O)",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480970068
+ },
+ {
+  "id": "q_962848c36eff",
+  "question": "指標19「訓練成效（成果層次）」主要評核什麼？",
+  "options": {
+   "a": "學員是否獲得結業證書",
+   "b": "訓練對組織營運績效（如成本降低、效率提升）的貢獻",
+   "c": "訓練經費的執行率",
+   "d": "講師的教學時數"
+  },
+  "answer": "b",
+  "explanation": "指標19對應Kirkpatrick第四層次（成果），關注訓練對組織整體績效或目標達成的實質貢獻。",
+  "source": "企業機構版評核表：指標19",
+  "topic": "評核指標-成果(O)",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480970068
+ },
+ {
+  "id": "q_c40a9e78078b",
+  "subtype": "tf",
+  "question": "指標2「訓練需求分析之方法與工具」要求機構必須採用量化問卷進行需求調查，不得使用訪談或觀察法。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "b",
+  "explanation": "錯誤。指標2並未限制只能使用量化問卷，機構應依據自身特性選擇合適且多元的需求分析方法（如訪談、焦點團體、觀察、問卷等）。",
+  "source": "企業機構版評核表：指標2",
+  "topic": "評核指標-計畫(P)",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480970068
+ },
+ {
+  "id": "q_3419f8131ec8",
+  "subtype": "tf",
+  "question": "指標4「訓練計畫之完整性」中，訓練經費預算編列屬於可有可無的項目，不影響評核分數。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "b",
+  "explanation": "錯誤。訓練計畫必須具備完整性，經費預算編列是訓練計畫的核心要素，攸關訓練資源的配置與可行性。",
+  "source": "企業機構版評核表：指標4",
+  "topic": "評核指標-計畫(P)",
+  "difficulty": "易",
+  "origin": "Dify",
+  "added_at": 1783480970068
+ },
+ {
+  "id": "q_9ead14dd8356",
+  "subtype": "tf",
+  "question": "指標7「訓練課程規劃之適切性」評核重點在於課程內容是否符合組織需求，而非僅是課程數量的多寡。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "a",
+  "explanation": "正確。指標7強調課程規劃必須與組織需求連結，重視課程內容的適切性與系統性。",
+  "source": "企業機構版評核表：指標7",
+  "topic": "評核指標-設計(D)",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480970068
+ },
+ {
+  "id": "q_8a16334bc762",
+  "subtype": "tf",
+  "question": "指標8「訓練資源與講師之規劃」僅需評核外部講師的專業度，內部講師之遴選無需納入規範。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "b",
+  "explanation": "錯誤。指標8針對「講師」的規劃，無論是內部或外部講師，皆需有遴選、評估與管理的機制，確保教學品質。",
+  "source": "企業機構版評核表：指標8",
+  "topic": "評核指標-設計(D)",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480970068
+ },
+ {
+  "id": "q_d34f8d48960f",
+  "subtype": "tf",
+  "question": "指標10「訓練資源與教材之運用」評核重點在於教材是否確實發放給學員，以及教學設備是否運作正常。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "a",
+  "explanation": "正確。指標10關注訓練過程中資源（教材、設備、環境）的有效運用與管理。",
+  "source": "企業機構版評核表：指標10",
+  "topic": "評核指標-執行(D)",
+  "difficulty": "易",
+  "origin": "Dify",
+  "added_at": 1783480970068
+ },
+ {
+  "id": "q_69e9aee4825f",
+  "subtype": "tf",
+  "question": "指標12「訓練執行之紀錄與保存」要求所有訓練過程紀錄，必須以紙本形式保存，電子檔不具備效力。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "b",
+  "explanation": "錯誤。TTQS 並未規定必須採紙本，電子化紀錄只要能完整呈現執行過程並可供查核，皆符合要求。",
+  "source": "企業機構版評核表：指標12",
+  "topic": "評核指標-執行(D)",
+  "difficulty": "易",
+  "origin": "Dify",
+  "added_at": 1783480970068
+ },
+ {
+  "id": "q_088649c9c6df",
+  "subtype": "tf",
+  "question": "指標14「訓練成效評估資訊之蒐集」僅需蒐集學員滿意度問卷，無需蒐集其他數據。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "b",
+  "explanation": "錯誤。指標14要求評估資訊的蒐集應多元且具體，需涵蓋Kirkpatrick各層次所需之數據，不僅止於滿意度問卷。",
+  "source": "企業機構版評核表：指標14",
+  "topic": "評核指標-查核(R)",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480970068
+ },
+ {
+  "id": "q_d3bdd35e2b70",
+  "subtype": "tf",
+  "question": "指標16「訓練改善會議之召開」要求機構需有定期檢討機制，並留下會議紀錄。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "a",
+  "explanation": "正確。指標16要求透過會議或檢討機制，針對評估結果進行討論並提出改善方案，並需有紀錄佐證。",
+  "source": "企業機構版評核表：指標16",
+  "topic": "評核指標-查核(R)",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480970068
+ },
+ {
+  "id": "q_c888ba6e9c38",
+  "question": "關於「企業機構版」與「訓練機構版」在成果構面（Outcome）指標 18、19 的計分上限，下列敘述何者正確？",
+  "options": {
+   "a": "兩者皆為 1-5 分",
+   "b": "兩者皆為 1-4 分",
+   "c": "企業版為 1-5 分，訓練機構版為 1-4 分",
+   "d": "企業版為 1-4 分，訓練機構版為 1-5 分"
+  },
+  "answer": "c",
+  "explanation": "企業機構版成果指標 18、19 計分上限為 5 分；訓練機構版成果指標 18、19 計分上限為 4 分。",
+  "source": "訓練機構版/企業機構版評核表：成果構面計分說明",
+  "topic": "評核版本差異",
+  "difficulty": "難",
+  "origin": "Dify",
+  "added_at": 1783480984354
+ },
+ {
+  "id": "q_f64b6a8045a1",
+  "question": "TTQS 評核指標 17 關於 Kirkpatrick 四層次評估，在「訓練機構版」中包含哪四個細項？",
+  "options": {
+   "a": "反應、學習、行為、成果",
+   "b": "需求、設計、執行、查核",
+   "c": "規劃、設計、執行、成果",
+   "d": "反應、學習、執行、績效"
+  },
+  "answer": "a",
+  "explanation": "指標 17 對應 Kirkpatrick 四層次評估：反應(Reaction)、學習(Learning)、行為(Behavior)、成果(Result)。",
+  "source": "訓練機構版評核表：指標17",
+  "topic": "評核指標",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480984354
+ },
+ {
+  "id": "q_541259d4d376",
+  "question": "企業機構版與訓練機構版在指標 17a-17d（成果構面）的計分上限為何？",
+  "options": {
+   "a": "企業版上限 2 分，訓練機構版上限 3 分",
+   "b": "企業版上限 3 分，訓練機構版上限 2 分",
+   "c": "兩者皆為 2 分",
+   "d": "兩者皆為 3 分"
+  },
+  "answer": "a",
+  "explanation": "企業機構版指標 17a/17b 上限為 2 分；訓練機構版指標 17a-17d 上限為 3 分。",
+  "source": "訓練機構版/企業機構版評核表：指標17計分備註",
+  "topic": "評核制度",
+  "difficulty": "難",
+  "origin": "Dify",
+  "added_at": 1783480984354
+ },
+ {
+  "id": "q_b5ab89a775d5",
+  "question": "在 TTQS 評核中，訓練需求分析（TNA）主要對應於 PDDRO 的哪個構面？",
+  "options": {
+   "a": "計畫 (Plan)",
+   "b": "設計 (Design)",
+   "c": "執行 (Do)",
+   "d": "查核 (Review)"
+  },
+  "answer": "a",
+  "explanation": "訓練需求分析（TNA）屬於計畫階段（Plan），用以釐清訓練目標與需求。",
+  "source": "作業要點：PDDRO 構面定義",
+  "topic": "PDDRO構面",
+  "difficulty": "易",
+  "origin": "Dify",
+  "added_at": 1783480984354
+ },
+ {
+  "id": "q_4a53f7c1362f",
+  "question": "下列關於 TTQS 評核計分原則，何者錯誤？",
+  "options": {
+   "a": "最小計分單位為 0.5 分",
+   "b": "滿分為 100 分",
+   "c": "成果構面指標 17、18、19 若未執行，計分為 0 分",
+   "d": "所有指標最低得分皆為 1 分"
+  },
+  "answer": "d",
+  "explanation": "錯誤。成果構面（指標 17、18、19）若未執行，該指標得分為 0 分，非最低 1 分。",
+  "source": "企業機構版評核表：計分備註",
+  "topic": "評核制度",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480984354
+ },
+ {
+  "id": "q_7fc52a9ebfb2",
+  "question": "何種組織類型通常適用「訓練機構版」評核？",
+  "options": {
+   "a": "內部訓練為主的製造業公司",
+   "b": "提供對外訓練服務的機構",
+   "c": "僅進行內部員工教育訓練的企業",
+   "d": "初次申請 TTQS 的中小企業"
+  },
+  "answer": "b",
+  "explanation": "訓練機構版適用於提供對外公開訓練、教育訓練服務之機構；內部訓練為主之企業適用企業機構版。",
+  "source": "作業要點：版本適用對象",
+  "topic": "評核版本",
+  "difficulty": "易",
+  "origin": "Dify",
+  "added_at": 1783480984354
+ },
+ {
+  "id": "q_e8224fb59ee2",
+  "question": "ADDIE 模型在 TTQS 評核中通常對應哪些構面？",
+  "options": {
+   "a": "計畫 (Plan) 與 設計 (Design)",
+   "b": "計畫 (Plan) 與 執行 (Do)",
+   "c": "設計 (Design) 與 執行 (Do)",
+   "d": "執行 (Do) 與 成果 (Outcome)"
+  },
+  "answer": "a",
+  "explanation": "ADDIE 模型（分析、設計、發展、實施、評鑑）在 TTQS 中主要涵蓋計畫（Plan）與設計（Design）構面。",
+  "source": "作業要點：訓練品質管理系統概念",
+  "topic": "ADDIE模型",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480984354
+ },
+ {
+  "id": "q_7349da318e92",
+  "question": "TTQS 評核中，有關「查核 (Review)」構面，下列敘述何者最符合？",
+  "options": {
+   "a": "僅包含對訓練結果的滿意度調查",
+   "b": "包含對訓練計畫、設計與執行過程的檢視與改善",
+   "c": "僅包含學員的考試成績統計",
+   "d": "指訓練講師的授課品質評估"
+  },
+  "answer": "b",
+  "explanation": "查核（Review）構面不僅是結果調查，更包含對訓練全流程（PDD）的檢視、績效分析與持續改善。",
+  "source": "作業要點：PDDRO 構面定義",
+  "topic": "評核制度",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480984354
+ },
+ {
+  "id": "q_a8e694ce926b",
+  "question": "在企業機構版中，指標 17a 與 17b 的計分方式為何？",
+  "options": {
+   "a": "分為 1-5 分",
+   "b": "分為 1-4 分",
+   "c": "分為 1-3 分",
+   "d": "分為 1-2 分"
+  },
+  "answer": "d",
+  "explanation": "企業機構版指標 17a、17b 計分上限為 2 分。",
+  "source": "企業機構版評核表：指標17",
+  "topic": "評核指標",
+  "difficulty": "難",
+  "origin": "Dify",
+  "added_at": 1783480984354
+ },
+ {
+  "id": "q_6c6dd0768a12",
+  "question": "TTQS 評核的「成果 (Outcome)」指標，其核心意義在於？",
+  "options": {
+   "a": "訓練課程的費用支出多寡",
+   "b": "訓練活動對組織績效與能力的實質貢獻",
+   "c": "參訓學員的人數多寡",
+   "d": "訓練講師的專業證照數量"
+  },
+  "answer": "b",
+  "explanation": "成果（Outcome）構面重點在於評估訓練活動是否對組織績效、個人能力提升產生實質貢獻。",
+  "source": "作業要點：PDDRO 構面定義",
+  "topic": "評核制度",
+  "difficulty": "易",
+  "origin": "Dify",
+  "added_at": 1783480984354
+ },
+ {
+  "id": "q_d64007417f8c",
+  "subtype": "tf",
+  "question": "企業機構版評核中，成果構面的指標 17a、17b 計分上限為 5 分。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "b",
+  "explanation": "錯誤。企業機構版成果指標 17a、17b 計分上限為 2 分，非 5 分。",
+  "source": "企業機構版評核表：指標17",
+  "topic": "評核制度",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480984354
+ },
+ {
+  "id": "q_8afa42e2ce27",
+  "subtype": "tf",
+  "question": "訓練機構版評核指標 18、19 的計分上限為 4 分。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "a",
+  "explanation": "正確。訓練機構版指標 18、19 計分上限為 4 分。",
+  "source": "訓練機構版評核表：成果構面",
+  "topic": "評核制度",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480984354
+ },
+ {
+  "id": "q_b58c7d6c40a0",
+  "subtype": "tf",
+  "question": "TTQS 評核計分的最小單位為 0.5 分。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "a",
+  "explanation": "正確。TTQS 評核計分最小單位為 0.5 分。",
+  "source": "作業要點：計分原則",
+  "topic": "評核制度",
+  "difficulty": "易",
+  "origin": "Dify",
+  "added_at": 1783480984354
+ },
+ {
+  "id": "q_9f5f227ede9d",
+  "subtype": "tf",
+  "question": "所有類型的 TTQS 評核，其成果構面指標（17、18、19）若未執行，該指標得分為 1 分。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "b",
+  "explanation": "錯誤。成果構面指標（17、18、19）若未執行，該指標得分為 0 分。",
+  "source": "企業機構版評核表：計分備註",
+  "topic": "評核制度",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480984354
+ },
+ {
+  "id": "q_b4bc73079788",
+  "subtype": "tf",
+  "question": "一般企業若僅進行內部員工訓練，應申請「訓練機構版」評核。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "b",
+  "explanation": "錯誤。一般企業進行內部員工訓練應申請「企業機構版」；「訓練機構版」適用於對外提供訓練之機構。",
+  "source": "作業要點：版本適用對象",
+  "topic": "評核版本",
+  "difficulty": "易",
+  "origin": "Dify",
+  "added_at": 1783480984354
+ },
+ {
+  "id": "q_53eb60ec0a85",
+  "subtype": "tf",
+  "question": "Kirkpatrick 四層次評估法在訓練機構版中是對應於指標 17。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "a",
+  "explanation": "正確。指標 17 確實對應 Kirkpatrick 四層次評估。",
+  "source": "訓練機構版評核表：指標17",
+  "topic": "評核制度",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480984354
+ },
+ {
+  "id": "q_fbeca69b3e86",
+  "question": "ADDIE 訓練設計模式中，不包含下列哪一個階段？",
+  "options": {
+   "a": "Analysis (分析)",
+   "b": "Design (設計)",
+   "c": "Development (發展)",
+   "d": "Distribution (配發)"
+  },
+  "answer": "d",
+  "explanation": "ADDIE 代表 Analysis(分析)、Design(設計)、Development(發展)、Implementation(執行)、Evaluation(評估)。Distribution 並非 ADDIE 的標準階段。",
+  "source": "訓練品質系統參考手冊：ADDIE 模式",
+  "topic": "理論基礎:ADDIE",
+  "difficulty": "易",
+  "origin": "Dify",
+  "added_at": 1783480996659
+ },
+ {
+  "id": "q_460aaf379881",
+  "question": "Kirkpatrick 四層次評估模式中，第一層次 (Level 1) 是評估什麼？",
+  "options": {
+   "a": "反應 (Reaction)",
+   "b": "學習 (Learning)",
+   "c": "行為 (Behavior)",
+   "d": "成果 (Results)"
+  },
+  "answer": "a",
+  "explanation": "Kirkpatrick 四層次依序為：1.反應(學員滿意度)、2.學習(知識技能獲得)、3.行為(應用於工作)、4.成果(組織績效)。",
+  "source": "企業機構版評核表：指標17說明",
+  "topic": "理論基礎:Kirkpatrick",
+  "difficulty": "易",
+  "origin": "Dify",
+  "added_at": 1783480996659
+ },
+ {
+  "id": "q_da20118d2042",
+  "question": "訓練需求分析 (TNA) 主要對應 TTQS PDDRO 五大構面中的哪一個？",
+  "options": {
+   "a": "計畫 (Plan)",
+   "b": "設計 (Design)",
+   "c": "執行 (Do)",
+   "d": "查核 (Review)"
+  },
+  "answer": "a",
+  "explanation": "訓練需求分析 (TNA) 是訓練規劃的基礎，屬於 PDDRO 中的「計畫 (Plan)」構面。",
+  "source": "企業機構版評核表：指標1",
+  "topic": "理論基礎:TNA",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480996659
+ },
+ {
+  "id": "q_b7cb56ebbb26",
+  "question": "在 TTQS 評核指標中，關於 Kirkpatrick 四層次評估的應用，主要對應哪一項指標？",
+  "options": {
+   "a": "指標 1",
+   "b": "指標 5",
+   "c": "指標 17",
+   "d": "指標 19"
+  },
+  "answer": "c",
+  "explanation": "指標 17 為「訓練成效評估之執行」，明確要求運用 Kirkpatrick 四層次進行評估。",
+  "source": "企業機構版評核表：指標17",
+  "topic": "理論基礎:Kirkpatrick",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480996659
+ },
+ {
+  "id": "q_66e0eec4d797",
+  "question": "Phillips 在 Kirkpatrick 的四層次基礎上，增加了第五層次 (Level 5)，請問這層次是指什麼？",
+  "options": {
+   "a": "回饋 (Feedback)",
+   "b": "投資報酬率 (ROI)",
+   "c": "轉移 (Transfer)",
+   "d": "長期影響 (Long-term Impact)"
+  },
+  "answer": "b",
+  "explanation": "Phillips 將 ROI (Return on Investment，投資報酬率) 定義為評估模式的第五層次，用於量化訓練的財務價值。",
+  "source": "訓練品質系統參考手冊：評估模式",
+  "topic": "理論基礎:Phillips ROI",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480996659
+ },
+ {
+  "id": "q_ad031e7291e9",
+  "question": "ADDIE 模式中的 Analysis (分析) 與 Design (設計) 階段，主要對應 TTQS PDDRO 的哪些構面？",
+  "options": {
+   "a": "計畫 (Plan) 與 設計 (Design)",
+   "b": "計畫 (Plan) 與 執行 (Do)",
+   "c": "設計 (Design) 與 查核 (Review)",
+   "d": "執行 (Do) 與 成果 (Outcome)"
+  },
+  "answer": "a",
+  "explanation": "ADDIE 的 Analysis 與 Design 階段皆屬於訓練規劃與架構建立過程，對應 TTQS 的「計畫 (Plan)」與「設計 (Design)」構面。",
+  "source": "訓練品質系統參考手冊：PDDRO 與 ADDIE 對照",
+  "topic": "理論基礎:ADDIE",
+  "difficulty": "難",
+  "origin": "Dify",
+  "added_at": 1783480996659
+ },
+ {
+  "id": "q_40faf156db84",
+  "question": "Kirkpatrick 四層次評估中，評估學員是否將學習到的知識與技能應用於工作現場，屬於第幾層次？",
+  "options": {
+   "a": "第一層次 (反應)",
+   "b": "第二層次 (學習)",
+   "c": "第三層次 (行為)",
+   "d": "第四層次 (成果)"
+  },
+  "answer": "c",
+  "explanation": "第三層次「行為」評估重點在於學員是否將訓練內容應用於實際工作場域中。",
+  "source": "企業機構版評核表：指標17說明",
+  "topic": "理論基礎:Kirkpatrick",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480996659
+ },
+ {
+  "id": "q_ae7ab4b80e1a",
+  "question": "進行訓練需求分析 (TNA) 時，通常建議從哪三個層次進行分析？",
+  "options": {
+   "a": "知識、技能、態度",
+   "b": "反應、學習、行為",
+   "c": "組織、工作、個人",
+   "d": "投入、過程、產出"
+  },
+  "answer": "c",
+  "explanation": "TNA 的經典分析架構為：組織分析 (Organizational Analysis)、工作分析 (Task/Job Analysis)、個人分析 (Individual/Person Analysis)。",
+  "source": "訓練品質系統參考手冊：訓練需求分析",
+  "topic": "理論基礎:TNA",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480996659
+ },
+ {
+  "id": "q_2ea21eab3340",
+  "subtype": "tf",
+  "question": "Kirkpatrick 四層次評估模式中，Level 2「學習」主要評估學員對課程的滿意度與講師表現。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "b",
+  "explanation": "錯誤。評估學員對課程滿意度與講師表現屬於 Level 1「反應」；Level 2「學習」評估的是學員知識、技能或態度的改變。",
+  "source": "企業機構版評核表：指標17說明",
+  "topic": "理論基礎:Kirkpatrick",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480996659
+ },
+ {
+  "id": "q_c21c522bdec4",
+  "subtype": "tf",
+  "question": "Phillips 的 ROI (投資報酬率) 評估屬於 Kirkpatrick 四層次評估模型的一部分。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "b",
+  "explanation": "錯誤。Kirkpatrick 原模式僅有四層次，ROI 是 Phillips 額外提出的第五層次 (Level 5)，並非原四層次的一部份。",
+  "source": "訓練品質系統參考手冊：評估模式",
+  "topic": "理論基礎:Phillips ROI",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480996659
+ },
+ {
+  "id": "q_69badfa4bcbb",
+  "subtype": "tf",
+  "question": "ADDIE 模式中的 Evaluation (評估) 階段，應僅在訓練結束後進行一次總結性評估。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "b",
+  "explanation": "錯誤。ADDIE 模式強調 Evaluation 是持續性的，應包含形成性評估 (設計/發展階段) 與總結性評估 (執行後)。",
+  "source": "訓練品質系統參考手冊：ADDIE 模式",
+  "topic": "理論基礎:ADDIE",
+  "difficulty": "難",
+  "origin": "Dify",
+  "added_at": 1783480996659
+ },
+ {
+  "id": "q_980f2589452b",
+  "subtype": "tf",
+  "question": "執行訓練需求分析 (TNA) 的目的之一，是為了釐清訓練是否為解決績效問題的有效方法。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "a",
+  "explanation": "正確。TNA 不僅是為了排課，更重要的是判斷績效問題是否源於訓練需求，還是其他因素（如系統、環境），避免無效訓練。",
+  "source": "訓練品質系統參考手冊：訓練需求分析",
+  "topic": "理論基礎:TNA",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783480996659
+ },
+ {
+  "id": "q_e9583bcd95c7",
+  "question": "依據 TTQS 企業機構版評核標準，取得「銅牌」的分數區間為何？",
+  "options": {
+   "a": "85.5 分以上",
+   "b": "74.5 分至 85 分",
+   "c": "63.5 分至 74 分",
+   "d": "53.5 分至 63 分"
+  },
+  "answer": "c",
+  "explanation": "金牌為 85.5 分以上；銀牌為 74.5 至 85 分；銅牌為 63.5 至 74 分；通過為 53.5 至 63 分。",
+  "source": "作業要點：附件三 等級分數標準",
+  "topic": "等級門檻",
+  "difficulty": "易",
+  "origin": "Dify",
+  "added_at": 1783481005458
+ },
+ {
+  "id": "q_f05e8ba7d457",
+  "question": "TTQS 評核計分的最小單位為何？",
+  "options": {
+   "a": "0.1 分",
+   "b": "0.5 分",
+   "c": "1.0 分",
+   "d": "2.0 分"
+  },
+  "answer": "b",
+  "explanation": "TTQS 評核計分採 1 至 5 級，最小計分單位為 0.5 分。",
+  "source": "企業機構版評核表：計分備註",
+  "topic": "計分標準",
+  "difficulty": "易",
+  "origin": "Dify",
+  "added_at": 1783481005458
+ },
+ {
+  "id": "q_257da5ca19bd",
+  "question": "在企業機構版評核中，關於成果（Outcome）構面（指標 17、18、19）的計分，若該指標未執行，應評為幾分？",
+  "options": {
+   "a": "1 分",
+   "b": "0.5 分",
+   "c": "0 分",
+   "d": "不予計分，不影響總分"
+  },
+  "answer": "c",
+  "explanation": "成果構面指標 17、18、19 若未執行，該指標分數為 0 分。",
+  "source": "企業機構版評核表：計分備註",
+  "topic": "計分標準",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783481005458
+ },
+ {
+  "id": "q_d0c608d74929",
+  "question": "針對中小企業所使用的「辦訓能力檢核表」，其合格標準為何？",
+  "options": {
+   "a": "50 分",
+   "b": "53.5 分",
+   "c": "60 分",
+   "d": "70 分"
+  },
+  "answer": "a",
+  "explanation": "辦訓能力檢核表與外訓版評核，合格分數均為 50 分，且不分等級。",
+  "source": "辦訓能力檢核表：說明",
+  "topic": "等級門檻",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783481005458
+ },
+ {
+  "id": "q_d8bb5325f7e9",
+  "subtype": "tf",
+  "question": "以下敘述正確或錯誤：在企業機構版評核中，分數為 74.0 分者，等級判定為銀牌。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "b",
+  "explanation": "錯誤。銀牌門檻為 74.5 分以上，74.0 分屬於銅牌（63.5 至 74 分）。",
+  "source": "作業要點：附件三 等級分數標準",
+  "topic": "等級門檻",
+  "difficulty": "中",
+  "origin": "Dify",
+  "added_at": 1783481005458
+ },
+ {
+  "id": "q_86f5c48f445f",
+  "subtype": "tf",
+  "question": "以下敘述正確或錯誤：企業機構版與訓練機構版在成果構面（指標 17-19）的計分上限完全相同。",
+  "options": {
+   "a": "正確",
+   "b": "錯誤"
+  },
+  "answer": "b",
+  "explanation": "錯誤。兩者計分上限不同。企業版指標 18/19 為 1-5 分、17 為 1-2 分；訓練機構版指標 18/19 為 1-4 分、17 為 1-3 分。",
+  "source": "企業機構版評核表與訓練機構版評核表差異說明",
+  "topic": "計分標準",
+  "difficulty": "難",
+  "origin": "Dify",
+  "added_at": 1783481005458
+ }
+]

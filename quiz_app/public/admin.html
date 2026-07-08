@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>久朝企業 · TTQS 測驗管理</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar">
+  <img src="assets/logo-cc-fan-red.png" alt="久朝企業">
+  <div class="title">久朝企業 <span class="dim">· TTQS 測驗管理</span></div>
+  <div class="spacer"></div>
+  <div class="token-row">
+    <input id="adminToken" type="password" placeholder="ADMIN_TOKEN(未設可留空)">
+  </div>
+</div>
+<div class="admin-layout">
+  <nav class="side-nav">
+    <div class="group">測驗管理</div>
+    <a href="#top" class="active">▦ 總覽</a>
+    <a href="#bank">🗎 題庫管理</a>
+    <a href="/" target="_blank">↗ 前台測驗頁</a>
+  </nav>
+  <main class="admin-main" id="top">
+    <div class="admin-head">
+      <h1>總覽</h1>
+      <button class="btn btn-ghost" id="btnCsv" style="padding:9px 16px;font-size:13px">⭳ 匯出成績 CSV</button>
+    </div>
+    <div class="stat-cards">
+      <div class="card stat-card"><span class="k">應試人次</span><span class="v" id="stAttempts">—</span><span class="sub up" id="stWeek"></span></div>
+      <div class="card stat-card"><span class="k">平均分數</span><span class="v" id="stAvg">—</span><span class="sub" id="stPassStd">及格標準 70 分</span></div>
+      <div class="card stat-card"><span class="k">及格率</span><span class="v" id="stPassRate">—</span><span class="sub" id="stPassN"></span></div>
+      <div class="card stat-card"><span class="k">題庫題數</span><span class="v" id="stPool">—</span><span class="sub" id="stPoolSplit"></span></div>
+    </div>
+
+    <div class="card gen-panel" id="bank">
+      <div class="field"><label>選擇題數</label><input id="genMcq" type="number" min="0" max="10" value="5"></div>
+      <div class="field"><label>是非題數</label><input id="genTf" type="number" min="0" max="10" value="5"></div>
+      <div class="field"><label>主題(選填)</label><input id="genTopic" placeholder="例:等級門檻與計分" style="width:220px"></div>
+      <div class="field"><label>難度</label>
+        <select id="genDiff"><option value="">混合</option><option>易</option><option>中</option><option>難</option></select>
+      </div>
+      <button class="btn btn-green" id="btnGen" style="padding:10px 16px;font-size:13px">✦ 從 Dify 產生題目</button>
+      <span class="gen-status" id="genStatus"></span>
+    </div>
+
+    <div class="card qb-table">
+      <div class="qb-head">
+        <div class="eyebrow">題庫 · 最近更新</div>
+        <input id="qSearch" placeholder="搜尋題目…">
+      </div>
+      <div class="qb-cols"><span>編號</span><span>題目</span><span>題型</span><span>主題</span><span>答對率</span><span></span></div>
+      <div id="qRows"></div>
+      <div class="qb-foot"><span id="qCount"></span></div>
+    </div>
+  </main>
+</div>
+<script src="admin.js"></script>
+</body>
+</html>

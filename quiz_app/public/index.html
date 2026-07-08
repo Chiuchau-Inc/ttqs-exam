@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>久朝企業 · TTQS 線上測驗</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;900&family=Noto+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== 首頁 ===== -->
+<div id="view-home">
+  <div class="topbar">
+    <img src="assets/logo-cc-fan-red.png" alt="久朝企業">
+    <div class="title">久朝企業 <span class="dim">· TTQS 線上測驗</span></div>
+    <div class="spacer"></div>
+    <div class="mono-dim">TTQS-2026-Q3</div>
+  </div>
+  <div class="hero">
+    <div>
+      <div class="eyebrow">TTQS 人才發展品質管理系統</div>
+      <h1>TTQS 線上測驗</h1>
+      <p style="margin:12px 0 0">本測驗為匿名測驗,不需註冊帳號。送出後系統立即批改並顯示成績,可查看每題解析。</p>
+    </div>
+    <div class="spec-strip" id="specStrip">
+      <div><span class="k">題數</span><span class="v" id="specCount">20 <small>題</small></span></div>
+      <div><span class="k">作答時間</span><span class="v" id="specTime">30 <small>分鐘</small></span></div>
+      <div><span class="k">及格分數</span><span class="v" id="specPass">70 <small>分</small></span></div>
+      <div><span class="k">題型</span><span class="v text">選擇題 · 是非題</span></div>
+    </div>
+    <div class="card rules">
+      <div class="eyebrow">測驗說明</div>
+      <ol>
+        <li><span>全部題目於同一頁作答,可自由捲動、修改答案。</span></li>
+        <li><span>倒數計時 30 分鐘,時間到系統將自動交卷。</span></li>
+        <li><span>選擇題每題 5 分、是非題每題 5 分,答對 14 題以上(70 分)為及格。</span></li>
+        <li><span>測驗為匿名制,暱稱僅用於成績顯示,不會記錄個人資料。</span></li>
+      </ol>
+    </div>
+    <div id="poolNotice" class="notice-bar hidden"></div>
+    <div class="start-row">
+      <div class="field">
+        <label for="nickname">暱稱或代號(選填)</label>
+        <input id="nickname" maxlength="40" placeholder="例:考生 A-017">
+      </div>
+      <button class="btn btn-green" id="btnStart">開始測驗 <span aria-hidden="true">›</span></button>
+    </div>
+  </div>
+  <div class="page-footer">
+    <span>久朝企業 ChiuChau Enterprise</span>
+    <span class="mono">題目由 Dify AI 題庫產生</span>
+  </div>
+</div>
+
+<!-- ===== 作答頁 ===== -->
+<div id="view-quiz" class="hidden">
+  <div class="topbar">
+    <img src="assets/logo-cc-fan-red.png" alt="久朝企業">
+    <div class="title">TTQS 線上測驗</div>
+    <div class="divider hide-m"></div>
+    <div class="mono-dim hide-m" id="quizName"></div>
+    <div class="spacer"></div>
+    <div class="timer"><span class="label hide-m">剩餘時間</span><span class="val" id="timerVal">30:00</span></div>
+    <div class="divider hide-m"></div>
+    <div class="answered hide-m">已作答 <b id="answeredN">0</b>/<span id="totalN">20</span></div>
+  </div>
+  <div class="progress-rail"><div id="progressBar"></div></div>
+  <div class="layout">
+    <div class="q-col" id="qCol"></div>
+    <div class="rail">
+      <div class="card panel">
+        <div class="eyebrow">作答總覽</div>
+        <div class="qmap" id="qMap"></div>
+        <div class="qmap-legend">
+          <span><i style="background:var(--green)"></i>已作答</span>
+          <span><i style="background:var(--card);border:1px solid var(--border)"></i>未作答</span>
+        </div>
+      </div>
+      <button class="btn btn-green" id="btnSubmit" style="width:100%">交卷並看成績</button>
+      <div class="hint" id="submitHint"></div>
+    </div>
+  </div>
+  <div class="mobile-bar">
+    <div class="hint" id="submitHintM"></div>
+    <button class="btn btn-green" id="btnSubmitM">交卷並看成績</button>
+  </div>
+</div>
+
+<!-- ===== 成績頁 ===== -->
+<div id="view-result" class="hidden">
+  <div class="topbar">
+    <img src="assets/logo-cc-fan-red.png" alt="久朝企業">
+    <div class="title">TTQS 線上測驗 <span class="dim">· 成績單</span></div>
+    <div class="spacer"></div>
+    <div class="mono-dim" id="resultTime"></div>
+  </div>
+  <div class="wrap">
+    <div class="card score-hero">
+      <div class="main">
+        <div class="eyebrow" id="resultWho">測驗結果</div>
+        <div class="big"><span class="n" id="scoreN">0</span><span class="of">/ 100</span></div>
+        <div style="display:flex;align-items:center;gap:10px;margin-top:8px">
+          <span class="pill" id="passPill"></span>
+          <span style="font-size:13px;color:var(--ink-3)">及格標準 <span id="passStd">70</span> 分</span>
+        </div>
+      </div>
+      <div class="side">
+        <div class="row"><span>答對題數</span><span class="v" id="okN"></span></div>
+        <div class="row"><span>選擇題</span><span class="v" id="mcqN"></span></div>
+        <div class="row"><span>是非題</span><span class="v" id="tfN"></span></div>
+        <div class="row total"><span>作答時間</span><span class="v" id="elapsedV"></span></div>
+      </div>
+    </div>
+    <div class="card result-map">
+      <div class="eyebrow">各題對錯</div>
+      <div class="rmap" id="rMap"></div>
+    </div>
+    <div class="actions">
+      <button class="btn btn-green" id="btnReview">查看答案解析</button>
+      <button class="btn btn-ghost" id="btnRetry">再測一次</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 解析頁 ===== -->
+<div id="view-review" class="hidden">
+  <div class="topbar">
+    <img src="assets/logo-cc-fan-red.png" alt="久朝企業">
+    <div class="title">TTQS 線上測驗 <span class="dim">· 答案解析</span></div>
+    <div class="spacer"></div>
+    <div class="mono-dim" id="reviewScore"></div>
+  </div>
+  <div class="wrap">
+    <div class="review-filter">
+      <button class="chip active" id="chipAll">全部</button>
+      <button class="chip" id="chipWrong">答錯</button>
+      <button class="dl" id="btnPrint">⭳ 下載成績單</button>
+    </div>
+    <div id="reviewList" style="display:flex;flex-direction:column;gap:20px"></div>
+    <div class="actions">
+      <button class="btn btn-ghost" id="btnBackResult">回成績單</button>
+      <button class="btn btn-green" id="btnRetry2">再測一次</button>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

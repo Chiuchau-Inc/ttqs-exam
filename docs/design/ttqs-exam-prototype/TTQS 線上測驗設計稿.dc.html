@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;900&family=Noto+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+  body { margin: 0; background: #E9E8E3; font-family: 'Noto Sans TC', sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: #4A7C59; text-decoration: none; }
+  a:hover { color: #2E4F38; text-decoration: underline; }
+</style>
+</helmet>
+
+<section style="display: flex; flex-direction: column; gap: 56px; padding: 48px;">
+
+  <!-- ============ ROW 1: 首頁 + 作答頁 ============ -->
+  <div style="display: flex; gap: 48px; align-items: flex-start; flex-wrap: wrap;">
+
+    <!-- ========== SCREEN 1 · 首頁 / 測驗說明 ========== -->
+    <div data-screen-label="01 首頁·測驗說明" style="display: flex; flex-direction: column; gap: 12px;">
+      <div style="font-family: 'Noto Sans Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #5A5A58;">01 · 首頁 / 測驗說明</div>
+      <div style="width: 1280px; background: #F5F4F0; border: 1px solid #D9D9D4; box-shadow: 0 2px 0 0 rgba(26,26,26,0.04), 0 12px 24px -6px rgba(26,26,26,0.12); overflow: hidden;">
+        <!-- top bar -->
+        <div style="height: 56px; background: #1A1A1A; color: #FFFFFF; display: flex; align-items: center; padding: 0 24px; gap: 12px;">
+          <img src="assets/logo-cc-fan-red.png" alt="CC" style="height: 28px; width: auto;">
+          <div style="font-size: 13px; font-weight: 600; letter-spacing: 0.02em;">久朝企業 <span style="opacity: 0.5; font-weight: 400;">· TTQS 線上測驗</span></div>
+          <div style="flex: 1;"></div>
+          <div style="font-family: 'Noto Sans Mono', monospace; font-size: 11px; color: rgba(255,255,255,0.6); letter-spacing: 0.08em; text-transform: uppercase;">TTQS-2026-Q3</div>
+        </div>
+        <!-- hero -->
+        <div style="max-width: 720px; margin: 0 auto; padding: 64px 32px 80px; display: flex; flex-direction: column; gap: 32px;">
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <div style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #4A7C59;">TTQS 人才發展品質管理系統</div>
+            <div style="font-size: 40px; font-weight: 600; line-height: 1.15; letter-spacing: -0.01em; color: #1A1A1A;">TTQS 線上測驗</div>
+            <div style="font-size: 15px; line-height: 1.65; color: #333333;">本測驗為匿名測驗,不需註冊帳號。送出後系統立即批改並顯示成績,可查看每題解析。</div>
+          </div>
+          <!-- spec strip -->
+          <div style="display: grid; grid-template-columns: repeat(4, 1fr); background: #FFFFFF; border: 1px solid #D9D9D4; border-radius: 4px;">
+            <div style="padding: 20px 24px; border-right: 1px solid #EAEAE5; display: flex; flex-direction: column; gap: 6px;">
+              <div style="font-family: 'Noto Sans Mono', monospace; font-size: 11px; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; color: #5A5A58;">題數</div>
+              <div style="font-family: 'Noto Sans Mono', monospace; font-size: 24px; font-weight: 600; color: #1A1A1A;">20 <span style="font-size: 12px; color: #8A8A86;">題</span></div>
+            </div>
+            <div style="padding: 20px 24px; border-right: 1px solid #EAEAE5; display: flex; flex-direction: column; gap: 6px;">
+              <div style="font-family: 'Noto Sans Mono', monospace; font-size: 11px; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; color: #5A5A58;">作答時間</div>
+              <div style="font-family: 'Noto Sans Mono', monospace; font-size: 24px; font-weight: 600; color: #1A1A1A;">30 <span style="font-size: 12px; color: #8A8A86;">分鐘</span></div>
+            </div>
+            <div style="padding: 20px 24px; border-right: 1px solid #EAEAE5; display: flex; flex-direction: column; gap: 6px;">
+              <div style="font-family: 'Noto Sans Mono', monospace; font-size: 11px; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; color: #5A5A58;">及格分數</div>
+              <div style="font-family: 'Noto Sans Mono', monospace; font-size: 24px; font-weight: 600; color: #1A1A1A;">70 <span style="font-size: 12px; color: #8A8A86;">分</span></div>
+            </div>
+            <div style="padding: 20px 24px; display: flex; flex-direction: column; gap: 6px;">
+              <div style="font-family: 'Noto Sans Mono', monospace; font-size: 11px; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; color: #5A5A58;">題型</div>
+              <div style="font-size: 15px; font-weight: 600; color: #1A1A1A; padding-top: 4px;">選擇題 · 是非題</div>
+            </div>
+          </div>
+          <!-- rules -->
+          <div style="background: #FFFFFF; border: 1px solid #D9D9D4; border-radius: 4px; padding: 24px;">
+            <div style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #4A7C59; margin-bottom: 16px;">測驗說明</div>
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+              <div style="display: flex; gap: 12px; align-items: baseline;">
+                <span style="font-family: 'Noto Sans Mono', monospace; font-size: 13px; color: #4A7C59; font-weight: 600;">1</span>
+                <span style="font-size: 15px; line-height: 1.65; color: #333333;">全部題目於同一頁作答,可自由捲動、修改答案。</span>
+              </div>
+              <div style="display: flex; gap: 12px; align-items: baseline;">
+                <span style="font-family: 'Noto Sans Mono', monospace; font-size: 13px; color: #4A7C59; font-weight: 600;">2</span>
+                <span style="font-size: 15px; line-height: 1.65; color: #333333;">倒數計時 30 分鐘,時間到系統將自動交卷。</span>
+              </div>
+              <div style="display: flex; gap: 12px; align-items: baseline;">
+                <span style="font-family: 'Noto Sans Mono', monospace; font-size: 13px; color: #4A7C59; font-weight: 600;">3</span>
+                <span style="font-size: 15px; line-height: 1.65; color: #333333;">選擇題每題 5 分、是非題每題 5 分,答對 14 題以上(70 分)為及格。</span>
+              </div>
+              <div style="display: flex; gap: 12px; align-items: baseline;">
+                <span style="font-family: 'Noto Sans Mono', monospace; font-size: 13px; color: #4A7C59; font-weight: 600;">4</span>
+                <span style="font-size: 15px; line-height: 1.65; color: #333333;">測驗為匿名制,暱稱僅用於成績顯示,不會記錄個人資料。</span>
+              </div>
+            </div>
+          </div>
+          <!-- start form -->
+          <div style="display: flex; gap: 16px; align-items: flex-end;">
+            <div style="display: flex; flex-direction: column; gap: 6px; flex: 1;">
+              <label style="font-family: 'Noto Sans Mono', monospace; font-size: 10px; color: #5A5A58; text-transform: uppercase; letter-spacing: 0.08em;">暱稱或代號(選填)</label>
+              <input value="考生 A-017" style="font-family: 'Noto Sans TC', sans-serif; font-size: 14px; padding: 11px 12px; border: 1px solid #D9D9D4; border-radius: 2px; background: #FFFFFF; color: #1A1A1A; outline: none;">
+            </div>
+            <div style="background: #4A7C59; color: #FFFFFF; font-size: 15px; font-weight: 600; padding: 12px 32px; border-radius: 4px; display: flex; align-items: center; gap: 8px; cursor: pointer;" style-hover="background: #3E6A4B;">
+              開始測驗
+              <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i>
+            </div>
+          </div>
+        </div>
+        <!-- footer -->
+        <div style="border-top: 1px solid #D9D9D4; padding: 16px 24px; display: flex; justify-content: space-between; align-items: center;">
+          <div style="font-size: 12px; color: #8A8A86;">久朝企業 ChiuChau Enterprise</div>
+          <div style="font-family: 'Noto Sans Mono', monospace; font-size: 11px; color: #8A8A86; letter-spacing: 0.04em;">題目由 Dify AI 題庫產生</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ ROW 2: 作答頁 desktop + mobile ============ -->
+  <div style="display: flex; gap: 48px; align-items: flex-start; flex-wrap: wrap;">
+
+    <!-- ========== SCREEN 2 · 作答頁 ========== -->
+    <div data-screen-label="02 作答頁" style="display: flex; flex-direction: column; gap: 12px;">
+      <div style="font-family: 'Noto Sans Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #5A5A58;">02 · 作答頁(單頁捲動)</div>
+      <div style="width: 1280px; background: #F5F4F0; border: 1px solid #D9D9D4; box-shadow: 0 2px 0 0 rgba(26,26,26,0.04), 0 12px 24px -6px rgba(26,26,26,0.12); overflow: hidden;">
+        <!-- sticky exam bar -->
+        <div style="height: 56px; background: #1A1A1A; color: #FFFFFF; display: flex; align-items: center; padding: 0 24px; gap: 16px;">
+          <img src="assets/logo-cc-fan-red.png" alt="CC" style="height: 28px; width: auto;">
+          <div style="font-size: 13px; font-weight: 600;">TTQS 線上測驗</div>
+          <div style="width: 1px; height: 20px; background: rgba(255,255,255,0.15);"></div>
+          <div style="font-size: 12px; color: rgba(255,255,255,0.6);">考生 A-017</div>
+          <div style="flex: 1;"></div>
+          <div style="display: flex; align-items: center; gap: 8px; font-family: 'Noto Sans Mono', monospace;">
+            <span style="font-size: 11px; color: rgba(255,255,255,0.6); text-transform: uppercase; letter-spacing: 0.08em;">剩餘時間</span>
+            <span style="font-size: 20px; font-weight: 600; color: #FFFFFF; letter-spacing: 0.02em;">23:47</span>
+          </div>
+          <div style="width: 1px; height: 20px; background: rgba(255,255,255,0.15);"></div>
+          <div style="font-family: 'Noto Sans Mono', monospace; font-size: 12px; color: rgba(255,255,255,0.8);">已作答 <span style="color: #FFFFFF; font-weight: 600;">12</span>/20</div>
+        </div>
+        <!-- progress hairline -->
+        <div style="height: 3px; background: #D9D9D4;"><div style="height: 3px; width: 60%; background: #4A7C59;"></div></div>
+
+        <div style="display: flex; gap: 32px; max-width: 1120px; margin: 0 auto; padding: 32px;">
+          <!-- questions column -->
+          <div style="flex: 1; display: flex; flex-direction: column; gap: 20px;">
+
+            <!-- Q1 answered choice -->
+            <div style="background: #FFFFFF; border: 1px solid #D9D9D4; border-radius: 4px; padding: 24px;">
+              <div style="display: flex; gap: 12px; align-items: baseline; margin-bottom: 16px;">
+                <span style="font-family: 'Noto Sans Mono', monospace; font-size: 13px; font-weight: 600; color: #4A7C59;">Q01</span>
+                <span style="font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #5A5A58; background: #EAEAE5; padding: 2px 8px; border-radius: 2px;">選擇題</span>
+                <span style="font-size: 16px; font-weight: 600; line-height: 1.5; color: #1A1A1A; flex: 1;">TTQS 訓練品質管理循環(PDDRO)之五大構面,不包含下列何者?</span>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 8px; padding-left: 44px;">
+                <div style="display: flex; align-items: center; gap: 12px; border: 1px solid #D9D9D4; border-radius: 4px; padding: 12px 16px; background: #FFFFFF; cursor: pointer;">
+                  <span style="width: 18px; height: 18px; border: 1.5px solid #8A8A86; border-radius: 50%; flex-shrink: 0;"></span>
+                  <span style="font-family: 'Noto Sans Mono', monospace; font-size: 13px; color: #5A5A58;">A</span>
+                  <span style="font-size: 15px; color: #333333;">計畫 Plan</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 12px; border: 1px solid #D9D9D4; border-radius: 4px; padding: 12px 16px; background: #FFFFFF; cursor: pointer;">
+                  <span style="width: 18px; height: 18px; border: 1.5px solid #8A8A86; border-radius: 50%; flex-shrink: 0;"></span>
+                  <span style="font-family: 'Noto Sans Mono', monospace; font-size: 13px; color: #5A5A58;">B</span>
+                  <span style="font-size: 15px; color: #333333;">設計 Design</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 12px; border: 2px solid #4A7C59; border-radius: 4px; padding: 11px 15px; background: #E8EFEA; cursor: pointer;">
+                  <span style="width: 18px; height: 18px; border: 5px solid #4A7C59; border-radius: 50%; flex-shrink: 0; background: #FFFFFF; box-sizing: border-box;"></span>
+                  <span style="font-family: 'Noto Sans Mono', monospace; font-size: 13px; font-weight: 600; color: #2E4F38;">C</span>
+                  <span style="font-size: 15px; font-weight: 600; color: #1A1A1A;">行銷 Marketing</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 12px; border: 1px solid #D9D9D4; border-radius: 4px; padding: 12px 16px; background: #FFFFFF; cursor: pointer;">
+                  <span style="width: 18px; height: 18px; border: 1.5px solid #8A8A86; border-radius: 50%; flex-shrink: 0;"></span>
+                  <span style="font-family: 'Noto Sans Mono', monospace; font-size: 13px; color: #5A5A58;">D</span>
+                  <span style="font-size: 15px; color: #333333;">成果 Outcome</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Q2 answered true/false -->
+            <div style="background: #FFFFFF; border: 1px solid #D9D9D4; border-radius: 4px; padding: 24px;">
+              <div style="display: flex; gap: 12px; align-items: baseline; margin-bottom: 16px;">
+                <span style="font-family: 'Noto Sans Mono', monospace; font-size: 13px; font-weight: 600; color: #4A7C59;">Q02</span>
+                <span style="font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #5A5A58; background: #EAEAE5; padding: 2px 8px; border-radius: 2px;">是非題</span>
+                <span style="font-size: 16px; font-weight: 600; line-height: 1.5; color: #1A1A1A; flex: 1;">TTQS 評核等第由高至低依序為:金牌、銀牌、銅牌、通過。</span>
+              </div>
+              <div style="display: flex; gap: 8px; padding-left: 44px;">
+                <div style="flex: 1; display: flex; align-items: center; justify-content: center; gap: 10px; border: 2px solid #4A7C59; border-radius: 4px; padding: 13px; background: #E8EFEA; cursor: pointer;">
+                  <span style="font-family: 'Noto Sans Mono', monospace; font-size: 18px; font-weight: 600; color: #2E4F38;">◯</span>
+                  <span style="font-size: 15px; font-weight: 600; color: #1A1A1A;">正確</span>
+                </div>
+                <div style="flex: 1; display: flex; align-items: center; justify-content: center; gap: 10px; border: 1px solid #D9D9D4; border-radius: 4px; padding: 14px; background: #FFFFFF; cursor: pointer;">
+                  <span style="font-family: 'Noto Sans Mono', monospace; font-size: 18px; color: #5A5A58;">✕</span>
+                  <span style="font-size: 15px; color: #333333;">錯誤</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Q3 unanswered choice -->
+            <div style="background: #FFFFFF; border: 1px solid #D9D9D4; border-radius: 4px; padding: 24px;">
+              <div style="display: flex; gap: 12px; align-items: baseline; margin-bottom: 16px;">
+                <span style="font-family: 'Noto Sans Mono', monospace; font-size: 13px; font-weight: 600; color: #4A7C59;">Q03</span>
+                <span style="font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #5A5A58; background: #EAEAE5; padding: 2px 8px; border-radius: 2px;">選擇題</span>
+                <span style="font-size: 16px; font-weight: 600; line-height: 1.5; color: #1A1A1A; flex: 1;">依據 TTQS 訓練機構版指標,「訓練需求分析」屬於哪一個構面?</span>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 8px; padding-left: 44px;">
+                <div style="display: flex; align-items: center; gap: 12px; border: 1px solid #D9D9D4; border-radius: 4px; padding: 12px 16px; background: #FFFFFF; cursor: pointer;">
+                  <span style="width: 18px; height: 18px; border: 1.5px solid #8A8A86; border-radius: 50%; flex-shrink: 0;"></span>
+                  <span style="font-family: 'Noto Sans Mono', monospace; font-size: 13px; color: #5A5A58;">A</span>
+                  <span style="font-size: 15px; color: #333333;">計畫 Plan</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 12px; border: 1px solid #D9D9D4; border-radius: 4px; padding: 12px 16px; background: #FFFFFF; cursor: pointer;">
+                  <span style="width: 18px; height: 18px; border: 1.5px solid #8A8A86; border-radius: 50%; flex-shrink: 0;"></span>
+                  <span style="font-family: 'Noto Sans Mono', monospace; font-size: 13px; color: #5A5A58;">B</span>
+                  <span style="font-size: 15px; color: #333333;">設計 Design</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 12px; border: 1px solid #D9D9D4; border-radius: 4px; padding: 12px 16px; background: #FFFFFF; cursor: pointer;">
+                  <span style="width: 18px; height: 18px; border: 1.5px solid #8A8A86; border-radius: 50%; flex-shrink: 0;"></span>
+                  <span style="font-family: 'Noto Sans Mono', monospace; font-size: 13px; color: #5A5A58;">C</span>
+                  <span style="font-size: 15px; color: #333333;">執行 Do</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 12px; border: 1px solid #D9D9D4; border-radius: 4px; padding: 12px 16px; background: #FFFFFF; cursor: pointer;">
+                  <span style="width: 18px; height: 18px; border: 1.5px solid #8A8A86; border-radius: 50%; flex-shrink: 0;"></span>
+                  <span style="font-family: 'Noto Sans Mono', monospace; font-size: 13px; color: #5A5A58;">D</span>
+                  <span style="font-size: 15px; color: #333333;">查核 Review</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Q4 unanswered true/false -->
+            <div style="background: #FFFFFF; border: 1px solid #D9D9D4; border-radius: 4px; padding: 24px;">
+              <div style="display: flex; gap: 12px; align-items: baseline; margin-bottom: 16px;">
+                <span style="font-family: 'Noto Sans Mono', monospace; font-size: 13px; font-weight: 600; color: #4A7C59;">Q04</span>
+                <span style="font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #5A5A58; background: #EAEAE5; padding: 2px 8px; border-radius: 2px;">是非題</span>
+                <span style="font-size: 16px; font-weight: 600; line-height: 1.5; color: #1A1A1A; flex: 1;">柯克派翠克(Kirkpatrick)四層次評估模式中,第二層次為「行為」。</span>
+              </div>
+              <div style="display: flex; gap: 8px; padding-left: 44px;">
+                <div style="flex: 1; display: flex; align-items: center; justify-content: center; gap: 10px; border: 1px solid #D9D9D4; border-radius: 4px; padding: 14px; background: #FFFFFF; cursor: pointer;">
+                  <span style="font-family: 'Noto Sans Mono', monospace; font-size: 18px; color: #5A5A58;">◯</span>
+                  <span style="font-size: 15px; color: #333333;">正確</span>
+                </div>
+                <div style="flex: 1; display: flex; align-items: center; justify-content: center; gap: 10px; border: 1px solid #D9D9D4; border-radius: 4px; padding: 14px; background: #FFFFFF; cursor: pointer;">
+                  <span style="font-family: 'Noto Sans Mono', monospace; font-size: 18px; color: #5A5A58;">✕</span>
+                  <span style="font-size: 15px; color: #333333;">錯誤</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- fade hint that list continues -->
+            <div style="height: 80px; background: linear-gradient(rgba(245,244,240,0), #F5F4F0); margin-top: -60px; pointer-events: none;"></div>
+          </div>
+
+          <!-- answer rail -->
+          <div style="width: 264px; flex-shrink: 0; display: flex; flex-direction: column; gap: 16px; position: sticky; top: 32px; align-self: flex-start;">
+            <div style="background: #FFFFFF; border: 1px solid #D9D9D4; border-radius: 4px; padding: 20px;">
+              <div style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #4A7C59; margin-bottom: 14px;">作答總覽</div>
+              <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px;">
+                <div style="height: 36px; display: flex; align-items: center; justify-content: center; background: #4A7C59; color: #FFFFFF; border-radius: 2px; font-family: 'Noto Sans Mono', monospace; font-size: 12px; font-weight: 600;">1</div>
+                <div style="height: 36px; display: flex; align-items: center; justify-content: center; background: #4A7C59; color: #FFFFFF; border-radius: 2px; font-family: 'Noto Sans Mono', monospace; font-size: 12px; font-weight: 600;">2</div>
+                <div style="height: 36px; display: flex; align-items: center; justify-content: center; background: #FFFFFF; color: #5A5A58; border: 1px solid #D9D9D4; border-radius: 2px; font-family: 'Noto Sans Mono', monospace; font-size: 12px;">3</div>
+                <div style="height: 36px; display: flex; align-items: center; justify-content: center; background: #FFFFFF; color: #5A5A58; border: 1px solid #D9D9D4; border-radius: 2px; font-family: 'Noto Sans Mono', monospace; font-size: 12px;">4</div>
+                <div style="height: 36px; display: flex; align-items: center; justify-content: center; background: #4A7C59; color: #FFFFFF; border-radius: 2px; font-family: 'Noto Sans Mono', monospace; font-size: 12px; font-weight: 600;">5</div>
+                <div style="height: 36px; display: flex; align-items: center; justify-content: center; background: #4A7C59; color: #FFFFFF; border-radius: 2px; font-family: 'Noto Sans Mono', monospace; font-size: 12px; font-weight: 600;">6</div>
+                <div style="height: 36px; display: flex; align-items: center; justify-content: center; background: #4A7C59; color: #FFFFFF; border-radius: 2px; font-family: 'Noto Sans Mono', monospace; font-size: 12px; font-weight: 600;">7</div>
+                <div style="height: 36px; display: flex; align-items: center; justify-content: center; background: #FFFFFF; color: #5A5A58; border: 1px solid #D9D9D4; border-radius: 2px; font-family: 'Noto Sans Mono', monospace; font-size: 12px;">8</div>
+                <div style="height: 36px; display: flex; align-items: center; justify-content: center; background: #4A7C59; color: #FFFFFF; border-radius: 2px; font-family: 'Noto Sans Mono', monospace; font-size: 12px; font-weight: 600;">9</div>
+                <div style="height: 36px; display: flex; align-items: center; justify-content: center; background: #4A7C59; color: #FFFFFF; border-radius: 2px; font-family: 'Noto Sans Mono', monospace; font-size: 12px; font-weight: 600;">10</div>
+                <div style="height: 36px; display: flex; align-items: center; justify-content: center; background: #4A7C59; color: #FFFFFF; border-radius: 2px; font-family: 'Noto Sans Mono', monospace; font-size: 12px; font-weight: 600;">11</div>
+                <div style="height: 36px; display: flex; align-items: center; justify-content: center; background: #FFFFFF; color: #5A5A58; border: 1px solid #D9D9D4; border-radius: 2px; font-family: 'Noto Sans Mono', monospace; font-size: 12px;">12</div>
+                <div style="height: 36px; display: flex; align-items: center; justify-content: center; background: #4A7C59; color: #FFFFFF; border-radius: 2px; font-family: 'Noto Sans Mono', monospace; font-size: 12px; font-weight: 600;">13</div>
+                <div style="height: 36px; display: flex; align-items: center; justify-content: center; background: #4A7C59; color: #FFFFFF; border-radius: 2px; font-family: 'Noto Sans Mono', monospace; font-size: 12px; font-weight: 600;">14</div>
+                <div style="height: 36px; display: flex; align-items: center; justify-content: center; background: #FFFFFF; color: #5A5A58; border: 1px solid #D9D9D4; border-radius: 2px; font-family: 'Noto Sans Mono', monospace; font-size: 12px;">15</div>
+                <div style="height: 36px; display: flex; align-items: center; justify-content: center; background: #4A7C59; color: #FFFFFF; border-radius: 2px; font-family: 'Noto Sans Mono', monospace; font-size: 12px; font-weight: 600;">16</div>
+                <div style="height: 36px; display: flex; align-items: center; justify-content: center; background: #FFFFFF; color: #5A5A58; border: 1px solid #D9D9D4; border-radius: 2px; font-family: 'Noto Sans Mono', monospace; font-size: 12px;">17</div>
+                <div style="height: 36px; display: flex; align-items: center; justify-content: center; background: #4A7C59; color: #FFFFFF; border-radius: 2px; font-family: 'Noto Sans Mono', monospace; font-size: 12px; font-weight: 600;">18</div>
+                <div style="height: 36px; display: flex; align-items: center; justify-content: center; background: #FFFFFF; color: #5A5A58; border: 1px solid #D9D9D4; border-radius: 2px; font-family: 'Noto Sans Mono', monospace; font-size: 12px;">19</div>
+                <div style="height: 36px; display: flex; align-items: center; justify-content: center; background: #FFFFFF; color: #5A5A58; border: 1px solid #D9D9D4; border-radius: 2px; font-family: 'Noto Sans Mono', monospace; font-size: 12px;">20</div>
+              </div>
+              <div style="display: flex; gap: 16px; margin-top: 14px; padding-top: 14px; border-top: 1px solid #EAEAE5;">
+                <div style="display: flex; align-items: center; gap: 6px; font-size: 12px; color: #5A5A58;"><span style="width: 10px; height: 10px; background: #4A7C59; border-radius: 2px;"></span>已作答</div>
+                <div style="display: flex; align-items: center; gap: 6px; font-size: 12px; color: #5A5A58;"><span style="width: 10px; height: 10px; background: #FFFFFF; border: 1px solid #D9D9D4; border-radius: 2px;"></span>未作答</div>
+              </div>
+            </div>
+            <div style="background: #4A7C59; color: #FFFFFF; font-size: 15px; font-weight: 600; padding: 14px; border-radius: 4px; text-align: center; cursor: pointer;" style-hover="background: #3E6A4B;">交卷並看成績</div>
+            <div style="font-size: 12px; color: #8A8A86; text-align: center; line-height: 1.5;">尚有 8 題未作答</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== SCREEN 2M · 作答頁 mobile ========== -->
+    <div data-screen-label="02M 作答頁 手機版" style="display: flex; flex-direction: column; gap: 12px;">
+      <div style="font-family: 'Noto Sans Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #5A5A58;">02M · 作答頁(手機 390px)</div>
+      <div style="width: 390px; background: #F5F4F0; border: 1px solid #D9D9D4; box-shadow: 0 2px 0 0 rgba(26,26,26,0.04), 0 12px 24px -6px rgba(26,26,26,0.12); overflow: hidden;">
+        <div style="background: #1A1A1A; color: #FFFFFF; display: flex; align-items: center; padding: 12px 16px; gap: 10px;">
+          <img src="assets/logo-cc-fan-red.png" alt="CC" style="height: 22px; width: auto;">
+          <div style="font-size: 12px; font-weight: 600;">TTQS 線上測驗</div>
+          <div style="flex: 1;"></div>
+          <div style="font-family: 'Noto Sans Mono', monospace; font-size: 16px; font-weight: 600;">23:47</div>
+        </div>
+        <div style="height: 3px; background: #D9D9D4;"><div style="height: 3px; width: 60%; background: #4A7C59;"></div></div>
+        <div style="padding: 16px; display: flex; flex-direction: column; gap: 12px;">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div style="font-family: 'Noto Sans Mono', monospace; font-size: 12px; color: #5A5A58;">已作答 <span style="color: #1A1A1A; font-weight: 600;">12</span>/20</div>
+            <div style="font-size: 12px; color: #4A7C59; font-weight: 600;">作答總覽</div>
+          </div>
+          <div style="background: #FFFFFF; border: 1px solid #D9D9D4; border-radius: 4px; padding: 16px;">
+            <div style="display: flex; gap: 8px; align-items: center; margin-bottom: 10px;">
+              <span style="font-family: 'Noto Sans Mono', monospace; font-size: 12px; font-weight: 600; color: #4A7C59;">Q01</span>
+              <span style="font-size: 10px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #5A5A58; background: #EAEAE5; padding: 2px 6px; border-radius: 2px;">選擇題</span>
+            </div>
+            <div style="font-size: 15px; font-weight: 600; line-height: 1.5; color: #1A1A1A; margin-bottom: 12px;">TTQS 訓練品質管理循環(PDDRO)之五大構面,不包含下列何者?</div>
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+              <div style="display: flex; align-items: center; gap: 10px; border: 1px solid #D9D9D4; border-radius: 4px; padding: 12px; min-height: 44px; box-sizing: border-box;">
+                <span style="font-family: 'Noto Sans Mono', monospace; font-size: 12px; color: #5A5A58;">A</span>
+                <span style="font-size: 14px; color: #333333;">計畫 Plan</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px; border: 1px solid #D9D9D4; border-radius: 4px; padding: 12px; min-height: 44px; box-sizing: border-box;">
+                <span style="font-family: 'Noto Sans Mono', monospace; font-size: 12px; color: #5A5A58;">B</span>
+                <span style="font-size: 14px; color: #333333;">設計 Design</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px; border: 2px solid #4A7C59; border-radius: 4px; padding: 11px; background: #E8EFEA; min-height: 44px; box-sizing: border-box;">
+                <span style="font-family: 'Noto Sans Mono', monospace; font-size: 12px; font-weight: 600; color: #2E4F38;">C</span>
+                <span style="font-size: 14px; font-weight: 600; color: #1A1A1A;">行銷 Marketing</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px; border: 1px solid #D9D9D4; border-radius: 4px; padding: 12px; min-height: 44px; box-sizing: border-box;">
+                <span style="font-family: 'Noto Sans Mono', monospace; font-size: 12px; color: #5A5A58;">D</span>
+                <span style="font-size: 14px; color: #333333;">成果 Outcome</span>
+              </div>
+            </div>
+          </div>
+          <div style="background: #FFFFFF; border: 1px solid #D9D9D4; border-radius: 4px; padding: 16px;">
+            <div style="display: flex; gap: 8px; align-items: center; margin-bottom: 10px;">
+              <span style="font-family: 'Noto Sans Mono', monospace; font-size: 12px; font-weight: 600; color: #4A7C59;">Q02</span>
+              <span style="font-size: 10px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #5A5A58; background: #EAEAE5; padding: 2px 6px; border-radius: 2px;">是非題</span>
+            </div>
+            <div style="font-size: 15px; font-weight: 600; line-height: 1.5; color: #1A1A1A; margin-bottom: 12px;">TTQS 評核等第由高至低依序為:金牌、銀牌、銅牌、通過。</div>
+            <div style="display: flex; gap: 8px;">
+              <div style="flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; border: 2px solid #4A7C59; border-radius: 4px; padding: 12px; background: #E8EFEA; min-height: 44px; box-sizing: border-box;">
+                <span style="font-family: 'Noto Sans Mono', monospace; font-size: 16px; font-weight: 600; color: #2E4F38;">◯</span>
+                <span style="font-size: 14px; font-weight: 600; color: #1A1A1A;">正確</span>
+              </div>
+              <div style="flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; border: 1px solid #D9D9D4; border-radius: 4px; padding: 12px; min-height: 44px; box-sizing: border-box;">
+                <span style="font-family: 'Noto Sans Mono', monospace; font-size: 16px; color: #5A5A58;">✕</span>
+                <span style="font-size: 14px; color: #333333;">錯誤</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- sticky bottom submit -->
+        <div style="border-top: 1px solid #D9D9D4; background: #FFFFFF; padding: 12px 16px; display: flex; gap: 12px; align-items: center;">
+          <div style="font-size: 12px; color: #8A8A86; flex: 1; line-height: 1.4;">尚有 8 題<br>未作答</div>
+          <div style="background: #4A7C59; color: #FFFFFF; font-size: 14px; font-weight: 600; padding: 12px 24px; border-radius: 4px; min-height: 44px; display: flex; align-items: center; box-sizing: border-box;">交卷並看成績</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ ROW 3: 成績 + 解析 ============ -->
+  <div style="display: flex; gap: 48px; align-items: flex-start; flex-wrap: wrap;">
+
+    <!-- ========== SCREEN 3 · 成績結果頁 ========== -->
+    <div data-screen-label="03 成績結果頁" style="display: flex; flex-direction: column; gap: 12px;">
+      <div style="font-family: 'Noto Sans Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #5A5A58;">03 · 成績結果頁</div>
+      <div style="width: 1280px; background: #F5F4F0; border: 1px solid #D9D9D4; box-shadow: 0 2px 0 0 rgba(26,26,26,0.04), 0 12px 24px -6px rgba(26,26,26,0.12); overflow: hidden;">
+        <div style="height: 56px; background: #1A1A1A; color: #FFFFFF; display: flex; align-items: center; padding: 0 24px; gap: 12px;">
+          <img src="assets/logo-cc-fan-red.png" alt="CC" style="height: 28px; width: auto;">
+          <div style="font-size: 13px; font-weight: 600;">TTQS 線上測驗 <span style="opacity: 0.5; font-weight: 400;">· 成績單</span></div>
+          <div style="flex: 1;"></div>
+          <div style="font-family: 'Noto Sans Mono', monospace; font-size: 11px; color: rgba(255,255,255,0.6); letter-spacing: 0.08em;">2026-07-08 14:32</div>
+        </div>
+        <div style="max-width: 880px; margin: 0 auto; padding: 56px 32px 64px; display: flex; flex-direction: column; gap: 32px;">
+          <!-- score hero -->
+          <div style="background: #FFFFFF; border: 1px solid #D9D9D4; border-radius: 4px; display: flex;">
+            <div style="flex: 1; padding: 40px; display: flex; flex-direction: column; gap: 8px; border-right: 1px solid #EAEAE5;">
+              <div style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #4A7C59;">測驗結果 · 考生 A-017</div>
+              <div style="display: flex; align-items: baseline; gap: 12px;">
+                <span style="font-family: 'Noto Sans Mono', monospace; font-size: 88px; font-weight: 600; line-height: 1; color: #1A1A1A;">85</span>
+                <span style="font-family: 'Noto Sans Mono', monospace; font-size: 20px; color: #8A8A86;">/ 100</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px; margin-top: 8px;">
+                <span style="display: inline-flex; align-items: center; gap: 6px; background: #E2ECE6; color: #2E7D4F; font-size: 13px; font-weight: 600; padding: 4px 14px; border-radius: 999px;">
+                  <i data-lucide="circle-check" style="width: 14px; height: 14px;"></i>及格
+                </span>
+                <span style="font-size: 13px; color: #5A5A58;">及格標準 70 分</span>
+              </div>
+            </div>
+            <div style="width: 320px; padding: 40px; display: flex; flex-direction: column; justify-content: center; gap: 18px;">
+              <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                <span style="font-size: 13px; color: #5A5A58;">答對題數</span>
+                <span style="font-family: 'Noto Sans Mono', monospace; font-size: 16px; font-weight: 600; color: #1A1A1A;">17 <span style="font-size: 12px; color: #8A8A86;">/ 20</span></span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                <span style="font-size: 13px; color: #5A5A58;">選擇題</span>
+                <span style="font-family: 'Noto Sans Mono', monospace; font-size: 16px; font-weight: 600; color: #1A1A1A;">10 <span style="font-size: 12px; color: #8A8A86;">/ 12</span></span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                <span style="font-size: 13px; color: #5A5A58;">是非題</span>
+                <span style="font-family: 'Noto Sans Mono', monospace; font-size: 16px; font-weight: 600; color: #1A1A1A;">7 <span style="font-size: 12px; color: #8A8A86;">/ 8</span></span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: baseline; padding-top: 14px; border-top: 1px solid #EAEAE5;">
+                <span style="font-size: 13px; color: #5A5A58;">作答時間</span>
+                <span style="font-family: 'Noto Sans Mono', monospace; font-size: 16px; font-weight: 600; color: #1A1A1A;">21:34</span>
+              </div>
+            </div>
+          </div>
+          <!-- per-question map -->
+          <div style="background: #FFFFFF; border: 1px solid #D9D9D4; border-radius: 4px; padding: 24px;">
+            <div style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #4A7C59; margin-bottom: 16px;">各題對錯</div>
+            <div style="display: grid; grid-template-columns: repeat(10, 1fr); gap: 8px;">
+              <div style="height: 44px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #E2ECE6; border-radius: 2px;"><span style="font-family: 'Noto Sans Mono', monospace; font-size: 11px; color: #2E7D4F;">1</span><i data-lucide="check" style="width: 13px; height: 13px; color: #2E7D4F;"></i></div>
+              <div style="height: 44px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #E2ECE6; border-radius: 2px;"><span style="font-family: 'Noto Sans Mono', monospace; font-size: 11px; color: #2E7D4F;">2</span><i data-lucide="check" style="width: 13px; height: 13px; color: #2E7D4F;"></i></div>
+              <div style="height: 44px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #F5DEDA; border-radius: 2px;"><span style="font-family: 'Noto Sans Mono', monospace; font-size: 11px; color: #C8321F;">3</span><i data-lucide="x" style="width: 13px; height: 13px; color: #C8321F;"></i></div>
+              <div style="height: 44px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #E2ECE6; border-radius: 2px;"><span style="font-family: 'Noto Sans Mono', monospace; font-size: 11px; color: #2E7D4F;">4</span><i data-lucide="check" style="width: 13px; height: 13px; color: #2E7D4F;"></i></div>
+              <div style="height: 44px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #E2ECE6; border-radius: 2px;"><span style="font-family: 'Noto Sans Mono', monospace; font-size: 11px; color: #2E7D4F;">5</span><i data-lucide="check" style="width: 13px; height: 13px; color: #2E7D4F;"></i></div>
+              <div style="height: 44px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #E2ECE6; border-radius: 2px;"><span style="font-family: 'Noto Sans Mono', monospace; font-size: 11px; color: #2E7D4F;">6</span><i data-lucide="check" style="width: 13px; height: 13px; color: #2E7D4F;"></i></div>
+              <div style="height: 44px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #E2ECE6; border-radius: 2px;"><span style="font-family: 'Noto Sans Mono', monospace; font-size: 11px; color: #2E7D4F;">7</span><i data-lucide="check" style="width: 13px; height: 13px; color: #2E7D4F;"></i></div>
+              <div style="height: 44px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #F5DEDA; border-radius: 2px;"><span style="font-family: 'Noto Sans Mono', monospace; font-size: 11px; color: #C8321F;">8</span><i data-lucide="x" style="width: 13px; height: 13px; color: #C8321F;"></i></div>
+              <div style="height: 44px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #E2ECE6; border-radius: 2px;"><span style="font-family: 'Noto Sans Mono', monospace; font-size: 11px; color: #2E7D4F;">9</span><i data-lucide="check" style="width: 13px; height: 13px; color: #2E7D4F;"></i></div>
+              <div style="height: 44px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #E2ECE6; border-radius: 2px;"><span style="font-family: 'Noto Sans Mono', monospace; font-size: 11px; color: #2E7D4F;">10</span><i data-lucide="check" style="width: 13px; height: 13px; color: #2E7D4F;"></i></div>
+              <div style="height: 44px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #E2ECE6; border-radius: 2px;"><span style="font-family: 'Noto Sans Mono', monospace; font-size: 11px; color: #2E7D4F;">11</span><i data-lucide="check" style="width: 13px; height: 13px; color: #2E7D4F;"></i></div>
+              <div style="height: 44px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #E2ECE6; border-radius: 2px;"><span style="font-family: 'Noto Sans Mono', monospace; font-size: 11px; color: #2E7D4F;">12</span><i data-lucide="check" style="width: 13px; height: 13px; color: #2E7D4F;"></i></div>
+              <div style="height: 44px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #E2ECE6; border-radius: 2px;"><span style="font-family: 'Noto Sans Mono', monospace; font-size: 11px; color: #2E7D4F;">13</span><i data-lucide="check" style="width: 13px; height: 13px; color: #2E7D4F;"></i></div>
+              <div style="height: 44px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #F5DEDA; border-radius: 2px;"><span style="font-family: 'Noto Sans Mono', monospace; font-size: 11px; color: #C8321F;">14</span><i data-lucide="x" style="width: 13px; height: 13px; color: #C8321F;"></i></div>
+              <div style="height: 44px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #E2ECE6; border-radius: 2px;"><span style="font-family: 'Noto Sans Mono', monospace; font-size: 11px; color: #2E7D4F;">15</span><i data-lucide="check" style="width: 13px; height: 13px; color: #2E7D4F;"></i></div>
+              <div style="height: 44px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #E2ECE6; border-radius: 2px;"><span style="font-family: 'Noto Sans Mono', monospace; font-size: 11px; color: #2E7D4F;">16</span><i data-lucide="check" style="width: 13px; height: 13px; color: #2E7D4F;"></i></div>
+              <div style="height: 44px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #E2ECE6; border-radius: 2px;"><span style="font-family: 'Noto Sans Mono', monospace; font-size: 11px; color: #2E7D4F;">17</span><i data-lucide="check" style="width: 13px; height: 13px; color: #2E7D4F;"></i></div>
+              <div style="height: 44px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #E2ECE6; border-radius: 2px;"><span style="font-family: 'Noto Sans Mono', monospace; font-size: 11px; color: #2E7D4F;">18</span><i data-lucide="check" style="width: 13px; height: 13px; color: #2E7D4F;"></i></div>
+              <div style="height: 44px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #E2ECE6; border-radius: 2px;"><span style="font-family: 'Noto Sans Mono', monospace; font-size: 11px; color: #2E7D4F;">19</span><i data-lucide="check" style="width: 13px; height: 13px; color: #2E7D4F;"></i></div>
+              <div style="height: 44px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #E2ECE6; border-radius: 2px;"><span style="font-family: 'Noto Sans Mono', monospace; font-size: 11px; color: #2E7D4F;">20</span><i data-lucide="check" style="width: 13px; height: 13px; color: #2E7D4F;"></i></div>
+            </div>
+          </div>
+          <!-- actions -->
+          <div style="display: flex; gap: 12px; justify-content: center;">
+            <div style="background: #4A7C59; color: #FFFFFF; font-size: 15px; font-weight: 600; padding: 12px 32px; border-radius: 4px; cursor: pointer;" style-hover="background: #3E6A4B;">查看答案解析</div>
+            <div style="background: #FFFFFF; color: #1A1A1A; border: 1px solid #D9D9D4; font-size: 15px; font-weight: 500; padding: 12px 32px; border-radius: 4px; box-sizing: border-box; cursor: pointer;" style-hover="background: #EAEAE5;">再測一次</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ ROW 4: 解析頁 ============ -->
+  <div style="display: flex; gap: 48px; align-items: flex-start; flex-wrap: wrap;">
+
+    <!-- ========== SCREEN 4 · 答案解析頁 ========== -->
+    <div data-screen-label="04 答案解析頁" style="display: flex; flex-direction: column; gap: 12px;">
+      <div style="font-family: 'Noto Sans Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #5A5A58;">04 · 答案解析 / 檢討頁</div>
+      <div style="width: 1280px; background: #F5F4F0; border: 1px solid #D9D9D4; box-shadow: 0 2px 0 0 rgba(26,26,26,0.04), 0 12px 24px -6px rgba(26,26,26,0.12); overflow: hidden;">
+        <div style="height: 56px; background: #1A1A1A; color: #FFFFFF; display: flex; align-items: center; padding: 0 24px; gap: 12px;">
+          <img src="assets/logo-cc-fan-red.png" alt="CC" style="height: 28px; width: auto;">
+          <div style="font-size: 13px; font-weight: 600;">TTQS 線上測驗 <span style="opacity: 0.5; font-weight: 400;">· 答案解析</span></div>
+          <div style="flex: 1;"></div>
+          <div style="font-family: 'Noto Sans Mono', monospace; font-size: 12px; color: rgba(255,255,255,0.8);">85 / 100 · 及格</div>
+        </div>
+        <div style="max-width: 880px; margin: 0 auto; padding: 32px 32px 56px; display: flex; flex-direction: column; gap: 20px;">
+          <!-- filter -->
+          <div style="display: flex; gap: 8px; align-items: center;">
+            <div style="background: #1A1A1A; color: #FFFFFF; font-size: 13px; font-weight: 600; padding: 7px 16px; border-radius: 999px; cursor: pointer;">全部 20</div>
+            <div style="background: #FFFFFF; color: #5A5A58; border: 1px solid #D9D9D4; font-size: 13px; padding: 6px 15px; border-radius: 999px; cursor: pointer;">答錯 3</div>
+            <div style="flex: 1;"></div>
+            <div style="display: flex; align-items: center; gap: 6px; font-size: 13px; color: #4A7C59; font-weight: 500; cursor: pointer;">
+              <i data-lucide="download" style="width: 15px; height: 15px;"></i>下載成績單
+            </div>
+          </div>
+
+          <!-- correct item -->
+          <div style="background: #FFFFFF; border: 1px solid #D9D9D4; border-radius: 4px; padding: 24px;">
+            <div style="display: flex; gap: 12px; align-items: baseline; margin-bottom: 16px;">
+              <span style="font-family: 'Noto Sans Mono', monospace; font-size: 13px; font-weight: 600; color: #4A7C59;">Q01</span>
+              <span style="font-size: 16px; font-weight: 600; line-height: 1.5; color: #1A1A1A; flex: 1;">TTQS 訓練品質管理循環(PDDRO)之五大構面,不包含下列何者?</span>
+              <span style="display: inline-flex; align-items: center; gap: 5px; background: #E2ECE6; color: #2E7D4F; font-size: 12px; font-weight: 600; padding: 3px 12px; border-radius: 999px; flex-shrink: 0;">
+                <i data-lucide="circle-check" style="width: 13px; height: 13px;"></i>答對
+              </span>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 8px; padding-left: 44px; margin-bottom: 16px;">
+              <div style="display: flex; align-items: center; gap: 12px; border: 2px solid #2E7D4F; border-radius: 4px; padding: 11px 15px; background: #E2ECE6;">
+                <i data-lucide="check" style="width: 16px; height: 16px; color: #2E7D4F; flex-shrink: 0;"></i>
+                <span style="font-family: 'Noto Sans Mono', monospace; font-size: 13px; font-weight: 600; color: #2E7D4F;">C</span>
+                <span style="font-size: 15px; font-weight: 600; color: #1A1A1A; flex: 1;">行銷 Marketing</span>
+                <span style="font-size: 12px; color: #2E7D4F; font-weight: 600;">你的答案 · 正確答案</span>
+              </div>
+            </div>
+            <div style="margin-left: 44px; border-top: 1px solid #EAEAE5; padding-top: 14px; display: flex; gap: 10px;">
+              <span style="font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #4A7C59; flex-shrink: 0; padding-top: 2px;">解析</span>
+              <span style="font-size: 14px; line-height: 1.65; color: #333333;">TTQS 五大構面為計畫(Plan)、設計(Design)、執行(Do)、查核(Review)、成果(Outcome),合稱 PDDRO,不含行銷。</span>
+            </div>
+          </div>
+
+          <!-- wrong item -->
+          <div style="background: #FFFFFF; border: 1px solid #D9D9D4; border-radius: 4px; padding: 24px;">
+            <div style="display: flex; gap: 12px; align-items: baseline; margin-bottom: 16px;">
+              <span style="font-family: 'Noto Sans Mono', monospace; font-size: 13px; font-weight: 600; color: #4A7C59;">Q03</span>
+              <span style="font-size: 16px; font-weight: 600; line-height: 1.5; color: #1A1A1A; flex: 1;">依據 TTQS 訓練機構版指標,「訓練需求分析」屬於哪一個構面?</span>
+              <span style="display: inline-flex; align-items: center; gap: 5px; background: #F5DEDA; color: #C8321F; font-size: 12px; font-weight: 600; padding: 3px 12px; border-radius: 999px; flex-shrink: 0;">
+                <i data-lucide="circle-x" style="width: 13px; height: 13px;"></i>答錯
+              </span>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 8px; padding-left: 44px; margin-bottom: 16px;">
+              <div style="display: flex; align-items: center; gap: 12px; border: 2px solid #C8321F; border-radius: 4px; padding: 11px 15px; background: #F5DEDA;">
+                <i data-lucide="x" style="width: 16px; height: 16px; color: #C8321F; flex-shrink: 0;"></i>
+                <span style="font-family: 'Noto Sans Mono', monospace; font-size: 13px; font-weight: 600; color: #C8321F;">C</span>
+                <span style="font-size: 15px; color: #1A1A1A; flex: 1;">執行 Do</span>
+                <span style="font-size: 12px; color: #C8321F; font-weight: 600;">你的答案</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 12px; border: 2px solid #2E7D4F; border-radius: 4px; padding: 11px 15px; background: #E2ECE6;">
+                <i data-lucide="check" style="width: 16px; height: 16px; color: #2E7D4F; flex-shrink: 0;"></i>
+                <span style="font-family: 'Noto Sans Mono', monospace; font-size: 13px; font-weight: 600; color: #2E7D4F;">A</span>
+                <span style="font-size: 15px; font-weight: 600; color: #1A1A1A; flex: 1;">計畫 Plan</span>
+                <span style="font-size: 12px; color: #2E7D4F; font-weight: 600;">正確答案</span>
+              </div>
+            </div>
+            <div style="margin-left: 44px; border-top: 1px solid #EAEAE5; padding-top: 14px; display: flex; gap: 10px;">
+              <span style="font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #4A7C59; flex-shrink: 0; padding-top: 2px;">解析</span>
+              <span style="font-size: 14px; line-height: 1.65; color: #333333;">訓練需求分析用於確認訓練方向與目標,屬於「計畫(Plan)」構面的核心指標;「執行(Do)」構面關注的是訓練的實施與紀錄。</span>
+            </div>
+          </div>
+
+          <!-- correct T/F item -->
+          <div style="background: #FFFFFF; border: 1px solid #D9D9D4; border-radius: 4px; padding: 24px;">
+            <div style="display: flex; gap: 12px; align-items: baseline; margin-bottom: 16px;">
+              <span style="font-family: 'Noto Sans Mono', monospace; font-size: 13px; font-weight: 600; color: #4A7C59;">Q04</span>
+              <span style="font-size: 16px; font-weight: 600; line-height: 1.5; color: #1A1A1A; flex: 1;">柯克派翠克(Kirkpatrick)四層次評估模式中,第二層次為「行為」。</span>
+              <span style="display: inline-flex; align-items: center; gap: 5px; background: #E2ECE6; color: #2E7D4F; font-size: 12px; font-weight: 600; padding: 3px 12px; border-radius: 999px; flex-shrink: 0;">
+                <i data-lucide="circle-check" style="width: 13px; height: 13px;"></i>答對
+              </span>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 8px; padding-left: 44px; margin-bottom: 16px;">
+              <div style="display: flex; align-items: center; gap: 12px; border: 2px solid #2E7D4F; border-radius: 4px; padding: 11px 15px; background: #E2ECE6;">
+                <i data-lucide="check" style="width: 16px; height: 16px; color: #2E7D4F; flex-shrink: 0;"></i>
+                <span style="font-family: 'Noto Sans Mono', monospace; font-size: 15px; font-weight: 600; color: #2E7D4F;">✕</span>
+                <span style="font-size: 15px; font-weight: 600; color: #1A1A1A; flex: 1;">錯誤</span>
+                <span style="font-size: 12px; color: #2E7D4F; font-weight: 600;">你的答案 · 正確答案</span>
+              </div>
+            </div>
+            <div style="margin-left: 44px; border-top: 1px solid #EAEAE5; padding-top: 14px; display: flex; gap: 10px;">
+              <span style="font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #4A7C59; flex-shrink: 0; padding-top: 2px;">解析</span>
+              <span style="font-size: 14px; line-height: 1.65; color: #333333;">四層次依序為:反應(Reaction)、學習(Learning)、行為(Behavior)、成果(Results)。第二層次為「學習」,「行為」是第三層次。</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ ROW 5: 管理後台 ============ -->
+  <div style="display: flex; gap: 48px; align-items: flex-start; flex-wrap: wrap;">
+
+    <!-- ========== SCREEN 5 · 管理後台 ========== -->
+    <div data-screen-label="05 管理後台" style="display: flex; flex-direction: column; gap: 12px;">
+      <div style="font-family: 'Noto Sans Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #5A5A58;">05 · 管理後台(題庫與統計)</div>
+      <div style="width: 1280px; background: #F5F4F0; border: 1px solid #D9D9D4; box-shadow: 0 2px 0 0 rgba(26,26,26,0.04), 0 12px 24px -6px rgba(26,26,26,0.12); overflow: hidden;">
+        <div style="height: 56px; background: #1A1A1A; color: #FFFFFF; display: flex; align-items: center; padding: 0 20px; gap: 12px;">
+          <img src="assets/logo-cc-fan-red.png" alt="CC" style="height: 28px; width: auto;">
+          <div style="font-size: 13px; font-weight: 600;">久朝企業 <span style="opacity: 0.5; font-weight: 400;">· TTQS 測驗管理</span></div>
+          <div style="flex: 1;"></div>
+          <i data-lucide="bell" style="width: 18px; height: 18px; color: rgba(255,255,255,0.8);"></i>
+          <div style="width: 28px; height: 28px; border-radius: 50%; background: #4A7C59; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 600;">管</div>
+        </div>
+        <div style="display: flex;">
+          <!-- side nav -->
+          <div style="width: 200px; background: #FAFAF7; border-right: 1px solid #D9D9D4; padding: 20px 0; flex-shrink: 0;">
+            <div style="padding: 0 20px 12px; font-family: 'Noto Sans Mono', monospace; font-size: 10px; font-weight: 600; color: #8A8A86; text-transform: uppercase; letter-spacing: 0.08em;">測驗管理</div>
+            <div style="display: flex; align-items: center; gap: 10px; padding: 9px 20px 9px 18px; font-size: 13px; color: #1A1A1A; font-weight: 600; background: #E8EFEA; border-left: 2px solid #4A7C59; cursor: pointer;">
+              <i data-lucide="layout-grid" style="width: 16px; height: 16px;"></i><span>總覽</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px; padding: 9px 20px; font-size: 13px; color: #5A5A58; border-left: 2px solid transparent; cursor: pointer;">
+              <i data-lucide="file-text" style="width: 16px; height: 16px;"></i><span>題庫管理</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px; padding: 9px 20px; font-size: 13px; color: #5A5A58; border-left: 2px solid transparent; cursor: pointer;">
+              <i data-lucide="settings" style="width: 16px; height: 16px;"></i><span>測驗設定</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px; padding: 9px 20px; font-size: 13px; color: #5A5A58; border-left: 2px solid transparent; cursor: pointer;">
+              <i data-lucide="users" style="width: 16px; height: 16px;"></i><span>成績紀錄</span>
+            </div>
+          </div>
+          <!-- main -->
+          <div style="flex: 1; padding: 28px; display: flex; flex-direction: column; gap: 24px;">
+            <div style="display: flex; align-items: center; gap: 16px;">
+              <div style="font-size: 20px; font-weight: 600; color: #1A1A1A; flex: 1;">總覽</div>
+              <div style="display: flex; align-items: center; gap: 8px; background: #FFFFFF; color: #1A1A1A; border: 1px solid #D9D9D4; font-size: 13px; font-weight: 500; padding: 9px 16px; border-radius: 4px; cursor: pointer;" style-hover="background: #EAEAE5;">
+                <i data-lucide="download" style="width: 15px; height: 15px;"></i>匯出成績 CSV
+              </div>
+              <div style="display: flex; align-items: center; gap: 8px; background: #4A7C59; color: #FFFFFF; font-size: 13px; font-weight: 600; padding: 10px 16px; border-radius: 4px; cursor: pointer;" style-hover="background: #3E6A4B;">
+                <i data-lucide="sparkles" style="width: 15px; height: 15px;"></i>從 Dify 產生題目
+              </div>
+            </div>
+            <!-- stat cards -->
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;">
+              <div style="background: #FFFFFF; border: 1px solid #D9D9D4; border-radius: 4px; padding: 20px; display: flex; flex-direction: column; gap: 6px;">
+                <div style="font-family: 'Noto Sans Mono', monospace; font-size: 11px; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; color: #5A5A58;">應試人次</div>
+                <div style="font-family: 'Noto Sans Mono', monospace; font-size: 28px; font-weight: 600; color: #1A1A1A;">342</div>
+                <div style="font-size: 12px; color: #2E7D4F; display: flex; align-items: center; gap: 4px;"><i data-lucide="trending-up" style="width: 13px; height: 13px;"></i>本週 +28</div>
+              </div>
+              <div style="background: #FFFFFF; border: 1px solid #D9D9D4; border-radius: 4px; padding: 20px; display: flex; flex-direction: column; gap: 6px;">
+                <div style="font-family: 'Noto Sans Mono', monospace; font-size: 11px; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; color: #5A5A58;">平均分數</div>
+                <div style="font-family: 'Noto Sans Mono', monospace; font-size: 28px; font-weight: 600; color: #1A1A1A;">76.4 <span style="font-size: 13px; color: #8A8A86;">分</span></div>
+                <div style="font-size: 12px; color: #5A5A58;">及格標準 70 分</div>
+              </div>
+              <div style="background: #FFFFFF; border: 1px solid #D9D9D4; border-radius: 4px; padding: 20px; display: flex; flex-direction: column; gap: 6px;">
+                <div style="font-family: 'Noto Sans Mono', monospace; font-size: 11px; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; color: #5A5A58;">及格率</div>
+                <div style="font-family: 'Noto Sans Mono', monospace; font-size: 28px; font-weight: 600; color: #1A1A1A;">71.9 <span style="font-size: 13px; color: #8A8A86;">%</span></div>
+                <div style="font-size: 12px; color: #5A5A58;">246 / 342 人</div>
+              </div>
+              <div style="background: #FFFFFF; border: 1px solid #D9D9D4; border-radius: 4px; padding: 20px; display: flex; flex-direction: column; gap: 6px;">
+                <div style="font-family: 'Noto Sans Mono', monospace; font-size: 11px; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; color: #5A5A58;">題庫題數</div>
+                <div style="font-family: 'Noto Sans Mono', monospace; font-size: 28px; font-weight: 600; color: #1A1A1A;">128 <span style="font-size: 13px; color: #8A8A86;">題</span></div>
+                <div style="font-size: 12px; color: #5A5A58;">選擇 84 · 是非 44</div>
+              </div>
+            </div>
+            <!-- question bank table -->
+            <div style="background: #FFFFFF; border: 1px solid #D9D9D4; border-radius: 4px; overflow: hidden;">
+              <div style="padding: 16px 20px; border-bottom: 1px solid #EAEAE5; display: flex; align-items: center; gap: 12px;">
+                <div style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #4A7C59; flex: 1;">題庫 · 最近更新</div>
+                <div style="display: flex; align-items: center; gap: 6px; border: 1px solid #D9D9D4; border-radius: 2px; padding: 6px 10px; font-size: 12px; color: #8A8A86; width: 200px;">
+                  <i data-lucide="search" style="width: 13px; height: 13px;"></i>搜尋題目…
+                </div>
+              </div>
+              <div style="display: grid; grid-template-columns: 72px 1fr 88px 96px 104px 88px; padding: 10px 20px; border-bottom: 1px solid #EAEAE5; font-family: 'Noto Sans Mono', monospace; font-size: 10px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #8A8A86;">
+                <span>編號</span><span>題目</span><span>題型</span><span>構面</span><span>答對率</span><span>來源</span>
+              </div>
+              <div style="display: grid; grid-template-columns: 72px 1fr 88px 96px 104px 88px; padding: 13px 20px; border-bottom: 1px solid #EAEAE5; font-size: 13px; color: #333333; align-items: center;">
+                <span style="font-family: 'Noto Sans Mono', monospace; font-size: 12px; color: #5A5A58;">Q-128</span>
+                <span style="color: #1A1A1A;">TTQS 五大構面不包含下列何者?</span>
+                <span style="font-size: 12px;">選擇題</span>
+                <span style="font-size: 12px;">計畫</span>
+                <span style="font-family: 'Noto Sans Mono', monospace; font-size: 12px;">88.2%</span>
+                <span style="display: inline-flex; align-items: center; gap: 4px; background: #DFE6ED; color: #2D5A87; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 999px; justify-self: start;">Dify</span>
+              </div>
+              <div style="display: grid; grid-template-columns: 72px 1fr 88px 96px 104px 88px; padding: 13px 20px; border-bottom: 1px solid #EAEAE5; font-size: 13px; color: #333333; align-items: center;">
+                <span style="font-family: 'Noto Sans Mono', monospace; font-size: 12px; color: #5A5A58;">Q-127</span>
+                <span style="color: #1A1A1A;">TTQS 評核等第由高至低依序為金、銀、銅牌、通過。</span>
+                <span style="font-size: 12px;">是非題</span>
+                <span style="font-size: 12px;">成果</span>
+                <span style="font-family: 'Noto Sans Mono', monospace; font-size: 12px;">91.5%</span>
+                <span style="display: inline-flex; align-items: center; gap: 4px; background: #DFE6ED; color: #2D5A87; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 999px; justify-self: start;">Dify</span>
+              </div>
+              <div style="display: grid; grid-template-columns: 72px 1fr 88px 96px 104px 88px; padding: 13px 20px; border-bottom: 1px solid #EAEAE5; font-size: 13px; color: #333333; align-items: center;">
+                <span style="font-family: 'Noto Sans Mono', monospace; font-size: 12px; color: #5A5A58;">Q-126</span>
+                <span style="color: #1A1A1A;">訓練需求分析屬於哪一個構面?</span>
+                <span style="font-size: 12px;">選擇題</span>
+                <span style="font-size: 12px;">計畫</span>
+                <span style="font-family: 'Noto Sans Mono', monospace; font-size: 12px; color: #C87A0A;">54.1%</span>
+                <span style="display: inline-flex; align-items: center; gap: 4px; background: #DFE6ED; color: #2D5A87; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 999px; justify-self: start;">Dify</span>
+              </div>
+              <div style="display: grid; grid-template-columns: 72px 1fr 88px 96px 104px 88px; padding: 13px 20px; border-bottom: 1px solid #EAEAE5; font-size: 13px; color: #333333; align-items: center;">
+                <span style="font-family: 'Noto Sans Mono', monospace; font-size: 12px; color: #5A5A58;">Q-125</span>
+                <span style="color: #1A1A1A;">柯克派翠克四層次評估之第二層次為「行為」。</span>
+                <span style="font-size: 12px;">是非題</span>
+                <span style="font-size: 12px;">查核</span>
+                <span style="font-family: 'Noto Sans Mono', monospace; font-size: 12px;">67.8%</span>
+                <span style="display: inline-flex; align-items: center; gap: 4px; background: #EAEAE5; color: #5A5A58; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 999px; justify-self: start;">人工</span>
+              </div>
+              <div style="display: grid; grid-template-columns: 72px 1fr 88px 96px 104px 88px; padding: 13px 20px; font-size: 13px; color: #333333; align-items: center;">
+                <span style="font-family: 'Noto Sans Mono', monospace; font-size: 12px; color: #5A5A58;">Q-124</span>
+                <span style="color: #1A1A1A;">訓練品質計分卡(Scorecard)適用於企業機構版。</span>
+                <span style="font-size: 12px;">是非題</span>
+                <span style="font-size: 12px;">執行</span>
+                <span style="font-family: 'Noto Sans Mono', monospace; font-size: 12px;">72.3%</span>
+                <span style="display: inline-flex; align-items: center; gap: 4px; background: #DFE6ED; color: #2D5A87; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 999px; justify-self: start;">Dify</span>
+              </div>
+              <div style="padding: 12px 20px; border-top: 1px solid #EAEAE5; display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-family: 'Noto Sans Mono', monospace; font-size: 12px; color: #8A8A86;">128 題中的 1–5</span>
+                <span style="font-size: 13px; color: #4A7C59; font-weight: 500; cursor: pointer;">前往題庫管理 →</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    const run = () => { if (window.lucide) { try { window.lucide.createIcons(); } catch (e) {} } };
+    run();
+    this._t1 = setTimeout(run, 500);
+    this._t2 = setTimeout(run, 1500);
+  }
+  componentWillUnmount() {
+    clearTimeout(this._t1);
+    clearTimeout(this._t2);
+  }
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>
