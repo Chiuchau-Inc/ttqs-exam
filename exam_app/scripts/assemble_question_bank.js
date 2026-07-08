@@ -52,7 +52,8 @@ function validateMcq(q, i) {
   if (!q.question) warns.push(`${id} 缺 question`);
   const opts = q.options || {};
   const keys = ['a', 'b', 'c', 'd'].filter(k => opts[k] != null);
-  if (keys.length < 3) warns.push(`${id} 選項不足（${keys.length}）`);
+  const minOpts = q.subtype === 'tf' ? 2 : 3; // 是非題固定兩選項（a=正確、b=錯誤）
+  if (keys.length < minOpts) warns.push(`${id} 選項不足（${keys.length}）`);
   if (!keys.includes(q.answer)) warns.push(`${id} answer「${q.answer}」不在選項內`);
   if (!q.explanation) warns.push(`${id} 缺 explanation`);
 }
